@@ -1,0 +1,32 @@
+{
+  "source_file": "data/raw/sweetspot/touch_results_2026-10-06-sweetspot.jsonl",
+  "source_sha256": "290accd48b1739358913f6846d241b868f7a73a8317a14dd1b178490747f67f5",
+  "retained_sessions": 15,
+  "retained_events": 163,
+  "retained_contacts": 132,
+  "excluded_session_numbers": [
+    3,
+    4,
+    6,
+    7,
+    9
+  ],
+  "operator_target_counts": {
+    "12": 6,
+    "13": 6
+  },
+  "effective_targets": 135,
+  "logged_configuration_targets": 141,
+  "nearby_distance_dp": 8,
+  "rapid_contact_window_ms": 300,
+  "target_region_margin_dp": 20,
+  "python_version": "3.12.3",
+  "packages": {
+    "numpy": "1.26.4",
+    "matplotlib": "3.6.3",
+    "nbformat": "5.11.1",
+    "nbclient": "0.11.0",
+    "ipykernel": "7.4.0",
+    "matplotlib-inline": "0.1.7"
+  }
+}

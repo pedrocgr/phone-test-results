@@ -1,0 +1,4 @@
+measure,numerator,denominator,fraction
+Recorded-contact hit fraction,111,132,0.8409090909090909
+Target hit coverage: operator-corrected counts,111,135,0.8222222222222222
+Target hit coverage: raw configuration counts,111,141,0.7872340425531915
