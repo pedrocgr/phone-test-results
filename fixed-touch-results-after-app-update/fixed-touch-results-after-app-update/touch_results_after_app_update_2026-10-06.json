@@ -1,0 +1,6034 @@
+[
+  {
+    "event_id": "54485e66-6c5f-46f7-89d2-c9b6b892837a",
+    "session_id": "e4b009b4-b9c3-43f0-9ced-77fd53e93a69",
+    "test_id": "3453d0a7-4a4e-4932-a11b-9cb71a290818",
+    "date_time": "2026-10-06T19:31:59.839664Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-001-green",
+    "target_center_x": 367.94226,
+    "target_center_y": 498.21985,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF43A047",
+    "actual_touch_x": 339.29297,
+    "actual_touch_y": 447.48828,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 58.26211,
+    "response_time_ms": 45643,
+    "previous_attempts_in_session": 0,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 2,
+      "target_count": 6,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 85953498712121,
+      "accelerometer_mps2": [
+        -2.4850502,
+        10.22595,
+        -4.31505
+      ],
+      "gyroscope_rad_s": [
+        0.2083125,
+        0.0708125,
+        -0.0444125
+      ],
+      "orientation_deg": [
+        -102.21458,
+        -70.11187,
+        -179.49097
+      ]
+    }
+  },
+  {
+    "event_id": "a71714e2-2658-4835-a138-f49a561c0fab",
+    "session_id": "e4b009b4-b9c3-43f0-9ced-77fd53e93a69",
+    "test_id": "3453d0a7-4a4e-4932-a11b-9cb71a290818",
+    "date_time": "2026-10-06T19:32:05.700314Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-001-red",
+    "target_center_x": 942.2455,
+    "target_center_y": 518.5969,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FFE53935",
+    "actual_touch_x": 949.7578,
+    "actual_touch_y": 437.48828,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 81.455795,
+    "response_time_ms": 5840,
+    "previous_attempts_in_session": 1,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 2,
+      "target_count": 6,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 85959369007023,
+      "accelerometer_mps2": [
+        0.39600003,
+        9.87195,
+        -4.15905
+      ],
+      "gyroscope_rad_s": [
+        -0.207075,
+        -0.0012375,
+        0.0265375
+      ],
+      "orientation_deg": [
+        -102.06397,
+        -70.22483,
+        -178.9006
+      ]
+    }
+  },
+  {
+    "event_id": "737a158b-eb21-4545-adbc-0000e2a2ce41",
+    "session_id": "e4b009b4-b9c3-43f0-9ced-77fd53e93a69",
+    "test_id": "3453d0a7-4a4e-4932-a11b-9cb71a290818",
+    "date_time": "2026-10-06T19:32:10.670469Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-002-red",
+    "target_center_x": 852.8297,
+    "target_center_y": 1133.0262,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FFE53935",
+    "actual_touch_x": 877.1367,
+    "actual_touch_y": 1090.1592,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 49.27896,
+    "response_time_ms": 4959,
+    "previous_attempts_in_session": 2,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 2,
+      "target_count": 6,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 85964331770593,
+      "accelerometer_mps2": [
+        -0.93405,
+        6.84105,
+        -3.4050002
+      ],
+      "gyroscope_rad_s": [
+        0.1618375,
+        -0.32505,
+        -0.038225
+      ],
+      "orientation_deg": [
+        -101.97673,
+        -70.21422,
+        -178.79468
+      ]
+    }
+  },
+  {
+    "event_id": "599c1920-1081-4765-9dae-b1248c9cc434",
+    "session_id": "e4b009b4-b9c3-43f0-9ced-77fd53e93a69",
+    "test_id": "3453d0a7-4a4e-4932-a11b-9cb71a290818",
+    "date_time": "2026-10-06T19:32:15.748158Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-002-blue",
+    "target_center_x": 213.46307,
+    "target_center_y": 1187.2826,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF1E88E5",
+    "actual_touch_x": 200.48828,
+    "actual_touch_y": 1175.7822,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 17.337925,
+    "response_time_ms": 5065,
+    "previous_attempts_in_session": 3,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 2,
+      "target_count": 6,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 85969394842054,
+      "accelerometer_mps2": [
+        -0.46500003,
+        10.566001,
+        -4.87305
+      ],
+      "gyroscope_rad_s": [
+        0.0347875,
+        0.013475,
+        0.005775
+      ],
+      "orientation_deg": [
+        -101.912,
+        -69.97403,
+        -178.79636
+      ]
+    }
+  },
+  {
+    "event_id": "6b2e6626-f63e-4bba-bb75-856da54d9d02",
+    "session_id": "e4b009b4-b9c3-43f0-9ced-77fd53e93a69",
+    "test_id": "3453d0a7-4a4e-4932-a11b-9cb71a290818",
+    "date_time": "2026-10-06T19:32:20.907166Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-002-green",
+    "target_center_x": 708.9779,
+    "target_center_y": 1711.1348,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF43A047",
+    "actual_touch_x": 747.39453,
+    "actual_touch_y": 1708.3301,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 38.51887,
+    "response_time_ms": 5150,
+    "previous_attempts_in_session": 4,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 2,
+      "target_count": 6,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 85974553445915,
+      "accelerometer_mps2": [
+        0.31500003,
+        10.269,
+        -4.0950003
+      ],
+      "gyroscope_rad_s": [
+        0.1007875,
+        0.00605,
+        0.0240625
+      ],
+      "orientation_deg": [
+        -106.76789,
+        -68.83628,
+        179.782
+      ]
+    }
+  },
+  {
+    "event_id": "c5fed51a-6074-40e3-85a0-1a449c04ba78",
+    "session_id": "e4b009b4-b9c3-43f0-9ced-77fd53e93a69",
+    "test_id": "3453d0a7-4a4e-4932-a11b-9cb71a290818",
+    "date_time": "2026-10-06T19:32:25.557069Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-001-blue",
+    "target_center_x": 330.65393,
+    "target_center_y": 1918.253,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF1E88E5",
+    "actual_touch_x": 350.917,
+    "actual_touch_y": 1940.6992,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 30.239412,
+    "response_time_ms": 4639,
+    "previous_attempts_in_session": 5,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 2,
+      "target_count": 6,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 85979215295247,
+      "accelerometer_mps2": [
+        -0.88395005,
+        9.196951,
+        -2.802
+      ],
+      "gyroscope_rad_s": [
+        -0.245025,
+        0.163625,
+        -0.038225
+      ],
+      "orientation_deg": [
+        -108.62325,
+        -70.33824,
+        177.09123
+      ]
+    }
+  },
+  {
+    "event_id": "644abfc9-c455-4261-97f1-84c3e5939d87",
+    "session_id": "41d9b4a5-33ac-421b-aef3-eadadbcd026e",
+    "test_id": "54837cd3-457f-4b74-9f26-c6a8326d25fc",
+    "date_time": "2026-10-06T19:41:28.012024Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-002-red",
+    "target_center_x": 335.40533,
+    "target_center_y": 461.75208,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FFE53935",
+    "actual_touch_x": 282.7959,
+    "actual_touch_y": 411.80176,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 72.54507,
+    "response_time_ms": 59813,
+    "previous_attempts_in_session": 0,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 2,
+      "target_count": 6,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 86521680085889,
+      "accelerometer_mps2": [
+        -0.19395001,
+        10.939951,
+        -0.91800004
+      ],
+      "gyroscope_rad_s": [
+        -0.103125,
+        0.0218625,
+        -0.011
+      ],
+      "orientation_deg": [
+        32.260082,
+        -78.776085,
+        14.855228
+      ]
+    }
+  },
+  {
+    "event_id": "5fd7ddf8-1133-4b56-a34e-69b3beaee31a",
+    "session_id": "41d9b4a5-33ac-421b-aef3-eadadbcd026e",
+    "test_id": "54837cd3-457f-4b74-9f26-c6a8326d25fc",
+    "date_time": "2026-10-06T19:41:28.100134Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-002-red",
+    "target_center_x": 335.40533,
+    "target_center_y": 461.75208,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FFE53935",
+    "actual_touch_x": 280.7959,
+    "actual_touch_y": 411.92676,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": true,
+    "distance_to_center": 73.923965,
+    "response_time_ms": 76,
+    "previous_attempts_in_session": 1,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 2,
+      "target_count": 6,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 86521756508433,
+      "accelerometer_mps2": [
+        -0.16305001,
+        11.076,
+        0.34995002
+      ],
+      "gyroscope_rad_s": [
+        -0.032175,
+        0.0523875,
+        0.0122375
+      ],
+      "orientation_deg": [
+        32.260433,
+        -78.8256,
+        14.879167
+      ]
+    }
+  },
+  {
+    "event_id": "bab7e845-a8db-4991-b956-34b6e1bd5c9c",
+    "session_id": "41d9b4a5-33ac-421b-aef3-eadadbcd026e",
+    "test_id": "54837cd3-457f-4b74-9f26-c6a8326d25fc",
+    "date_time": "2026-10-06T19:41:34.080361Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-001-blue",
+    "target_center_x": 711.99927,
+    "target_center_y": 726.16547,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF1E88E5",
+    "actual_touch_x": 693.27246,
+    "actual_touch_y": 675.3574,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 54.149338,
+    "response_time_ms": 6056,
+    "previous_attempts_in_session": 2,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 2,
+      "target_count": 6,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 86527736565321,
+      "accelerometer_mps2": [
+        -0.177,
+        10.047001,
+        6.02295
+      ],
+      "gyroscope_rad_s": [
+        0.51507497,
+        -0.13695,
+        -0.014712499
+      ],
+      "orientation_deg": [
+        45.916397,
+        -83.73809,
+        30.186508
+      ]
+    }
+  },
+  {
+    "event_id": "3306b48e-cb28-41cb-bb62-7210e570c351",
+    "session_id": "27edd2c8-7c8a-4089-b96d-113c60282ea9",
+    "test_id": "4c1a183f-8169-4557-a64f-23631f4b2363",
+    "date_time": "2026-10-06T19:42:25.272811Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-002-red",
+    "target_center_x": 715.58514,
+    "target_center_y": 636.77563,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FFE53935",
+    "actual_touch_x": 692.70996,
+    "actual_touch_y": 592.6719,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 49.68315,
+    "response_time_ms": 27403,
+    "previous_attempts_in_session": 0,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 2,
+      "target_count": 6,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 86578939730410,
+      "accelerometer_mps2": [
+        -0.51495004,
+        10.81305,
+        -0.441
+      ],
+      "gyroscope_rad_s": [
+        0.52854997,
+        -0.0270875,
+        -0.0171875
+      ],
+      "orientation_deg": [
+        151.10934,
+        -87.77815,
+        117.02833
+      ]
+    }
+  },
+  {
+    "event_id": "8e6db15c-eb76-412c-9ef2-1eaf69616cc6",
+    "session_id": "27edd2c8-7c8a-4089-b96d-113c60282ea9",
+    "test_id": "4c1a183f-8169-4557-a64f-23631f4b2363",
+    "date_time": "2026-10-06T19:42:30.193262Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-001-blue",
+    "target_center_x": 220.4682,
+    "target_center_y": 709.20776,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF1E88E5",
+    "actual_touch_x": 172.24023,
+    "actual_touch_y": 685.6074,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 53.692764,
+    "response_time_ms": 4909,
+    "previous_attempts_in_session": 1,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 2,
+      "target_count": 6,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 86583849895928,
+      "accelerometer_mps2": [
+        -0.62295,
+        10.497001,
+        -0.03195
+      ],
+      "gyroscope_rad_s": [
+        0.2952125,
+        0.0644875,
+        -0.0246125
+      ],
+      "orientation_deg": [
+        147.9089,
+        -87.77718,
+        113.63353
+      ]
+    }
+  },
+  {
+    "event_id": "58fcc025-8b37-43e9-a632-e7c05c7a3248",
+    "session_id": "27edd2c8-7c8a-4089-b96d-113c60282ea9",
+    "test_id": "4c1a183f-8169-4557-a64f-23631f4b2363",
+    "date_time": "2026-10-06T19:42:34.892570Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-002-green",
+    "target_center_x": 150.34584,
+    "target_center_y": 1185.3376,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF43A047",
+    "actual_touch_x": 125.680664,
+    "actual_touch_y": 1193.4688,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 25.970863,
+    "response_time_ms": 4688,
+    "previous_attempts_in_session": 2,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 2,
+      "target_count": 6,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 86588549899892,
+      "accelerometer_mps2": [
+        -0.94095004,
+        9.790951,
+        -1.7119501
+      ],
+      "gyroscope_rad_s": [
+        0.259875,
+        0.070675,
+        -0.0196625
+      ],
+      "orientation_deg": [
+        149.47688,
+        -87.74796,
+        115.15657
+      ]
+    }
+  },
+  {
+    "event_id": "a930086e-5650-4b4e-a742-a2744b47db35",
+    "session_id": "27edd2c8-7c8a-4089-b96d-113c60282ea9",
+    "test_id": "4c1a183f-8169-4557-a64f-23631f4b2363",
+    "date_time": "2026-10-06T19:42:39.604170Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-002-blue",
+    "target_center_x": 651.68335,
+    "target_center_y": 1412.6984,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF1E88E5",
+    "actual_touch_x": 664.4619,
+    "actual_touch_y": 1407.7764,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 13.693712,
+    "response_time_ms": 4702,
+    "previous_attempts_in_session": 3,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 2,
+      "target_count": 6,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 86593269010979,
+      "accelerometer_mps2": [
+        -1.5180001,
+        9.778951,
+        1.107
+      ],
+      "gyroscope_rad_s": [
+        -0.0309375,
+        0.0034375,
+        -0.0099
+      ],
+      "orientation_deg": [
+        146.7951,
+        -87.78185,
+        112.57317
+      ]
+    }
+  },
+  {
+    "event_id": "ea135039-328b-4f43-844c-8a5d13a474c4",
+    "session_id": "27edd2c8-7c8a-4089-b96d-113c60282ea9",
+    "test_id": "4c1a183f-8169-4557-a64f-23631f4b2363",
+    "date_time": "2026-10-06T19:42:39.685021Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-002-blue",
+    "target_center_x": 651.68335,
+    "target_center_y": 1412.6984,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF1E88E5",
+    "actual_touch_x": 669.14844,
+    "actual_touch_y": 1410.7754,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": true,
+    "distance_to_center": 17.570633,
+    "response_time_ms": 71,
+    "previous_attempts_in_session": 4,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 2,
+      "target_count": 6,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 86593345434010,
+      "accelerometer_mps2": [
+        -1.6020001,
+        8.59305,
+        1.3060501
+      ],
+      "gyroscope_rad_s": [
+        -0.045649998,
+        -0.0490875,
+        -0.036849998
+      ],
+      "orientation_deg": [
+        148.18932,
+        -87.74849,
+        114.03217
+      ]
+    }
+  },
+  {
+    "event_id": "a66f5b7a-66b7-4907-8d6e-3f1789efca09",
+    "session_id": "27edd2c8-7c8a-4089-b96d-113c60282ea9",
+    "test_id": "4c1a183f-8169-4557-a64f-23631f4b2363",
+    "date_time": "2026-10-06T19:42:44.401806Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-001-red",
+    "target_center_x": 331.5799,
+    "target_center_y": 1710.063,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FFE53935",
+    "actual_touch_x": 339.29297,
+    "actual_touch_y": 1738.0176,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 28.999147,
+    "response_time_ms": 4787,
+    "previous_attempts_in_session": 5,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 2,
+      "target_count": 6,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 86598064546662,
+      "accelerometer_mps2": [
+        -0.97905004,
+        10.248,
+        0.82500005
+      ],
+      "gyroscope_rad_s": [
+        -0.14093749,
+        0.06325,
+        -0.036849998
+      ],
+      "orientation_deg": [
+        145.91019,
+        -87.74779,
+        111.60401
+      ]
+    }
+  },
+  {
+    "event_id": "d6e201dd-f687-4cbc-9b46-d0ddbd56414d",
+    "session_id": "27edd2c8-7c8a-4089-b96d-113c60282ea9",
+    "test_id": "4c1a183f-8169-4557-a64f-23631f4b2363",
+    "date_time": "2026-10-06T19:42:44.484253Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-001-red",
+    "target_center_x": 331.5799,
+    "target_center_y": 1710.063,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FFE53935",
+    "actual_touch_x": 339.79297,
+    "actual_touch_y": 1741.0176,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": true,
+    "distance_to_center": 32.025635,
+    "response_time_ms": 72,
+    "previous_attempts_in_session": 6,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 2,
+      "target_count": 6,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 86598160075282,
+      "accelerometer_mps2": [
+        -0.29505002,
+        10.99005,
+        0.0010500001
+      ],
+      "gyroscope_rad_s": [
+        -0.203225,
+        0.076725,
+        -0.0026125
+      ],
+      "orientation_deg": [
+        145.53873,
+        -87.732544,
+        111.25369
+      ]
+    }
+  },
+  {
+    "event_id": "2f017a4d-ed93-400a-b12c-d7cc1d75888a",
+    "session_id": "27edd2c8-7c8a-4089-b96d-113c60282ea9",
+    "test_id": "4c1a183f-8169-4557-a64f-23631f4b2363",
+    "date_time": "2026-10-06T19:42:49.518154Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-001-green",
+    "target_center_x": 921.95953,
+    "target_center_y": 1961.2493,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF43A047",
+    "actual_touch_x": 980.88086,
+    "actual_touch_y": 1974.1982,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 60.327427,
+    "response_time_ms": 5105,
+    "previous_attempts_in_session": 7,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 2,
+      "target_count": 6,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 86603184881003,
+      "accelerometer_mps2": [
+        -0.53595,
+        9.81,
+        1.5790501
+      ],
+      "gyroscope_rad_s": [
+        -0.3009875,
+        -0.0735625,
+        -0.012375
+      ],
+      "orientation_deg": [
+        141.01471,
+        -87.75458,
+        106.87734
+      ]
+    }
+  },
+  {
+    "event_id": "9bae150e-0403-4c66-bb47-06ea588dc37c",
+    "session_id": "155b3ddd-bb24-415c-88e6-ca2e61d8e748",
+    "test_id": "a339c270-8ef4-40d9-922d-342cbb6b4fa3",
+    "date_time": "2026-10-06T20:00:46.756295Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-004-red",
+    "target_center_x": 143.8637,
+    "target_center_y": 405.45935,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FFE53935",
+    "actual_touch_x": 81.43262,
+    "actual_touch_y": 348.7412,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 84.34801,
+    "response_time_ms": 1041968,
+    "previous_attempts_in_session": 0,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 87680415963028,
+      "accelerometer_mps2": [
+        -1.7809501,
+        10.68795,
+        -5.8450503
+      ],
+      "gyroscope_rad_s": [
+        0.37345,
+        0.18493749,
+        0.0042625
+      ],
+      "orientation_deg": [
+        -44.0584,
+        -70.219826,
+        153.79843
+      ]
+    }
+  },
+  {
+    "event_id": "47e825f3-d5df-4383-9528-483a0b5146dd",
+    "session_id": "155b3ddd-bb24-415c-88e6-ca2e61d8e748",
+    "test_id": "a339c270-8ef4-40d9-922d-342cbb6b4fa3",
+    "date_time": "2026-10-06T20:00:52.487221Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-006-green",
+    "target_center_x": 958.6359,
+    "target_center_y": 420.46582,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF43A047",
+    "actual_touch_x": 953.81934,
+    "actual_touch_y": 327.8662,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 92.72479,
+    "response_time_ms": 5720,
+    "previous_attempts_in_session": 1,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 87686147269351,
+      "accelerometer_mps2": [
+        -1.932,
+        10.557,
+        -5.0550003
+      ],
+      "gyroscope_rad_s": [
+        0.1131625,
+        -0.3257375,
+        -0.036025
+      ],
+      "orientation_deg": [
+        -43.999065,
+        -70.06929,
+        154.2723
+      ]
+    }
+  },
+  {
+    "event_id": "126c7af7-54fe-4ff5-b420-5cc58b86ac3d",
+    "session_id": "155b3ddd-bb24-415c-88e6-ca2e61d8e748",
+    "test_id": "a339c270-8ef4-40d9-922d-342cbb6b4fa3",
+    "date_time": "2026-10-06T20:00:57.683188Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-001-blue",
+    "target_center_x": 668.4497,
+    "target_center_y": 457.21207,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF1E88E5",
+    "actual_touch_x": 644.2129,
+    "actual_touch_y": 379.49023,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 81.413185,
+    "response_time_ms": 5186,
+    "previous_attempts_in_session": 2,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 87691343653331,
+      "accelerometer_mps2": [
+        -1.98705,
+        11.95995,
+        -4.18095
+      ],
+      "gyroscope_rad_s": [
+        0.4712125,
+        0.0078375,
+        0.01045
+      ],
+      "orientation_deg": [
+        -43.985252,
+        -70.03628,
+        154.24129
+      ]
+    }
+  },
+  {
+    "event_id": "51ef88cc-e4fb-4bbd-aec6-8010af91a073",
+    "session_id": "155b3ddd-bb24-415c-88e6-ca2e61d8e748",
+    "test_id": "a339c270-8ef4-40d9-922d-342cbb6b4fa3",
+    "date_time": "2026-10-06T20:01:02.720442Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-005-blue",
+    "target_center_x": 427.22144,
+    "target_center_y": 522.0717,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF1E88E5",
+    "actual_touch_x": 387.16504,
+    "actual_touch_y": 459.05078,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 74.673645,
+    "response_time_ms": 5028,
+    "previous_attempts_in_session": 3,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 87696387202175,
+      "accelerometer_mps2": [
+        -1.25205,
+        11.170051,
+        -6.22305
+      ],
+      "gyroscope_rad_s": [
+        0.149875,
+        0.04455,
+        -0.0017875
+      ],
+      "orientation_deg": [
+        -43.69435,
+        -69.90677,
+        154.4046
+      ]
+    }
+  },
+  {
+    "event_id": "a18ebaf5-434d-4d39-8a5c-993087ecfbea",
+    "session_id": "155b3ddd-bb24-415c-88e6-ca2e61d8e748",
+    "test_id": "a339c270-8ef4-40d9-922d-342cbb6b4fa3",
+    "date_time": "2026-10-06T20:01:08.049221Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-002-green",
+    "target_center_x": 141.27185,
+    "target_center_y": 774.9425,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF43A047",
+    "actual_touch_x": 90.74512,
+    "actual_touch_y": 736.48047,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 63.50023,
+    "response_time_ms": 5318,
+    "previous_attempts_in_session": 4,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 87701717315919,
+      "accelerometer_mps2": [
+        -2.29905,
+        9.823951,
+        -5.3089504
+      ],
+      "gyroscope_rad_s": [
+        -0.0089375,
+        0.0518375,
+        -0.0103124995
+      ],
+      "orientation_deg": [
+        -43.4905,
+        -69.99388,
+        154.27585
+      ]
+    }
+  },
+  {
+    "event_id": "c1653097-79d9-42c1-8f56-e185203c8046",
+    "session_id": "155b3ddd-bb24-415c-88e6-ca2e61d8e748",
+    "test_id": "a339c270-8ef4-40d9-922d-342cbb6b4fa3",
+    "date_time": "2026-10-06T20:01:13.677651Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-003-green",
+    "target_center_x": 954.77386,
+    "target_center_y": 793.192,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF43A047",
+    "actual_touch_x": 958.13184,
+    "actual_touch_y": 720.35645,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 72.91294,
+    "response_time_ms": 5617,
+    "previous_attempts_in_session": 5,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 87707333994314,
+      "accelerometer_mps2": [
+        -2.9260502,
+        10.267051,
+        -4.51095
+      ],
+      "gyroscope_rad_s": [
+        0.3465,
+        -0.2572625,
+        -0.0702625
+      ],
+      "orientation_deg": [
+        -43.292255,
+        -69.98448,
+        154.74698
+      ]
+    }
+  },
+  {
+    "event_id": "2adc6c8f-3283-4e73-aed9-64b8fb32f0ea",
+    "session_id": "155b3ddd-bb24-415c-88e6-ca2e61d8e748",
+    "test_id": "a339c270-8ef4-40d9-922d-342cbb6b4fa3",
+    "date_time": "2026-10-06T20:01:18.768091Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-006-blue",
+    "target_center_x": 703.8129,
+    "target_center_y": 889.44965,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF1E88E5",
+    "actual_touch_x": 691.14746,
+    "actual_touch_y": 834.041,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 56.837753,
+    "response_time_ms": 5079,
+    "previous_attempts_in_session": 6,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 87712434854680,
+      "accelerometer_mps2": [
+        -2.60505,
+        9.24195,
+        -4.8030005
+      ],
+      "gyroscope_rad_s": [
+        0.00935,
+        -0.1472625,
+        -0.042075
+      ],
+      "orientation_deg": [
+        -43.467133,
+        -70.05804,
+        154.4881
+      ]
+    }
+  },
+  {
+    "event_id": "35f3cf36-398b-482e-955f-229cc8e1475d",
+    "session_id": "155b3ddd-bb24-415c-88e6-ca2e61d8e748",
+    "test_id": "a339c270-8ef4-40d9-922d-342cbb6b4fa3",
+    "date_time": "2026-10-06T20:01:24.009995Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-004-blue",
+    "target_center_x": 374.8917,
+    "target_center_y": 928.1544,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF1E88E5",
+    "actual_touch_x": 342.66797,
+    "actual_touch_y": 889.53906,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 50.294277,
+    "response_time_ms": 5231,
+    "previous_attempts_in_session": 7,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 87717669445301,
+      "accelerometer_mps2": [
+        0.42705002,
+        9.41895,
+        -0.91995007
+      ],
+      "gyroscope_rad_s": [
+        0.093637496,
+        0.0946,
+        0.0067375
+      ],
+      "orientation_deg": [
+        -43.6824,
+        -70.20301,
+        154.16301
+      ]
+    }
+  },
+  {
+    "event_id": "d5d797bc-7132-4392-a00e-42cf5ad67d99",
+    "session_id": "155b3ddd-bb24-415c-88e6-ca2e61d8e748",
+    "test_id": "a339c270-8ef4-40d9-922d-342cbb6b4fa3",
+    "date_time": "2026-10-06T20:01:28.770512Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-003-red",
+    "target_center_x": 404.084,
+    "target_center_y": 1151.583,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FFE53935",
+    "actual_touch_x": 388.60254,
+    "actual_touch_y": 1127.2832,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 28.812439,
+    "response_time_ms": 4750,
+    "previous_attempts_in_session": 8,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 87722426426929,
+      "accelerometer_mps2": [
+        -2.7559502,
+        9.850051,
+        -2.2080002
+      ],
+      "gyroscope_rad_s": [
+        0.193875,
+        -0.0752125,
+        -0.0592625
+      ],
+      "orientation_deg": [
+        -43.724937,
+        -70.130455,
+        154.13698
+      ]
+    }
+  },
+  {
+    "event_id": "79d10b9e-c3d8-4477-be5e-b8f70e3b2372",
+    "session_id": "155b3ddd-bb24-415c-88e6-ca2e61d8e748",
+    "test_id": "a339c270-8ef4-40d9-922d-342cbb6b4fa3",
+    "date_time": "2026-10-06T20:01:33.651972Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-005-red",
+    "target_center_x": 677.40735,
+    "target_center_y": 1160.4475,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FFE53935",
+    "actual_touch_x": 677.02344,
+    "actual_touch_y": 1121.5957,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 38.853703,
+    "response_time_ms": 4873,
+    "previous_attempts_in_session": 9,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 87727317139017,
+      "accelerometer_mps2": [
+        -1.33395,
+        8.14605,
+        -1.83
+      ],
+      "gyroscope_rad_s": [
+        0.0265375,
+        -0.14973749,
+        -0.0067375
+      ],
+      "orientation_deg": [
+        -69.00869,
+        -69.95595,
+        156.75008
+      ]
+    }
+  },
+  {
+    "event_id": "218590a8-c73f-4ce9-b070-cb35042cdf73",
+    "session_id": "155b3ddd-bb24-415c-88e6-ca2e61d8e748",
+    "test_id": "a339c270-8ef4-40d9-922d-342cbb6b4fa3",
+    "date_time": "2026-10-06T20:01:39.192056Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-002-blue",
+    "target_center_x": 100.35572,
+    "target_center_y": 1197.6393,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF1E88E5",
+    "actual_touch_x": 66.18359,
+    "actual_touch_y": 1192.4062,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 34.57049,
+    "response_time_ms": 5529,
+    "previous_attempts_in_session": 10,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 87732857398626,
+      "accelerometer_mps2": [
+        -3.1680002,
+        9.319051,
+        -5.1529503
+      ],
+      "gyroscope_rad_s": [
+        0.18535,
+        0.10065,
+        -0.020075
+      ],
+      "orientation_deg": [
+        -68.91165,
+        -69.84094,
+        156.63069
+      ]
+    }
+  },
+  {
+    "event_id": "cca8df29-ac9f-4297-8331-e68c53503bf5",
+    "session_id": "155b3ddd-bb24-415c-88e6-ca2e61d8e748",
+    "test_id": "a339c270-8ef4-40d9-922d-342cbb6b4fa3",
+    "date_time": "2026-10-06T20:01:44.783384Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-005-green",
+    "target_center_x": 956.2428,
+    "target_center_y": 1217.1957,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF43A047",
+    "actual_touch_x": 976.19336,
+    "actual_touch_y": 1169.9697,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 51.267097,
+    "response_time_ms": 5582,
+    "previous_attempts_in_session": 11,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 87738435866533,
+      "accelerometer_mps2": [
+        -2.08095,
+        7.839,
+        -2.28705
+      ],
+      "gyroscope_rad_s": [
+        0.0081124995,
+        -0.3025,
+        -0.0482625
+      ],
+      "orientation_deg": [
+        -68.99919,
+        -69.95716,
+        156.968
+      ]
+    }
+  },
+  {
+    "event_id": "91e021f9-5e6b-46e6-a24a-6b578d8d5948",
+    "session_id": "155b3ddd-bb24-415c-88e6-ca2e61d8e748",
+    "test_id": "a339c270-8ef4-40d9-922d-342cbb6b4fa3",
+    "date_time": "2026-10-06T20:01:50.421135Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-001-red",
+    "target_center_x": 437.41687,
+    "target_center_y": 1573.4038,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FFE53935",
+    "actual_touch_x": 436.7246,
+    "actual_touch_y": 1567.2715,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 6.171274,
+    "response_time_ms": 5627,
+    "previous_attempts_in_session": 12,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 87744071646346,
+      "accelerometer_mps2": [
+        -1.3620001,
+        10.07295,
+        -3.147
+      ],
+      "gyroscope_rad_s": [
+        0.022824999,
+        0.056649998,
+        -0.0188375
+      ],
+      "orientation_deg": [
+        -69.08731,
+        -69.83253,
+        156.69736
+      ]
+    }
+  },
+  {
+    "event_id": "792d33c1-dba8-45cb-afda-e6f134c65179",
+    "session_id": "155b3ddd-bb24-415c-88e6-ca2e61d8e748",
+    "test_id": "a339c270-8ef4-40d9-922d-342cbb6b4fa3",
+    "date_time": "2026-10-06T20:01:55.292374Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-002-red",
+    "target_center_x": 651.04944,
+    "target_center_y": 1613.9852,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FFE53935",
+    "actual_touch_x": 668.39844,
+    "actual_touch_y": 1599.458,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 22.628035,
+    "response_time_ms": 4861,
+    "previous_attempts_in_session": 13,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 87748943251840,
+      "accelerometer_mps2": [
+        -1.2379501,
+        9.15795,
+        -2.5459502
+      ],
+      "gyroscope_rad_s": [
+        0.0435875,
+        -0.023924999,
+        -0.0127875
+      ],
+      "orientation_deg": [
+        -69.14851,
+        -69.79845,
+        156.76746
+      ]
+    }
+  },
+  {
+    "event_id": "22d015f3-ef0a-4697-b06a-c53e760b4436",
+    "session_id": "155b3ddd-bb24-415c-88e6-ca2e61d8e748",
+    "test_id": "a339c270-8ef4-40d9-922d-342cbb6b4fa3",
+    "date_time": "2026-10-06T20:02:00.740680Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-004-green",
+    "target_center_x": 111.91811,
+    "target_center_y": 1645.6289,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF43A047",
+    "actual_touch_x": 97.30664,
+    "actual_touch_y": 1663.707,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 23.24465,
+    "response_time_ms": 5438,
+    "previous_attempts_in_session": 14,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 87754407091230,
+      "accelerometer_mps2": [
+        -1.8319501,
+        9.040951,
+        -3.8839502
+      ],
+      "gyroscope_rad_s": [
+        -0.0419375,
+        0.064075,
+        -0.0103124995
+      ],
+      "orientation_deg": [
+        -69.37083,
+        -69.790054,
+        156.34305
+      ]
+    }
+  },
+  {
+    "event_id": "eeae438a-86be-4d92-bbb6-eb91cf245b29",
+    "session_id": "155b3ddd-bb24-415c-88e6-ca2e61d8e748",
+    "test_id": "a339c270-8ef4-40d9-922d-342cbb6b4fa3",
+    "date_time": "2026-10-06T20:02:06.345105Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-006-red",
+    "target_center_x": 955.8439,
+    "target_center_y": 1615.0181,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FFE53935",
+    "actual_touch_x": 995.3799,
+    "actual_touch_y": 1588.0215,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 47.873913,
+    "response_time_ms": 5595,
+    "previous_attempts_in_session": 15,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 87760004659856,
+      "accelerometer_mps2": [
+        -1.67595,
+        8.710951,
+        -6.54405
+      ],
+      "gyroscope_rad_s": [
+        -0.027224999,
+        -0.4943125,
+        -0.0543125
+      ],
+      "orientation_deg": [
+        -69.3405,
+        -69.73807,
+        156.78537
+      ]
+    }
+  },
+  {
+    "event_id": "2c2dd5de-f1fc-4ad6-9471-28b04d9d6028",
+    "session_id": "155b3ddd-bb24-415c-88e6-ca2e61d8e748",
+    "test_id": "a339c270-8ef4-40d9-922d-342cbb6b4fa3",
+    "date_time": "2026-10-06T20:02:12.083675Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-001-green",
+    "target_center_x": 380.10947,
+    "target_center_y": 1939.429,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF43A047",
+    "actual_touch_x": 395.66504,
+    "actual_touch_y": 1961.0742,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 26.655079,
+    "response_time_ms": 5727,
+    "previous_attempts_in_session": 16,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 87765735958302,
+      "accelerometer_mps2": [
+        -0.28995,
+        11.34405,
+        -2.8980002
+      ],
+      "gyroscope_rad_s": [
+        -0.14093749,
+        0.108075,
+        0.007975
+      ],
+      "orientation_deg": [
+        -69.16475,
+        -69.66122,
+        156.81915
+      ]
+    }
+  },
+  {
+    "event_id": "e54b07f0-1f76-4b75-84bb-870c77bf089c",
+    "session_id": "155b3ddd-bb24-415c-88e6-ca2e61d8e748",
+    "test_id": "a339c270-8ef4-40d9-922d-342cbb6b4fa3",
+    "date_time": "2026-10-06T20:02:17.103058Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-003-blue",
+    "target_center_x": 152.24368,
+    "target_center_y": 1956.5453,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF1E88E5",
+    "actual_touch_x": 149.74121,
+    "actual_touch_y": 1988.4482,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 32.00095,
+    "response_time_ms": 5009,
+    "previous_attempts_in_session": 17,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 87770760396063,
+      "accelerometer_mps2": [
+        -0.96000004,
+        10.633051,
+        -6.5659504
+      ],
+      "gyroscope_rad_s": [
+        -0.2057,
+        0.274175,
+        -0.015262499
+      ],
+      "orientation_deg": [
+        -69.23729,
+        -69.728325,
+        156.67853
+      ]
+    }
+  },
+  {
+    "event_id": "2490e1f1-723c-42b5-a264-c202db6ddaa8",
+    "session_id": "db7b7404-00c9-44ca-bdee-d1969ff9be3d",
+    "test_id": "71c95cfd-e578-4b79-9d7d-5d58c6441f75",
+    "date_time": "2026-10-06T20:03:52.251311Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-002-green",
+    "target_center_x": 409.17575,
+    "target_center_y": 402.66736,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF43A047",
+    "actual_touch_x": 364.10352,
+    "actual_touch_y": 331.1162,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 84.56402,
+    "response_time_ms": 63273,
+    "previous_attempts_in_session": 0,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 87865909292378,
+      "accelerometer_mps2": [
+        -1.437,
+        11.062051,
+        -4.56405
+      ],
+      "gyroscope_rad_s": [
+        0.41387498,
+        0.0589875,
+        -0.0017875
+      ],
+      "orientation_deg": [
+        172.87889,
+        -82.39937,
+        155.67033
+      ]
+    }
+  },
+  {
+    "event_id": "a3980ed1-968c-4060-a08d-046ff7bcefad",
+    "session_id": "db7b7404-00c9-44ca-bdee-d1969ff9be3d",
+    "test_id": "71c95cfd-e578-4b79-9d7d-5d58c6441f75",
+    "date_time": "2026-10-06T20:03:57.327645Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-004-red",
+    "target_center_x": 165.70238,
+    "target_center_y": 465.5471,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FFE53935",
+    "actual_touch_x": 112.618164,
+    "actual_touch_y": 403.48926,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 81.664604,
+    "response_time_ms": 5064,
+    "previous_attempts_in_session": 1,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 87870991023368,
+      "accelerometer_mps2": [
+        -0.77805007,
+        11.593051,
+        -5.2660503
+      ],
+      "gyroscope_rad_s": [
+        0.2965875,
+        0.06765,
+        -0.004125
+      ],
+      "orientation_deg": [
+        172.88152,
+        -82.39914,
+        155.41011
+      ]
+    }
+  },
+  {
+    "event_id": "1d0c4fb5-cd9a-4f8a-ae82-7f94047e74fe",
+    "session_id": "db7b7404-00c9-44ca-bdee-d1969ff9be3d",
+    "test_id": "71c95cfd-e578-4b79-9d7d-5d58c6441f75",
+    "date_time": "2026-10-06T20:04:02.895579Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-004-green",
+    "target_center_x": 933.5774,
+    "target_center_y": 469.6031,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF43A047",
+    "actual_touch_x": 932.0713,
+    "actual_touch_y": 373.80273,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 95.812195,
+    "response_time_ms": 5558,
+    "previous_attempts_in_session": 2,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 87876550359958,
+      "accelerometer_mps2": [
+        -1.9039501,
+        11.719951,
+        -4.4950504
+      ],
+      "gyroscope_rad_s": [
+        0.37235,
+        -0.18287499,
+        -0.020075
+      ],
+      "orientation_deg": [
+        172.8915,
+        -82.43068,
+        155.61287
+      ]
+    }
+  },
+  {
+    "event_id": "dacd6e62-b17d-45a9-a518-fe3f3aa4418e",
+    "session_id": "db7b7404-00c9-44ca-bdee-d1969ff9be3d",
+    "test_id": "71c95cfd-e578-4b79-9d7d-5d58c6441f75",
+    "date_time": "2026-10-06T20:04:07.880247Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-005-red",
+    "target_center_x": 657.9275,
+    "target_center_y": 487.3192,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FFE53935",
+    "actual_touch_x": 638.7129,
+    "actual_touch_y": 404.67676,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 84.84678,
+    "response_time_ms": 4974,
+    "previous_attempts_in_session": 3,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 87881536568662,
+      "accelerometer_mps2": [
+        0.06795,
+        8.886001,
+        -1.3290001
+      ],
+      "gyroscope_rad_s": [
+        0.52745,
+        0.0224125,
+        -0.031075
+      ],
+      "orientation_deg": [
+        172.21432,
+        -82.58902,
+        154.87457
+      ]
+    }
+  },
+  {
+    "event_id": "34f391f7-42e9-489a-b742-76094a638151",
+    "session_id": "db7b7404-00c9-44ca-bdee-d1969ff9be3d",
+    "test_id": "71c95cfd-e578-4b79-9d7d-5d58c6441f75",
+    "date_time": "2026-10-06T20:04:12.837918Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-005-green",
+    "target_center_x": 705.1908,
+    "target_center_y": 783.763,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF43A047",
+    "actual_touch_x": 699.02246,
+    "actual_touch_y": 715.04395,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 68.99534,
+    "response_time_ms": 4947,
+    "previous_attempts_in_session": 4,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 87886484568491,
+      "accelerometer_mps2": [
+        -3.1219501,
+        10.19505,
+        0.22605
+      ],
+      "gyroscope_rad_s": [
+        0.0900625,
+        -0.028875,
+        -0.0763125
+      ],
+      "orientation_deg": [
+        171.60811,
+        -82.68334,
+        154.37172
+      ]
+    }
+  },
+  {
+    "event_id": "e4d4fc42-94cc-49d5-a77d-34863655dee3",
+    "session_id": "db7b7404-00c9-44ca-bdee-d1969ff9be3d",
+    "test_id": "71c95cfd-e578-4b79-9d7d-5d58c6441f75",
+    "date_time": "2026-10-06T20:04:17.962573Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-006-blue",
+    "target_center_x": 379.483,
+    "target_center_y": 818.8593,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF1E88E5",
+    "actual_touch_x": 351.292,
+    "actual_touch_y": 762.54297,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 62.97828,
+    "response_time_ms": 5114,
+    "previous_attempts_in_session": 5,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 87891623610279,
+      "accelerometer_mps2": [
+        -0.71595,
+        11.248951,
+        -3.762
+      ],
+      "gyroscope_rad_s": [
+        0.242825,
+        0.054175,
+        -0.009075
+      ],
+      "orientation_deg": [
+        172.10287,
+        -82.482895,
+        154.77527
+      ]
+    }
+  },
+  {
+    "event_id": "1975659f-d6f1-4268-b8f7-acc827f26f32",
+    "session_id": "db7b7404-00c9-44ca-bdee-d1969ff9be3d",
+    "test_id": "71c95cfd-e578-4b79-9d7d-5d58c6441f75",
+    "date_time": "2026-10-06T20:04:23.039223Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-003-green",
+    "target_center_x": 106.86391,
+    "target_center_y": 851.0466,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF43A047",
+    "actual_touch_x": 69.55859,
+    "actual_touch_y": 816.2285,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 51.02924,
+    "response_time_ms": 5066,
+    "previous_attempts_in_session": 6,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 87896686235233,
+      "accelerometer_mps2": [
+        1.4860501,
+        10.851001,
+        0.53505003
+      ],
+      "gyroscope_rad_s": [
+        0.104775,
+        0.016224999,
+        0.001925
+      ],
+      "orientation_deg": [
+        171.02834,
+        -82.72134,
+        153.34285
+      ]
+    }
+  },
+  {
+    "event_id": "a137038f-9685-420e-b844-a91491e935c8",
+    "session_id": "db7b7404-00c9-44ca-bdee-d1969ff9be3d",
+    "test_id": "71c95cfd-e578-4b79-9d7d-5d58c6441f75",
+    "date_time": "2026-10-06T20:04:28.639101Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-002-blue",
+    "target_center_x": 954.2055,
+    "target_center_y": 920.3102,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF1E88E5",
+    "actual_touch_x": 970.44434,
+    "actual_touch_y": 842.8535,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 79.1406,
+    "response_time_ms": 5589,
+    "previous_attempts_in_session": 7,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 87902302883471,
+      "accelerometer_mps2": [
+        -0.63900006,
+        11.20995,
+        -2.8950002
+      ],
+      "gyroscope_rad_s": [
+        0.1340625,
+        -0.0265375,
+        -0.0408375
+      ],
+      "orientation_deg": [
+        171.60197,
+        -82.44459,
+        154.46063
+      ]
+    }
+  },
+  {
+    "event_id": "7eb98ed7-b592-43f9-89e0-1a47ad8584b7",
+    "session_id": "db7b7404-00c9-44ca-bdee-d1969ff9be3d",
+    "test_id": "71c95cfd-e578-4b79-9d7d-5d58c6441f75",
+    "date_time": "2026-10-06T20:04:33.668799Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-001-green",
+    "target_center_x": 682.09033,
+    "target_center_y": 1168.2155,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF43A047",
+    "actual_touch_x": 691.14746,
+    "actual_touch_y": 1119.9082,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 49.14898,
+    "response_time_ms": 5019,
+    "previous_attempts_in_session": 8,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 87907327300096,
+      "accelerometer_mps2": [
+        -2.40405,
+        9.867001,
+        -2.0689502
+      ],
+      "gyroscope_rad_s": [
+        0.198825,
+        -0.0961125,
+        -0.0396
+      ],
+      "orientation_deg": [
+        170.95082,
+        -82.48093,
+        153.80888
+      ]
+    }
+  },
+  {
+    "event_id": "5e3bf56e-aac8-418c-8799-0e70fb77c8a1",
+    "session_id": "db7b7404-00c9-44ca-bdee-d1969ff9be3d",
+    "test_id": "71c95cfd-e578-4b79-9d7d-5d58c6441f75",
+    "date_time": "2026-10-06T20:04:38.555874Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-001-blue",
+    "target_center_x": 940.84534,
+    "target_center_y": 1167.2241,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF1E88E5",
+    "actual_touch_x": 964.69434,
+    "actual_touch_y": 1104.0342,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 67.54068,
+    "response_time_ms": 4876,
+    "previous_attempts_in_session": 9,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 87912217987291,
+      "accelerometer_mps2": [
+        0.90405005,
+        10.6380005,
+        -3.1609502
+      ],
+      "gyroscope_rad_s": [
+        0.29535,
+        -0.013062499,
+        0.040975
+      ],
+      "orientation_deg": [
+        171.17787,
+        -82.37143,
+        154.15352
+      ]
+    }
+  },
+  {
+    "event_id": "9d82f136-9cbf-444c-ad00-7735859970ec",
+    "session_id": "db7b7404-00c9-44ca-bdee-d1969ff9be3d",
+    "test_id": "71c95cfd-e578-4b79-9d7d-5d58c6441f75",
+    "date_time": "2026-10-06T20:04:49.192902Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-001-red",
+    "target_center_x": 373.58142,
+    "target_center_y": 1271.7549,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FFE53935",
+    "actual_touch_x": 367.16602,
+    "actual_touch_y": 1251.2178,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 21.515816,
+    "response_time_ms": 10625,
+    "previous_attempts_in_session": 10,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 87922839949560,
+      "accelerometer_mps2": [
+        -0.39000002,
+        10.674001,
+        -1.24605
+      ],
+      "gyroscope_rad_s": [
+        0.038775,
+        0.07865,
+        -0.015125
+      ],
+      "orientation_deg": [
+        169.6153,
+        -82.5512,
+        152.44232
+      ]
+    }
+  },
+  {
+    "event_id": "a1868315-aa2e-4d1d-8262-78aea718516e",
+    "session_id": "db7b7404-00c9-44ca-bdee-d1969ff9be3d",
+    "test_id": "71c95cfd-e578-4b79-9d7d-5d58c6441f75",
+    "date_time": "2026-10-06T20:04:54.483310Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-003-red",
+    "target_center_x": 116.76047,
+    "target_center_y": 1645.9302,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FFE53935",
+    "actual_touch_x": 109.43164,
+    "actual_touch_y": 1654.957,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 11.627374,
+    "response_time_ms": 5280,
+    "previous_attempts_in_session": 11,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 87928131826332,
+      "accelerometer_mps2": [
+        -0.771,
+        10.935,
+        -0.012
+      ],
+      "gyroscope_rad_s": [
+        0.0363,
+        0.0187,
+        -0.020075
+      ],
+      "orientation_deg": [
+        170.01169,
+        -82.38001,
+        152.6398
+      ]
+    }
+  },
+  {
+    "event_id": "6613b5e0-f175-42ce-a965-b11303f41bed",
+    "session_id": "db7b7404-00c9-44ca-bdee-d1969ff9be3d",
+    "test_id": "71c95cfd-e578-4b79-9d7d-5d58c6441f75",
+    "date_time": "2026-10-06T20:04:59.371167Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-006-green",
+    "target_center_x": 416.41003,
+    "target_center_y": 1635.4949,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF43A047",
+    "actual_touch_x": 424.0381,
+    "actual_touch_y": 1630.083,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 9.352832,
+    "response_time_ms": 4876,
+    "previous_attempts_in_session": 12,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 87933022513285,
+      "accelerometer_mps2": [
+        -0.46005002,
+        11.277,
+        -0.04095
+      ],
+      "gyroscope_rad_s": [
+        -0.0600875,
+        0.0444125,
+        -0.0066
+      ],
+      "orientation_deg": [
+        170.62863,
+        -82.30596,
+        153.4347
+      ]
+    }
+  },
+  {
+    "event_id": "5e723919-02c4-4edf-9396-aa837d5ee310",
+    "session_id": "db7b7404-00c9-44ca-bdee-d1969ff9be3d",
+    "test_id": "71c95cfd-e578-4b79-9d7d-5d58c6441f75",
+    "date_time": "2026-10-06T20:05:04.692862Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-005-blue",
+    "target_center_x": 963.9373,
+    "target_center_y": 1655.6609,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF1E88E5",
+    "actual_touch_x": 1012.6914,
+    "actual_touch_y": 1619.583,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 60.651257,
+    "response_time_ms": 5309,
+    "previous_attempts_in_session": 13,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 87938352598245,
+      "accelerometer_mps2": [
+        -1.8769501,
+        10.40295,
+        -1.7820001
+      ],
+      "gyroscope_rad_s": [
+        -0.127325,
+        -0.6752625,
+        -0.0396
+      ],
+      "orientation_deg": [
+        171.46864,
+        -82.1712,
+        154.58188
+      ]
+    }
+  },
+  {
+    "event_id": "210d5e4f-35ad-45b7-91ed-b1e1f6a30463",
+    "session_id": "db7b7404-00c9-44ca-bdee-d1969ff9be3d",
+    "test_id": "71c95cfd-e578-4b79-9d7d-5d58c6441f75",
+    "date_time": "2026-10-06T20:05:09.720169Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-003-blue",
+    "target_center_x": 681.20496,
+    "target_center_y": 1683.9291,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF1E88E5",
+    "actual_touch_x": 717.584,
+    "actual_touch_y": 1665.3945,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 40.82846,
+    "response_time_ms": 5016,
+    "previous_attempts_in_session": 14,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 87943377014983,
+      "accelerometer_mps2": [
+        -0.80205005,
+        10.597051,
+        -2.8879502
+      ],
+      "gyroscope_rad_s": [
+        -0.0075625,
+        0.010175,
+        0.0031625
+      ],
+      "orientation_deg": [
+        172.43524,
+        -81.968254,
+        155.5863
+      ]
+    }
+  },
+  {
+    "event_id": "55c9d749-42c1-43d2-9743-857d9b7dd0ee",
+    "session_id": "db7b7404-00c9-44ca-bdee-d1969ff9be3d",
+    "test_id": "71c95cfd-e578-4b79-9d7d-5d58c6441f75",
+    "date_time": "2026-10-06T20:05:14.995745Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-006-red",
+    "target_center_x": 372.76294,
+    "target_center_y": 1931.1672,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FFE53935",
+    "actual_touch_x": 396.97656,
+    "actual_touch_y": 1941.1992,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 26.209545,
+    "response_time_ms": 5263,
+    "previous_attempts_in_session": 15,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 87948649786629,
+      "accelerometer_mps2": [
+        -1.149,
+        11.050051,
+        -2.60805
+      ],
+      "gyroscope_rad_s": [
+        0.0705375,
+        -0.0155375,
+        -0.0298375
+      ],
+      "orientation_deg": [
+        173.33289,
+        -81.699455,
+        156.17493
+      ]
+    }
+  },
+  {
+    "event_id": "f078604b-ce97-4f30-9b90-2cc0548b88ab",
+    "session_id": "db7b7404-00c9-44ca-bdee-d1969ff9be3d",
+    "test_id": "71c95cfd-e578-4b79-9d7d-5d58c6441f75",
+    "date_time": "2026-10-06T20:05:20.050488Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-002-red",
+    "target_center_x": 157.43314,
+    "target_center_y": 2050.0247,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FFE53935",
+    "actual_touch_x": 168.55273,
+    "actual_touch_y": 2077.6963,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 29.822216,
+    "response_time_ms": 5044,
+    "previous_attempts_in_session": 16,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 87953712410887,
+      "accelerometer_mps2": [
+        -2.7180002,
+        9.319051,
+        3.051
+      ],
+      "gyroscope_rad_s": [
+        -0.326425,
+        -0.066825,
+        -0.0543125
+      ],
+      "orientation_deg": [
+        173.13261,
+        -81.74614,
+        155.942
+      ]
+    }
+  },
+  {
+    "event_id": "532f9bf6-df6b-4e9b-98e9-a39d58eb8b8e",
+    "session_id": "db7b7404-00c9-44ca-bdee-d1969ff9be3d",
+    "test_id": "71c95cfd-e578-4b79-9d7d-5d58c6441f75",
+    "date_time": "2026-10-06T20:05:30.740411Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-004-blue",
+    "target_center_x": 141.84082,
+    "target_center_y": 1283.2457,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF1E88E5",
+    "actual_touch_x": null,
+    "actual_touch_y": null,
+    "inside_target": false,
+    "result": "no_touch",
+    "target_already_completed": false,
+    "distance_to_center": null,
+    "response_time_ms": 10679,
+    "previous_attempts_in_session": 17,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 87964391681846,
+      "accelerometer_mps2": [
+        -0.45495003,
+        9.679951,
+        -0.50595003
+      ],
+      "gyroscope_rad_s": [
+        0.0229625,
+        0.015125,
+        0.0056375
+      ],
+      "orientation_deg": [
+        174.03151,
+        -81.61037,
+        156.82088
+      ]
+    }
+  },
+  {
+    "event_id": "b6eaa772-b004-4690-811f-3dfa4acb6e82",
+    "session_id": "97f88663-32b9-47bb-804a-f9feb04d41b1",
+    "test_id": "9c5cead6-529f-4ae0-bdc9-cf405c062084",
+    "date_time": "2026-10-06T20:11:12.047273Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-005-green",
+    "target_center_x": 373.87186,
+    "target_center_y": 433.9699,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF43A047",
+    "actual_touch_x": 324.23145,
+    "actual_touch_y": 365.36523,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 84.68041,
+    "response_time_ms": 319775,
+    "previous_attempts_in_session": 0,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 88305701978745,
+      "accelerometer_mps2": [
+        -0.57000005,
+        9.86505,
+        1.9710001
+      ],
+      "gyroscope_rad_s": [
+        0.171875,
+        0.07975,
+        -0.010175
+      ],
+      "orientation_deg": [
+        12.361589,
+        -79.23883,
+        21.014221
+      ]
+    }
+  },
+  {
+    "event_id": "77072ade-c6b4-423f-b7e1-bd496e6cc4cf",
+    "session_id": "97f88663-32b9-47bb-804a-f9feb04d41b1",
+    "test_id": "9c5cead6-529f-4ae0-bdc9-cf405c062084",
+    "date_time": "2026-10-06T20:11:17.647945Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-001-green",
+    "target_center_x": 932.66016,
+    "target_center_y": 422.55786,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF43A047",
+    "actual_touch_x": 914.82227,
+    "actual_touch_y": 330.8662,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 93.410645,
+    "response_time_ms": 5590,
+    "previous_attempts_in_session": 1,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 88311299482469,
+      "accelerometer_mps2": [
+        -1.6690501,
+        9.77595,
+        2.49795
+      ],
+      "gyroscope_rad_s": [
+        0.115637496,
+        -0.14739999,
+        -0.0114124995
+      ],
+      "orientation_deg": [
+        12.097718,
+        -79.18012,
+        20.942238
+      ]
+    }
+  },
+  {
+    "event_id": "32aca82f-5612-41a5-9c22-c350c4a88ffc",
+    "session_id": "97f88663-32b9-47bb-804a-f9feb04d41b1",
+    "test_id": "9c5cead6-529f-4ae0-bdc9-cf405c062084",
+    "date_time": "2026-10-06T20:12:53.342743Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-005-blue",
+    "target_center_x": 408.432,
+    "target_center_y": 863.8312,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF1E88E5",
+    "actual_touch_x": 304.60742,
+    "actual_touch_y": 787.292,
+    "inside_target": false,
+    "result": "miss",
+    "target_already_completed": false,
+    "distance_to_center": 128.98756,
+    "response_time_ms": 95684,
+    "previous_attempts_in_session": 2,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 88407010930716,
+      "accelerometer_mps2": [
+        -3.11295,
+        10.95405,
+        -5.9100003
+      ],
+      "gyroscope_rad_s": [
+        0.0424875,
+        0.3936625,
+        -0.31185
+      ],
+      "orientation_deg": [
+        166.5347,
+        -74.436935,
+        170.30676
+      ]
+    }
+  },
+  {
+    "event_id": "8c3428ef-0527-4ff6-95f4-16bee7df803d",
+    "session_id": "97f88663-32b9-47bb-804a-f9feb04d41b1",
+    "test_id": "9c5cead6-529f-4ae0-bdc9-cf405c062084",
+    "date_time": "2026-10-06T20:13:04.004686Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-001-green",
+    "target_center_x": 932.66016,
+    "target_center_y": 422.55786,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF43A047",
+    "actual_touch_x": 920.8213,
+    "actual_touch_y": 364.67773,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": true,
+    "distance_to_center": 59.078487,
+    "response_time_ms": 106346,
+    "previous_attempts_in_session": 3,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 88417670983981,
+      "accelerometer_mps2": [
+        0.24300002,
+        9.738001,
+        -3.15105
+      ],
+      "gyroscope_rad_s": [
+        -0.033275,
+        -0.0400125,
+        0.011825
+      ],
+      "orientation_deg": [
+        166.5507,
+        -74.54903,
+        170.55594
+      ]
+    }
+  },
+  {
+    "event_id": "55ddd3a4-6fe6-4784-812c-fb8e80893d8b",
+    "session_id": "97f88663-32b9-47bb-804a-f9feb04d41b1",
+    "test_id": "9c5cead6-529f-4ae0-bdc9-cf405c062084",
+    "date_time": "2026-10-06T20:13:09.119269Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-004-blue",
+    "target_center_x": 100.84224,
+    "target_center_y": 520.9684,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF1E88E5",
+    "actual_touch_x": 36.435547,
+    "actual_touch_y": 505.7373,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 66.183136,
+    "response_time_ms": 111461,
+    "previous_attempts_in_session": 4,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 88422771760569,
+      "accelerometer_mps2": [
+        -0.73800004,
+        9.56805,
+        -2.9479501
+      ],
+      "gyroscope_rad_s": [
+        0.1903,
+        0.0479875,
+        -0.0004125
+      ],
+      "orientation_deg": [
+        166.44914,
+        -74.56936,
+        170.14491
+      ]
+    }
+  },
+  {
+    "event_id": "05071cb3-d29a-422b-9cb0-a4c61acd3f2c",
+    "session_id": "97f88663-32b9-47bb-804a-f9feb04d41b1",
+    "test_id": "9c5cead6-529f-4ae0-bdc9-cf405c062084",
+    "date_time": "2026-10-06T20:13:14.196729Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-001-blue",
+    "target_center_x": 706.3287,
+    "target_center_y": 525.4303,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF1E88E5",
+    "actual_touch_x": 684.33496,
+    "actual_touch_y": 485.3623,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 45.707413,
+    "response_time_ms": 5068,
+    "previous_attempts_in_session": 5,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 88427853431714,
+      "accelerometer_mps2": [
+        -0.68700004,
+        10.19505,
+        -3.4339502
+      ],
+      "gyroscope_rad_s": [
+        0.380875,
+        0.0174625,
+        -0.027224999
+      ],
+      "orientation_deg": [
+        166.52263,
+        -74.39998,
+        170.41335
+      ]
+    }
+  },
+  {
+    "event_id": "cb6ec663-c359-4a6b-b500-9e4e7385279b",
+    "session_id": "97f88663-32b9-47bb-804a-f9feb04d41b1",
+    "test_id": "9c5cead6-529f-4ae0-bdc9-cf405c062084",
+    "date_time": "2026-10-06T20:13:18.840866Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-004-green",
+    "target_center_x": 954.76636,
+    "target_center_y": 776.87524,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF43A047",
+    "actual_touch_x": 959.06934,
+    "actual_touch_y": 737.73047,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 39.380566,
+    "response_time_ms": 4633,
+    "previous_attempts_in_session": 6,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 88432495709619,
+      "accelerometer_mps2": [
+        -0.50505,
+        9.987,
+        -4.1449504
+      ],
+      "gyroscope_rad_s": [
+        0.380875,
+        -0.000825,
+        -0.0517
+      ],
+      "orientation_deg": [
+        166.55324,
+        -74.26694,
+        170.57233
+      ]
+    }
+  },
+  {
+    "event_id": "8d1c981a-a74d-42ec-9502-ec2afd8c4417",
+    "session_id": "97f88663-32b9-47bb-804a-f9feb04d41b1",
+    "test_id": "9c5cead6-529f-4ae0-bdc9-cf405c062084",
+    "date_time": "2026-10-06T20:13:23.895046Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-006-blue",
+    "target_center_x": 102.85976,
+    "target_center_y": 839.22565,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF1E88E5",
+    "actual_touch_x": 58.18457,
+    "actual_touch_y": 840.666,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 44.6984,
+    "response_time_ms": 5035,
+    "previous_attempts_in_session": 7,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 88437558274991,
+      "accelerometer_mps2": [
+        0.82305,
+        8.12895,
+        -0.37395
+      ],
+      "gyroscope_rad_s": [
+        -0.0919875,
+        0.0540375,
+        0.0155375
+      ],
+      "orientation_deg": [
+        166.39397,
+        -74.472275,
+        170.1166
+      ]
+    }
+  },
+  {
+    "event_id": "e60acd6f-2239-44fb-bf67-abdfe212d28f",
+    "session_id": "97f88663-32b9-47bb-804a-f9feb04d41b1",
+    "test_id": "9c5cead6-529f-4ae0-bdc9-cf405c062084",
+    "date_time": "2026-10-06T20:13:55.556761Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-005-green",
+    "target_center_x": 373.87186,
+    "target_center_y": 433.9699,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF43A047",
+    "actual_touch_x": 329.60547,
+    "actual_touch_y": 364.30273,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": true,
+    "distance_to_center": 82.54107,
+    "response_time_ms": 31650,
+    "previous_attempts_in_session": 8,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 88469213605634,
+      "accelerometer_mps2": [
+        -1.22595,
+        10.68795,
+        -2.163
+      ],
+      "gyroscope_rad_s": [
+        0.358875,
+        0.0834625,
+        0.0031625
+      ],
+      "orientation_deg": [
+        128.32664,
+        -88.233864,
+        110.85353
+      ]
+    }
+  },
+  {
+    "event_id": "67c6e10c-c560-4ddb-9973-cfd14504e96e",
+    "session_id": "97f88663-32b9-47bb-804a-f9feb04d41b1",
+    "test_id": "9c5cead6-529f-4ae0-bdc9-cf405c062084",
+    "date_time": "2026-10-06T20:14:00.717059Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-002-blue",
+    "target_center_x": 699.64417,
+    "target_center_y": 930.6429,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF1E88E5",
+    "actual_touch_x": 931.0713,
+    "actual_touch_y": 321.7412,
+    "inside_target": false,
+    "result": "miss",
+    "target_already_completed": false,
+    "distance_to_center": 651.3983,
+    "response_time_ms": 36811,
+    "previous_attempts_in_session": 9,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 88474371680642,
+      "accelerometer_mps2": [
+        -1.6309501,
+        10.717051,
+        -1.5589501
+      ],
+      "gyroscope_rad_s": [
+        0.32587498,
+        -0.2756875,
+        -0.0089375
+      ],
+      "orientation_deg": [
+        130.2032,
+        -88.1942,
+        113.28223
+      ]
+    }
+  },
+  {
+    "event_id": "cdd997b2-cfa5-47ab-9db9-a2c303b9065b",
+    "session_id": "97f88663-32b9-47bb-804a-f9feb04d41b1",
+    "test_id": "9c5cead6-529f-4ae0-bdc9-cf405c062084",
+    "date_time": "2026-10-06T20:14:11.576918Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-001-blue",
+    "target_center_x": 706.3287,
+    "target_center_y": 525.4303,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF1E88E5",
+    "actual_touch_x": 683.58594,
+    "actual_touch_y": 441.55078,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": true,
+    "distance_to_center": 86.90803,
+    "response_time_ms": 47670,
+    "previous_attempts_in_session": 10,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 88485241846671,
+      "accelerometer_mps2": [
+        -0.39795002,
+        10.8820505,
+        -2.9170501
+      ],
+      "gyroscope_rad_s": [
+        0.447975,
+        0.04675,
+        -0.0004125
+      ],
+      "orientation_deg": [
+        131.57256,
+        -88.15093,
+        114.585815
+      ]
+    }
+  },
+  {
+    "event_id": "a3367d39-63eb-4d92-b6b4-5feaec79eaf2",
+    "session_id": "97f88663-32b9-47bb-804a-f9feb04d41b1",
+    "test_id": "9c5cead6-529f-4ae0-bdc9-cf405c062084",
+    "date_time": "2026-10-06T20:14:16.391390Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-004-green",
+    "target_center_x": 954.76636,
+    "target_center_y": 776.87524,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF43A047",
+    "actual_touch_x": 959.69434,
+    "actual_touch_y": 694.91895,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": true,
+    "distance_to_center": 82.104324,
+    "response_time_ms": 52485,
+    "previous_attempts_in_session": 11,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 88490056050103,
+      "accelerometer_mps2": [
+        -0.156,
+        11.46195,
+        -4.056
+      ],
+      "gyroscope_rad_s": [
+        0.2476375,
+        -0.1951125,
+        0.0361625
+      ],
+      "orientation_deg": [
+        133.23262,
+        -88.15443,
+        116.28894
+      ]
+    }
+  },
+  {
+    "event_id": "9298251c-b4c0-4308-b2c7-2d1e4e66ec08",
+    "session_id": "97f88663-32b9-47bb-804a-f9feb04d41b1",
+    "test_id": "9c5cead6-529f-4ae0-bdc9-cf405c062084",
+    "date_time": "2026-10-06T20:14:24.348115Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-002-blue",
+    "target_center_x": 699.64417,
+    "target_center_y": 930.6429,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF1E88E5",
+    "actual_touch_x": 974.88086,
+    "actual_touch_y": 215.11914,
+    "inside_target": false,
+    "result": "miss",
+    "target_already_completed": false,
+    "distance_to_center": 766.63513,
+    "response_time_ms": 60442,
+    "previous_attempts_in_session": 12,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 88498003307151,
+      "accelerometer_mps2": [
+        -0.25905,
+        9.86505,
+        -0.29700002
+      ],
+      "gyroscope_rad_s": [
+        0.0411125,
+        -0.0105875,
+        -0.010175
+      ],
+      "orientation_deg": [
+        128.76875,
+        -88.11914,
+        111.72251
+      ]
+    }
+  },
+  {
+    "event_id": "80fe09a1-4937-4aa6-a382-d56c0d9dbcde",
+    "session_id": "95244448-650a-455c-97a7-16ccba2dc5e5",
+    "test_id": "1fea3dad-1402-4e55-b610-0ecec95a4c71",
+    "date_time": "2026-10-06T20:15:15.749244Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-006-green",
+    "target_center_x": 148.89572,
+    "target_center_y": 417.9262,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF43A047",
+    "actual_touch_x": 69.05859,
+    "actual_touch_y": 348.7412,
+    "inside_target": false,
+    "result": "miss",
+    "target_already_completed": false,
+    "distance_to_center": 105.64342,
+    "response_time_ms": 47089,
+    "previous_attempts_in_session": 0,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 88549421674499,
+      "accelerometer_mps2": [
+        -1.57305,
+        11.44005,
+        -3.1350002
+      ],
+      "gyroscope_rad_s": [
+        0.243925,
+        0.192225,
+        -0.00165
+      ],
+      "orientation_deg": [
+        29.579638,
+        -83.54833,
+        15.570619
+      ]
+    }
+  },
+  {
+    "event_id": "00f946ea-eb2d-4a5e-a8e8-2b28ae865a89",
+    "session_id": "95244448-650a-455c-97a7-16ccba2dc5e5",
+    "test_id": "1fea3dad-1402-4e55-b610-0ecec95a4c71",
+    "date_time": "2026-10-06T20:15:20.422668Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-004-blue",
+    "target_center_x": 680.4597,
+    "target_center_y": 448.89917,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF1E88E5",
+    "actual_touch_x": 628.08887,
+    "actual_touch_y": 352.4912,
+    "inside_target": false,
+    "result": "miss",
+    "target_already_completed": false,
+    "distance_to_center": 109.71417,
+    "response_time_ms": 51762,
+    "previous_attempts_in_session": 1,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 88554083043996,
+      "accelerometer_mps2": [
+        -0.735,
+        10.344001,
+        1.50705
+      ],
+      "gyroscope_rad_s": [
+        0.1131625,
+        0.055275,
+        -0.010175
+      ],
+      "orientation_deg": [
+        29.548483,
+        -83.522736,
+        15.730954
+      ]
+    }
+  },
+  {
+    "event_id": "3970390a-6f69-4db8-ba6e-9122444a6c59",
+    "session_id": "95244448-650a-455c-97a7-16ccba2dc5e5",
+    "test_id": "1fea3dad-1402-4e55-b610-0ecec95a4c71",
+    "date_time": "2026-10-06T20:15:24.864781Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-002-green",
+    "target_center_x": 403.14774,
+    "target_center_y": 514.2536,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF43A047",
+    "actual_touch_x": 336.91797,
+    "actual_touch_y": 441.67578,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 98.25437,
+    "response_time_ms": 56204,
+    "previous_attempts_in_session": 2,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 88558534269634,
+      "accelerometer_mps2": [
+        0.010950001,
+        11.112,
+        -0.69705003
+      ],
+      "gyroscope_rad_s": [
+        0.1901625,
+        0.03575,
+        0.028875
+      ],
+      "orientation_deg": [
+        30.702427,
+        -83.75722,
+        16.782612
+      ]
+    }
+  },
+  {
+    "event_id": "76a1ff33-f3d0-486d-849b-ad84867215c2",
+    "session_id": "95244448-650a-455c-97a7-16ccba2dc5e5",
+    "test_id": "1fea3dad-1402-4e55-b610-0ecec95a4c71",
+    "date_time": "2026-10-06T20:15:29.546923Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-001-blue",
+    "target_center_x": 950.7363,
+    "target_center_y": 490.6341,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF1E88E5",
+    "actual_touch_x": 919.94727,
+    "actual_touch_y": 386.61523,
+    "inside_target": false,
+    "result": "miss",
+    "target_already_completed": false,
+    "distance_to_center": 108.479904,
+    "response_time_ms": 4672,
+    "previous_attempts_in_session": 3,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 88563214743422,
+      "accelerometer_mps2": [
+        0.22905001,
+        8.50695,
+        2.0740502
+      ],
+      "gyroscope_rad_s": [
+        -0.0419375,
+        -0.0765875,
+        -0.010175
+      ],
+      "orientation_deg": [
+        30.811674,
+        -83.70932,
+        17.106518
+      ]
+    }
+  },
+  {
+    "event_id": "9268daab-f56d-4765-93d4-5fb3b3d90ad8",
+    "session_id": "90eb78f5-85dd-484c-8661-379e8d080678",
+    "test_id": "cfcdd57e-dc4d-40ba-8231-3e9e3fe545a2",
+    "date_time": "2026-10-06T20:16:49.003658Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-004-green",
+    "target_center_x": 678.6251,
+    "target_center_y": 1582.2969,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF43A047",
+    "actual_touch_x": 710.3965,
+    "actual_touch_y": 1530.0225,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 61.172165,
+    "response_time_ms": 605,
+    "previous_attempts_in_session": 0,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 88642648953197,
+      "accelerometer_mps2": [
+        -1.422,
+        9.28995,
+        -3.18
+      ],
+      "gyroscope_rad_s": [
+        -0.01485,
+        -0.004675,
+        -0.000275
+      ],
+      "orientation_deg": [
+        163.42374,
+        -71.41208,
+        149.26784
+      ]
+    }
+  },
+  {
+    "event_id": "201b7a11-02fc-42a4-8c26-65079f2b73bd",
+    "session_id": "e8041b55-e1ce-4a02-b579-47aa66e9ed09",
+    "test_id": "d1ced24c-0c77-4604-81e6-f530c17553a9",
+    "date_time": "2026-10-06T20:20:19.642767Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-002-blue",
+    "target_center_x": 673.10754,
+    "target_center_y": 414.53952,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF1E88E5",
+    "actual_touch_x": 676.89844,
+    "actual_touch_y": 497.1748,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 82.72219,
+    "response_time_ms": 208930,
+    "previous_attempts_in_session": 0,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 88853293173761,
+      "accelerometer_mps2": [
+        -0.31395,
+        9.88605,
+        -1.9020001
+      ],
+      "gyroscope_rad_s": [
+        0.00935,
+        0.0004125,
+        -0.000275
+      ],
+      "orientation_deg": [
+        164.74062,
+        -80.15004,
+        169.23773
+      ]
+    }
+  },
+  {
+    "event_id": "60450452-62fc-4ff6-9dff-a462e0b3ac59",
+    "session_id": "e8041b55-e1ce-4a02-b579-47aa66e9ed09",
+    "test_id": "d1ced24c-0c77-4604-81e6-f530c17553a9",
+    "date_time": "2026-10-06T20:20:55.638093Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-002-blue",
+    "target_center_x": 673.10754,
+    "target_center_y": 414.53952,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF1E88E5",
+    "actual_touch_x": 646.5254,
+    "actual_touch_y": 362.49023,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": true,
+    "distance_to_center": 58.444324,
+    "response_time_ms": 35990,
+    "previous_attempts_in_session": 1,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 88889284815408,
+      "accelerometer_mps2": [
+        -0.55305004,
+        10.432051,
+        -5.3569503
+      ],
+      "gyroscope_rad_s": [
+        0.53845,
+        0.07975,
+        -0.0149875
+      ],
+      "orientation_deg": [
+        170.38795,
+        -73.22159,
+        172.55414
+      ]
+    }
+  },
+  {
+    "event_id": "01f38713-4740-4bcd-af92-bf3ee9aa64d0",
+    "session_id": "e8041b55-e1ce-4a02-b579-47aa66e9ed09",
+    "test_id": "d1ced24c-0c77-4604-81e6-f530c17553a9",
+    "date_time": "2026-10-06T20:21:00.532512Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-003-red",
+    "target_center_x": 139.1296,
+    "target_center_y": 507.34586,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FFE53935",
+    "actual_touch_x": 79.12012,
+    "actual_touch_y": 480.5498,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 65.72036,
+    "response_time_ms": 40885,
+    "previous_attempts_in_session": 2,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 88894194501511,
+      "accelerometer_mps2": [
+        -0.9289501,
+        9.063001,
+        -3.24705
+      ],
+      "gyroscope_rad_s": [
+        0.1095875,
+        0.066275,
+        -0.033275
+      ],
+      "orientation_deg": [
+        170.51299,
+        -73.17405,
+        172.45157
+      ]
+    }
+  },
+  {
+    "event_id": "d31dc9ad-da1e-40a1-9fed-3430a3a242bc",
+    "session_id": "e8041b55-e1ce-4a02-b579-47aa66e9ed09",
+    "test_id": "d1ced24c-0c77-4604-81e6-f530c17553a9",
+    "date_time": "2026-10-06T20:21:05.216684Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-002-green",
+    "target_center_x": 405.3604,
+    "target_center_y": 503.75372,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF43A047",
+    "actual_touch_x": 363.85352,
+    "actual_touch_y": 468.23828,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 54.62755,
+    "response_time_ms": 4672,
+    "previous_attempts_in_session": 3,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 88898874941813,
+      "accelerometer_mps2": [
+        -0.44805002,
+        9.783,
+        -4.6740003
+      ],
+      "gyroscope_rad_s": [
+        0.32945,
+        0.038225,
+        -0.017324999
+      ],
+      "orientation_deg": [
+        170.47978,
+        -73.211624,
+        172.46133
+      ]
+    }
+  },
+  {
+    "event_id": "b607c006-682a-40bf-a91a-ec0cd820eb46",
+    "session_id": "e8041b55-e1ce-4a02-b579-47aa66e9ed09",
+    "test_id": "d1ced24c-0c77-4604-81e6-f530c17553a9",
+    "date_time": "2026-10-06T20:21:10.300204Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-004-green",
+    "target_center_x": 952.3074,
+    "target_center_y": 526.22705,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF43A047",
+    "actual_touch_x": 946.0703,
+    "actual_touch_y": 470.9873,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 55.59074,
+    "response_time_ms": 5075,
+    "previous_attempts_in_session": 4,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 88903956563326,
+      "accelerometer_mps2": [
+        -0.06705,
+        9.86505,
+        -3.2299502
+      ],
+      "gyroscope_rad_s": [
+        0.304975,
+        -0.187825,
+        -0.0039875
+      ],
+      "orientation_deg": [
+        170.53197,
+        -73.23758,
+        172.85718
+      ]
+    }
+  },
+  {
+    "event_id": "26d6f733-3f67-4bd6-874a-522b1f85873d",
+    "session_id": "e8041b55-e1ce-4a02-b579-47aa66e9ed09",
+    "test_id": "d1ced24c-0c77-4604-81e6-f530c17553a9",
+    "date_time": "2026-10-06T20:21:15.135058Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-003-blue",
+    "target_center_x": 412.49396,
+    "target_center_y": 788.01575,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF1E88E5",
+    "actual_touch_x": 386.91504,
+    "actual_touch_y": 765.91797,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 33.80226,
+    "response_time_ms": 4826,
+    "previous_attempts_in_session": 5,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 88908789835779,
+      "accelerometer_mps2": [
+        0.049050003,
+        8.521951,
+        -2.1360002
+      ],
+      "gyroscope_rad_s": [
+        0.2341625,
+        0.0809875,
+        -0.000275
+      ],
+      "orientation_deg": [
+        170.49799,
+        -73.1318,
+        172.67615
+      ]
+    }
+  },
+  {
+    "event_id": "e42fc897-f7a6-4025-b949-739bcfd83962",
+    "session_id": "e8041b55-e1ce-4a02-b579-47aa66e9ed09",
+    "test_id": "d1ced24c-0c77-4604-81e6-f530c17553a9",
+    "date_time": "2026-10-06T20:21:19.841188Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-006-blue",
+    "target_center_x": 664.949,
+    "target_center_y": 788.621,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF1E88E5",
+    "actual_touch_x": 656.7744,
+    "actual_touch_y": 755.16797,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 34.43729,
+    "response_time_ms": 4694,
+    "previous_attempts_in_session": 6,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 88913489381892,
+      "accelerometer_mps2": [
+        -1.0320001,
+        9.328051,
+        -5.3490005
+      ],
+      "gyroscope_rad_s": [
+        0.454025,
+        0.038225,
+        -0.017324999
+      ],
+      "orientation_deg": [
+        170.44955,
+        -73.076515,
+        172.73677
+      ]
+    }
+  },
+  {
+    "event_id": "7ecf93fc-8451-446c-b387-60f81f58233f",
+    "session_id": "e8041b55-e1ce-4a02-b579-47aa66e9ed09",
+    "test_id": "d1ced24c-0c77-4604-81e6-f530c17553a9",
+    "date_time": "2026-10-06T20:21:30.040093Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-006-green",
+    "target_center_x": 953.0182,
+    "target_center_y": 827.15497,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF43A047",
+    "actual_touch_x": 962.81934,
+    "actual_touch_y": 786.917,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 41.414455,
+    "response_time_ms": 10188,
+    "previous_attempts_in_session": 7,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 88923690836964,
+      "accelerometer_mps2": [
+        1.062,
+        11.823001,
+        -10.2289505
+      ],
+      "gyroscope_rad_s": [
+        0.3697375,
+        0.071225,
+        0.0669625
+      ],
+      "orientation_deg": [
+        170.56622,
+        -73.03583,
+        172.87813
+      ]
+    }
+  },
+  {
+    "event_id": "aab717dd-c94a-4490-85bb-eeacd63cd210",
+    "session_id": "e8041b55-e1ce-4a02-b579-47aa66e9ed09",
+    "test_id": "d1ced24c-0c77-4604-81e6-f530c17553a9",
+    "date_time": "2026-10-06T20:21:35.238297Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-005-green",
+    "target_center_x": 101.10867,
+    "target_center_y": 1163.4109,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF43A047",
+    "actual_touch_x": 69.80859,
+    "actual_touch_y": 1177.5947,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 34.36388,
+    "response_time_ms": 5187,
+    "previous_attempts_in_session": 8,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 88928887083871,
+      "accelerometer_mps2": [
+        0.00795,
+        9.766951,
+        -5.30595
+      ],
+      "gyroscope_rad_s": [
+        0.3331625,
+        0.3510375,
+        -0.0088
+      ],
+      "orientation_deg": [
+        170.26808,
+        -73.12757,
+        172.16177
+      ]
+    }
+  },
+  {
+    "event_id": "a038c9af-9637-40b5-a580-b7378e22c194",
+    "session_id": "e8041b55-e1ce-4a02-b579-47aa66e9ed09",
+    "test_id": "d1ced24c-0c77-4604-81e6-f530c17553a9",
+    "date_time": "2026-10-06T20:21:39.803458Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-005-red",
+    "target_center_x": 373.94693,
+    "target_center_y": 1157.664,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FFE53935",
+    "actual_touch_x": 356.042,
+    "actual_touch_y": 1160.3447,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 18.104513,
+    "response_time_ms": 4554,
+    "previous_attempts_in_session": 9,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 88933452903564,
+      "accelerometer_mps2": [
+        -1.14195,
+        10.593,
+        -4.8630004
+      ],
+      "gyroscope_rad_s": [
+        0.2916375,
+        0.0479875,
+        -0.028324999
+      ],
+      "orientation_deg": [
+        170.19484,
+        -73.106926,
+        172.18266
+      ]
+    }
+  },
+  {
+    "event_id": "04414b93-d8a2-4ef5-8691-be78b5c80292",
+    "session_id": "e8041b55-e1ce-4a02-b579-47aa66e9ed09",
+    "test_id": "d1ced24c-0c77-4604-81e6-f530c17553a9",
+    "date_time": "2026-10-06T20:21:44.581071Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-002-red",
+    "target_center_x": 686.39844,
+    "target_center_y": 1256.1184,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FFE53935",
+    "actual_touch_x": 693.39746,
+    "actual_touch_y": 1255.0928,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 7.0737724,
+    "response_time_ms": 4766,
+    "previous_attempts_in_session": 10,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 88938228866353,
+      "accelerometer_mps2": [
+        0.054,
+        8.90505,
+        -3.7360501
+      ],
+      "gyroscope_rad_s": [
+        -0.0639375,
+        -0.005775,
+        0.005775
+      ],
+      "orientation_deg": [
+        170.26341,
+        -73.216675,
+        172.47772
+      ]
+    }
+  },
+  {
+    "event_id": "3b5f6c5c-dd1d-4d96-abbf-ff763f5d43e4",
+    "session_id": "e8041b55-e1ce-4a02-b579-47aa66e9ed09",
+    "test_id": "d1ced24c-0c77-4604-81e6-f530c17553a9",
+    "date_time": "2026-10-06T20:21:49.204930Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-005-blue",
+    "target_center_x": 941.9624,
+    "target_center_y": 1312.048,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF1E88E5",
+    "actual_touch_x": 963.63184,
+    "actual_touch_y": 1301.6533,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 24.033585,
+    "response_time_ms": 4612,
+    "previous_attempts_in_session": 11,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 88942851998527,
+      "accelerometer_mps2": [
+        -0.10095,
+        10.6380005,
+        -3.2280002
+      ],
+      "gyroscope_rad_s": [
+        0.1876875,
+        -0.1731125,
+        0.038775
+      ],
+      "orientation_deg": [
+        170.30025,
+        -73.09437,
+        172.57938
+      ]
+    }
+  },
+  {
+    "event_id": "9cddd755-57b1-492e-88bb-93dc88cbb93b",
+    "session_id": "e8041b55-e1ce-4a02-b579-47aa66e9ed09",
+    "test_id": "d1ced24c-0c77-4604-81e6-f530c17553a9",
+    "date_time": "2026-10-06T20:21:53.634478Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-004-blue",
+    "target_center_x": 675.791,
+    "target_center_y": 1540.5671,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF1E88E5",
+    "actual_touch_x": 693.64746,
+    "actual_touch_y": 1548.335,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 19.472845,
+    "response_time_ms": 4418,
+    "previous_attempts_in_session": 12,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 88947284092363,
+      "accelerometer_mps2": [
+        -1.09395,
+        8.871,
+        -4.8679504
+      ],
+      "gyroscope_rad_s": [
+        0.0485375,
+        -0.2866875,
+        -0.0075625
+      ],
+      "orientation_deg": [
+        170.24449,
+        -73.177,
+        172.41597
+      ]
+    }
+  },
+  {
+    "event_id": "3732d0f6-f290-4f0e-b79f-9744f2fbd8b0",
+    "session_id": "e8041b55-e1ce-4a02-b579-47aa66e9ed09",
+    "test_id": "d1ced24c-0c77-4604-81e6-f530c17553a9",
+    "date_time": "2026-10-06T20:21:58.310052Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-006-red",
+    "target_center_x": 919.91254,
+    "target_center_y": 1535.9836,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FFE53935",
+    "actual_touch_x": 950.8203,
+    "actual_touch_y": 1539.085,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 31.06298,
+    "response_time_ms": 4663,
+    "previous_attempts_in_session": 13,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 88951964536484,
+      "accelerometer_mps2": [
+        -0.43305,
+        8.96205,
+        -1.5589501
+      ],
+      "gyroscope_rad_s": [
+        0.0814,
+        -0.5176875,
+        -0.011275
+      ],
+      "orientation_deg": [
+        170.22629,
+        -73.29398,
+        172.46083
+      ]
+    }
+  },
+  {
+    "event_id": "bba214e0-4175-4a7d-a5c3-def2c01049e0",
+    "session_id": "e8041b55-e1ce-4a02-b579-47aa66e9ed09",
+    "test_id": "d1ced24c-0c77-4604-81e6-f530c17553a9",
+    "date_time": "2026-10-06T20:22:03.283017Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-003-green",
+    "target_center_x": 158.31198,
+    "target_center_y": 1598.0398,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF43A047",
+    "actual_touch_x": 143.86621,
+    "actual_touch_y": 1640.707,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 45.046345,
+    "response_time_ms": 4961,
+    "previous_attempts_in_session": 14,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 88956931538508,
+      "accelerometer_mps2": [
+        -2.4760501,
+        9.522,
+        -4.6309505
+      ],
+      "gyroscope_rad_s": [
+        0.0276375,
+        -0.0290125,
+        -0.0748
+      ],
+      "orientation_deg": [
+        169.98831,
+        -73.457306,
+        172.10292
+      ]
+    }
+  },
+  {
+    "event_id": "aefdfb0c-d682-433f-9e40-86d89e8f8be0",
+    "session_id": "e8041b55-e1ce-4a02-b579-47aa66e9ed09",
+    "test_id": "d1ced24c-0c77-4604-81e6-f530c17553a9",
+    "date_time": "2026-10-06T20:22:07.841225Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-001-blue",
+    "target_center_x": 431.79016,
+    "target_center_y": 1597.8175,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF1E88E5",
+    "actual_touch_x": 437.4121,
+    "actual_touch_y": 1622.1455,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 24.969141,
+    "response_time_ms": 4547,
+    "previous_attempts_in_session": 15,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 88961497359492,
+      "accelerometer_mps2": [
+        -1.38195,
+        9.81,
+        -2.292
+      ],
+      "gyroscope_rad_s": [
+        -0.0627,
+        -0.0705375,
+        0.0009625
+      ],
+      "orientation_deg": [
+        169.85156,
+        -73.5483,
+        171.96223
+      ]
+    }
+  },
+  {
+    "event_id": "72405525-1adf-420a-be2f-2781d06b708f",
+    "session_id": "e8041b55-e1ce-4a02-b579-47aa66e9ed09",
+    "test_id": "d1ced24c-0c77-4604-81e6-f530c17553a9",
+    "date_time": "2026-10-06T20:22:12.687181Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-004-red",
+    "target_center_x": 410.232,
+    "target_center_y": 1984.331,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FFE53935",
+    "actual_touch_x": 422.1006,
+    "actual_touch_y": 2032.1973,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 49.315693,
+    "response_time_ms": 4835,
+    "previous_attempts_in_session": 16,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 88966349738623,
+      "accelerometer_mps2": [
+        -0.31395,
+        8.907001,
+        -2.0359502
+      ],
+      "gyroscope_rad_s": [
+        0.094875,
+        0.0259875,
+        0.0009625
+      ],
+      "orientation_deg": [
+        169.87503,
+        -73.5336,
+        171.99982
+      ]
+    }
+  },
+  {
+    "event_id": "4914630d-2fe5-45aa-aab5-6020bf046cc3",
+    "session_id": "e8041b55-e1ce-4a02-b579-47aa66e9ed09",
+    "test_id": "d1ced24c-0c77-4604-81e6-f530c17553a9",
+    "date_time": "2026-10-06T20:22:17.153499Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-001-red",
+    "target_center_x": 113.19551,
+    "target_center_y": 2027.8734,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FFE53935",
+    "actual_touch_x": 116.243164,
+    "actual_touch_y": 2095.1328,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 67.328415,
+    "response_time_ms": 4455,
+    "previous_attempts_in_session": 17,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 88970820040648,
+      "accelerometer_mps2": [
+        -0.25905,
+        9.44295,
+        -1.6000501
+      ],
+      "gyroscope_rad_s": [
+        0.1401125,
+        -0.0020625,
+        0.0570625
+      ],
+      "orientation_deg": [
+        169.78688,
+        -73.460464,
+        171.80927
+      ]
+    }
+  },
+  {
+    "event_id": "3632f854-cda2-4f56-9cf6-917286e9389a",
+    "session_id": "e8041b55-e1ce-4a02-b579-47aa66e9ed09",
+    "test_id": "d1ced24c-0c77-4604-81e6-f530c17553a9",
+    "date_time": "2026-10-06T20:23:08.452558Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-002-blue",
+    "target_center_x": 673.10754,
+    "target_center_y": 414.53952,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF1E88E5",
+    "actual_touch_x": 663.3994,
+    "actual_touch_y": 323.8662,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": true,
+    "distance_to_center": 91.191536,
+    "response_time_ms": 51292,
+    "previous_attempts_in_session": 18,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 89022113855282,
+      "accelerometer_mps2": [
+        -1.21905,
+        10.44705,
+        -6.52995
+      ],
+      "gyroscope_rad_s": [
+        0.3931125,
+        -0.0290125,
+        0.0155375
+      ],
+      "orientation_deg": [
+        178.86697,
+        -70.95619,
+        158.07956
+      ]
+    }
+  },
+  {
+    "event_id": "a8ac2666-e577-437b-bbf0-fd8b0d114c58",
+    "session_id": "e8041b55-e1ce-4a02-b579-47aa66e9ed09",
+    "test_id": "d1ced24c-0c77-4604-81e6-f530c17553a9",
+    "date_time": "2026-10-06T20:23:13.840671Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-003-red",
+    "target_center_x": 139.1296,
+    "target_center_y": 507.34586,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FFE53935",
+    "actual_touch_x": 87.49512,
+    "actual_touch_y": 447.36328,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": true,
+    "distance_to_center": 79.145615,
+    "response_time_ms": 56680,
+    "previous_attempts_in_session": 19,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 89027501132669,
+      "accelerometer_mps2": [
+        -0.54795,
+        11.227051,
+        -7.629
+      ],
+      "gyroscope_rad_s": [
+        -0.0405625,
+        0.116325,
+        0.0534875
+      ],
+      "orientation_deg": [
+        178.98009,
+        -70.88912,
+        157.94534
+      ]
+    }
+  },
+  {
+    "event_id": "9e6f1b3b-d98e-4bd6-ad84-4e8212e057c6",
+    "session_id": "e8041b55-e1ce-4a02-b579-47aa66e9ed09",
+    "test_id": "d1ced24c-0c77-4604-81e6-f530c17553a9",
+    "date_time": "2026-10-06T20:23:18.624654Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-002-green",
+    "target_center_x": 405.3604,
+    "target_center_y": 503.75372,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF43A047",
+    "actual_touch_x": 382.85254,
+    "actual_touch_y": 429.61426,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": true,
+    "distance_to_center": 77.480736,
+    "response_time_ms": 61464,
+    "previous_attempts_in_session": 20,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 89032277087223,
+      "accelerometer_mps2": [
+        -1.6330501,
+        9.4150505,
+        -2.5170002
+      ],
+      "gyroscope_rad_s": [
+        0.468875,
+        0.0930875,
+        -0.0125124995
+      ],
+      "orientation_deg": [
+        178.7287,
+        -70.93252,
+        157.73541
+      ]
+    }
+  },
+  {
+    "event_id": "16b5228f-b4c8-4e9b-a186-387beb7a729b",
+    "session_id": "e8041b55-e1ce-4a02-b579-47aa66e9ed09",
+    "test_id": "d1ced24c-0c77-4604-81e6-f530c17553a9",
+    "date_time": "2026-10-06T20:23:23.864924Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-004-green",
+    "target_center_x": 952.3074,
+    "target_center_y": 526.22705,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF43A047",
+    "actual_touch_x": 969.13184,
+    "actual_touch_y": 429.30176,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": true,
+    "distance_to_center": 98.374664,
+    "response_time_ms": 66704,
+    "previous_attempts_in_session": 21,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 89037511532762,
+      "accelerometer_mps2": [
+        -1.3120501,
+        9.58905,
+        -2.7439501
+      ],
+      "gyroscope_rad_s": [
+        0.3515875,
+        -0.143825,
+        0.01925
+      ],
+      "orientation_deg": [
+        178.65025,
+        -71.01308,
+        158.11299
+      ]
+    }
+  },
+  {
+    "event_id": "8a31cef0-763f-4c63-b075-f080c164dc42",
+    "session_id": "e8041b55-e1ce-4a02-b579-47aa66e9ed09",
+    "test_id": "d1ced24c-0c77-4604-81e6-f530c17553a9",
+    "date_time": "2026-10-06T20:23:29.296549Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-003-blue",
+    "target_center_x": 412.49396,
+    "target_center_y": 788.01575,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF1E88E5",
+    "actual_touch_x": 399.85156,
+    "actual_touch_y": 725.29395,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": true,
+    "distance_to_center": 63.98324,
+    "response_time_ms": 72136,
+    "previous_attempts_in_session": 22,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 89042956120413,
+      "accelerometer_mps2": [
+        -1.659,
+        9.39105,
+        -3.2620502
+      ],
+      "gyroscope_rad_s": [
+        0.30855,
+        0.086899996,
+        -0.0121
+      ],
+      "orientation_deg": [
+        178.76244,
+        -70.94341,
+        157.85947
+      ]
+    }
+  },
+  {
+    "event_id": "015d9dc1-9d34-406f-8cea-38b9fad4e111",
+    "session_id": "e8041b55-e1ce-4a02-b579-47aa66e9ed09",
+    "test_id": "d1ced24c-0c77-4604-81e6-f530c17553a9",
+    "date_time": "2026-10-06T20:23:34.046780Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-006-blue",
+    "target_center_x": 664.949,
+    "target_center_y": 788.621,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF1E88E5",
+    "actual_touch_x": 673.08594,
+    "actual_touch_y": 712.98145,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": true,
+    "distance_to_center": 76.075935,
+    "response_time_ms": 76886,
+    "previous_attempts_in_session": 23,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 89047693866806,
+      "accelerometer_mps2": [
+        -1.8079501,
+        8.78505,
+        -0.18705001
+      ],
+      "gyroscope_rad_s": [
+        0.236775,
+        -0.0815375,
+        -0.005225
+      ],
+      "orientation_deg": [
+        178.67416,
+        -71.111084,
+        157.78996
+      ]
+    }
+  },
+  {
+    "event_id": "bd8b1c10-6894-4c37-a634-007be0a68896",
+    "session_id": "e8041b55-e1ce-4a02-b579-47aa66e9ed09",
+    "test_id": "d1ced24c-0c77-4604-81e6-f530c17553a9",
+    "date_time": "2026-10-06T20:23:39.299322Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-001-green",
+    "target_center_x": 110.054306,
+    "target_center_y": 815.84766,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF43A047",
+    "actual_touch_x": 77.12012,
+    "actual_touch_y": 774.9795,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 52.48683,
+    "response_time_ms": 82139,
+    "previous_attempts_in_session": 24,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 89052947416177,
+      "accelerometer_mps2": [
+        -1.1040001,
+        9.364051,
+        -2.87595
+      ],
+      "gyroscope_rad_s": [
+        0.1975875,
+        0.2800875,
+        -0.0089375
+      ],
+      "orientation_deg": [
+        178.60902,
+        -70.86174,
+        157.34067
+      ]
+    }
+  },
+  {
+    "event_id": "ae25143a-0768-4abe-bd6a-ddd088c6ca06",
+    "session_id": "39e7ae21-453a-4c96-b8c2-4a1ceb6d9dd1",
+    "test_id": "965787f2-fa38-4e2a-aaea-2afa3b7d3274",
+    "date_time": "2026-10-06T20:23:44.742381Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-005-red",
+    "target_center_x": 915.982,
+    "target_center_y": 803.68365,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FFE53935",
+    "actual_touch_x": 985.88086,
+    "actual_touch_y": 744.35547,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 91.682526,
+    "response_time_ms": 1478,
+    "previous_attempts_in_session": 0,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 89058401555666,
+      "accelerometer_mps2": [
+        0.22395001,
+        10.753051,
+        -5.5620003
+      ],
+      "gyroscope_rad_s": [
+        0.1890625,
+        -0.132825,
+        0.049775
+      ],
+      "orientation_deg": [
+        171.65324,
+        -75.17547,
+        155.69714
+      ]
+    }
+  },
+  {
+    "event_id": "8e84fd6e-5ac2-453b-84a6-344ed6e91494",
+    "session_id": "375722e8-2565-41d5-94be-c0c904ce4902",
+    "test_id": "856a1193-5658-434e-aa02-6176f5fee180",
+    "date_time": "2026-10-06T20:24:16.156373Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-001-blue",
+    "target_center_x": 158.1357,
+    "target_center_y": 424.76288,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF1E88E5",
+    "actual_touch_x": 121.868164,
+    "actual_touch_y": 356.92773,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 76.92165,
+    "response_time_ms": 18340,
+    "previous_attempts_in_session": 0,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 89089827336642,
+      "accelerometer_mps2": [
+        -0.21795002,
+        10.61205,
+        -4.7650504
+      ],
+      "gyroscope_rad_s": [
+        -0.0259875,
+        0.0039875,
+        0.0094875
+      ],
+      "orientation_deg": [
+        173.85378,
+        -79.753136,
+        159.61249
+      ]
+    }
+  },
+  {
+    "event_id": "80704e7a-1f68-4da4-a446-f0e5772ccc45",
+    "session_id": "375722e8-2565-41d5-94be-c0c904ce4902",
+    "test_id": "856a1193-5658-434e-aa02-6176f5fee180",
+    "date_time": "2026-10-06T20:24:21.543135Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-005-blue",
+    "target_center_x": 919.089,
+    "target_center_y": 410.74365,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF1E88E5",
+    "actual_touch_x": 932.7588,
+    "actual_touch_y": 307.9922,
+    "inside_target": false,
+    "result": "miss",
+    "target_already_completed": false,
+    "distance_to_center": 103.65678,
+    "response_time_ms": 5376,
+    "previous_attempts_in_session": 1,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 89095214613544,
+      "accelerometer_mps2": [
+        -0.66300005,
+        10.602,
+        -4.39395
+      ],
+      "gyroscope_rad_s": [
+        0.1315875,
+        -0.08635,
+        0.0059125
+      ],
+      "orientation_deg": [
+        173.86826,
+        -79.764435,
+        160.04686
+      ]
+    }
+  },
+  {
+    "event_id": "f6e70b26-a51d-48d3-9387-ddbf7e8f915b",
+    "session_id": "375722e8-2565-41d5-94be-c0c904ce4902",
+    "test_id": "856a1193-5658-434e-aa02-6176f5fee180",
+    "date_time": "2026-10-06T20:24:26.494839Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-005-red",
+    "target_center_x": 649.7451,
+    "target_center_y": 492.0248,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FFE53935",
+    "actual_touch_x": 644.8379,
+    "actual_touch_y": 405.86426,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 86.300186,
+    "response_time_ms": 10327,
+    "previous_attempts_in_session": 2,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 89100162501920,
+      "accelerometer_mps2": [
+        -0.96300006,
+        8.577001,
+        -1.0900501
+      ],
+      "gyroscope_rad_s": [
+        0.48839998,
+        0.011275,
+        -0.0026125
+      ],
+      "orientation_deg": [
+        174.2231,
+        -79.47948,
+        160.40422
+      ]
+    }
+  },
+  {
+    "event_id": "8083f5b0-e494-4c6b-95ba-36a1b29a34f5",
+    "session_id": "375722e8-2565-41d5-94be-c0c904ce4902",
+    "test_id": "856a1193-5658-434e-aa02-6176f5fee180",
+    "date_time": "2026-10-06T20:24:31.336352Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-001-red",
+    "target_center_x": 427.14236,
+    "target_center_y": 562.61084,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FFE53935",
+    "actual_touch_x": 410.72656,
+    "actual_touch_y": 489.7998,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 74.63863,
+    "response_time_ms": 4831,
+    "previous_attempts_in_session": 3,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 89104995767563,
+      "accelerometer_mps2": [
+        0.528,
+        8.41905,
+        6.3409505
+      ],
+      "gyroscope_rad_s": [
+        0.1425875,
+        0.0809875,
+        0.010725
+      ],
+      "orientation_deg": [
+        174.31961,
+        -79.401085,
+        160.47804
+      ]
+    }
+  },
+  {
+    "event_id": "adceddf6-78f5-45d0-9da0-74ba9ed214d8",
+    "session_id": "375722e8-2565-41d5-94be-c0c904ce4902",
+    "test_id": "856a1193-5658-434e-aa02-6176f5fee180",
+    "date_time": "2026-10-06T20:24:36.016613Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-006-green",
+    "target_center_x": 427.63333,
+    "target_center_y": 776.40405,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF43A047",
+    "actual_touch_x": 416.0381,
+    "actual_touch_y": 714.41895,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 63.060314,
+    "response_time_ms": 4669,
+    "previous_attempts_in_session": 4,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 89109676203030,
+      "accelerometer_mps2": [
+        -0.192,
+        9.477,
+        4.42995
+      ],
+      "gyroscope_rad_s": [
+        0.00825,
+        0.02475,
+        0.0180125
+      ],
+      "orientation_deg": [
+        174.61295,
+        -79.251434,
+        160.81783
+      ]
+    }
+  },
+  {
+    "event_id": "385a3cab-1a98-40ef-96f7-4f5576474c99",
+    "session_id": "375722e8-2565-41d5-94be-c0c904ce4902",
+    "test_id": "856a1193-5658-434e-aa02-6176f5fee180",
+    "date_time": "2026-10-06T20:24:41.082756Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-005-green",
+    "target_center_x": 109.64394,
+    "target_center_y": 811.94806,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF43A047",
+    "actual_touch_x": 79.49512,
+    "actual_touch_y": 767.23047,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 53.931572,
+    "response_time_ms": 5058,
+    "previous_attempts_in_session": 5,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 89114738715585,
+      "accelerometer_mps2": [
+        -0.23700002,
+        8.886001,
+        6.0270004
+      ],
+      "gyroscope_rad_s": [
+        0.1304875,
+        0.26785,
+        0.0034375
+      ],
+      "orientation_deg": [
+        174.61388,
+        -79.08047,
+        160.5448
+      ]
+    }
+  },
+  {
+    "event_id": "1e0cbf08-47fd-4e36-8178-49044ff54961",
+    "session_id": "375722e8-2565-41d5-94be-c0c904ce4902",
+    "test_id": "856a1193-5658-434e-aa02-6176f5fee180",
+    "date_time": "2026-10-06T20:24:46.205545Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-001-green",
+    "target_center_x": 664.1449,
+    "target_center_y": 789.48566,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF43A047",
+    "actual_touch_x": 674.39844,
+    "actual_touch_y": 717.79395,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 72.42124,
+    "response_time_ms": 5111,
+    "previous_attempts_in_session": 6,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 89119877645137,
+      "accelerometer_mps2": [
+        -0.028950002,
+        11.93595,
+        -6.6730504
+      ],
+      "gyroscope_rad_s": [
+        0.181775,
+        -0.0583,
+        0.0132
+      ],
+      "orientation_deg": [
+        174.46153,
+        -78.98862,
+        160.56676
+      ]
+    }
+  },
+  {
+    "event_id": "5f121a8a-dd53-45d1-bc03-d18a38f6830d",
+    "session_id": "375722e8-2565-41d5-94be-c0c904ce4902",
+    "test_id": "856a1193-5658-434e-aa02-6176f5fee180",
+    "date_time": "2026-10-06T20:24:50.901351Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-004-blue",
+    "target_center_x": 924.7808,
+    "target_center_y": 916.7923,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF1E88E5",
+    "actual_touch_x": 951.5703,
+    "actual_touch_y": 842.6035,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 78.87745,
+    "response_time_ms": 4686,
+    "previous_attempts_in_session": 7,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 89124558083721,
+      "accelerometer_mps2": [
+        -1.116,
+        8.253,
+        -3.0220501
+      ],
+      "gyroscope_rad_s": [
+        0.2135375,
+        -0.3014,
+        -0.0149875
+      ],
+      "orientation_deg": [
+        174.4867,
+        -78.74787,
+        160.81563
+      ]
+    }
+  },
+  {
+    "event_id": "c8bd6ad0-4c20-4e2e-b865-d5647f5386e2",
+    "session_id": "375722e8-2565-41d5-94be-c0c904ce4902",
+    "test_id": "856a1193-5658-434e-aa02-6176f5fee180",
+    "date_time": "2026-10-06T20:24:56.571692Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-002-blue",
+    "target_center_x": 153.6648,
+    "target_center_y": 1154.6376,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF1E88E5",
+    "actual_touch_x": 142.05469,
+    "actual_touch_y": 1126.3457,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 30.58144,
+    "response_time_ms": 5659,
+    "previous_attempts_in_session": 8,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 89130231922519,
+      "accelerometer_mps2": [
+        -0.522,
+        10.50405,
+        -4.00395
+      ],
+      "gyroscope_rad_s": [
+        0.242825,
+        0.33261248,
+        -0.0209
+      ],
+      "orientation_deg": [
+        174.13623,
+        -78.64992,
+        160.14552
+      ]
+    }
+  },
+  {
+    "event_id": "fe7d1e97-6658-4da3-98bc-dddfb5528e74",
+    "session_id": "375722e8-2565-41d5-94be-c0c904ce4902",
+    "test_id": "856a1193-5658-434e-aa02-6176f5fee180",
+    "date_time": "2026-10-06T20:25:01.883559Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-003-blue",
+    "target_center_x": 956.7269,
+    "target_center_y": 1170.7566,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF1E88E5",
+    "actual_touch_x": 1007.8164,
+    "actual_touch_y": 1107.5342,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 81.28474,
+    "response_time_ms": 5301,
+    "previous_attempts_in_session": 9,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 89135542788307,
+      "accelerometer_mps2": [
+        -2.88,
+        10.36005,
+        0.60405004
+      ],
+      "gyroscope_rad_s": [
+        0.0473,
+        -0.2880625,
+        -0.0015125
+      ],
+      "orientation_deg": [
+        174.20056,
+        -78.71451,
+        160.51656
+      ]
+    }
+  },
+  {
+    "event_id": "a20e620c-d23b-4024-9707-c3b8aa79fa5b",
+    "session_id": "375722e8-2565-41d5-94be-c0c904ce4902",
+    "test_id": "856a1193-5658-434e-aa02-6176f5fee180",
+    "date_time": "2026-10-06T20:25:06.669774Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-004-red",
+    "target_center_x": 703.13745,
+    "target_center_y": 1258.2217,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FFE53935",
+    "actual_touch_x": 736.14453,
+    "actual_touch_y": 1209.4062,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 58.92719,
+    "response_time_ms": 4776,
+    "previous_attempts_in_session": 10,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 89140337850738,
+      "accelerometer_mps2": [
+        -1.6210501,
+        10.49205,
+        -1.107
+      ],
+      "gyroscope_rad_s": [
+        0.027775,
+        -0.0204875,
+        -0.01375
+      ],
+      "orientation_deg": [
+        174.19537,
+        -78.62913,
+        160.46715
+      ]
+    }
+  },
+  {
+    "event_id": "4919bd7e-506a-4693-93ae-817e3393a0cf",
+    "session_id": "375722e8-2565-41d5-94be-c0c904ce4902",
+    "test_id": "856a1193-5658-434e-aa02-6176f5fee180",
+    "date_time": "2026-10-06T20:25:11.555612Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-006-blue",
+    "target_center_x": 413.8308,
+    "target_center_y": 1291.4858,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF1E88E5",
+    "actual_touch_x": 428.7256,
+    "actual_touch_y": 1256.9053,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 37.65196,
+    "response_time_ms": 4875,
+    "previous_attempts_in_session": 11,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 89145228431980,
+      "accelerometer_mps2": [
+        -1.8220501,
+        10.320001,
+        -4.39395
+      ],
+      "gyroscope_rad_s": [
+        0.1975875,
+        0.082225,
+        -0.0125124995
+      ],
+      "orientation_deg": [
+        173.89427,
+        -78.68924,
+        160.09833
+      ]
+    }
+  },
+  {
+    "event_id": "8c6be497-3049-4822-b115-ea3ad735ec2f",
+    "session_id": "375722e8-2565-41d5-94be-c0c904ce4902",
+    "test_id": "856a1193-5658-434e-aa02-6176f5fee180",
+    "date_time": "2026-10-06T20:25:16.674890Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-004-green",
+    "target_center_x": 105.16264,
+    "target_center_y": 1546.8243,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF43A047",
+    "actual_touch_x": 111.430664,
+    "actual_touch_y": 1541.71,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 8.089807,
+    "response_time_ms": 5108,
+    "previous_attempts_in_session": 12,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 89150338707540,
+      "accelerometer_mps2": [
+        -2.9670002,
+        10.056001,
+        -1.9519501
+      ],
+      "gyroscope_rad_s": [
+        0.0229625,
+        -0.0435875,
+        -0.0735625
+      ],
+      "orientation_deg": [
+        173.7136,
+        -78.678986,
+        159.77646
+      ]
+    }
+  },
+  {
+    "event_id": "52fcf287-6060-4648-a6ce-1f3383ac17c1",
+    "session_id": "375722e8-2565-41d5-94be-c0c904ce4902",
+    "test_id": "856a1193-5658-434e-aa02-6176f5fee180",
+    "date_time": "2026-10-06T20:25:21.387735Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-003-green",
+    "target_center_x": 390.6472,
+    "target_center_y": 1662.605,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF43A047",
+    "actual_touch_x": 416.4756,
+    "actual_touch_y": 1653.832,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 27.277662,
+    "response_time_ms": 4701,
+    "previous_attempts_in_session": 13,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 89155047802803,
+      "accelerometer_mps2": [
+        -1.1370001,
+        9.843,
+        -2.4790502
+      ],
+      "gyroscope_rad_s": [
+        -0.060225,
+        0.0174625,
+        0.0022
+      ],
+      "orientation_deg": [
+        173.55946,
+        -78.71491,
+        159.67525
+      ]
+    }
+  },
+  {
+    "event_id": "b44d7638-d561-495d-8e1b-cc2ead4be21d",
+    "session_id": "375722e8-2565-41d5-94be-c0c904ce4902",
+    "test_id": "856a1193-5658-434e-aa02-6176f5fee180",
+    "date_time": "2026-10-06T20:25:26.400129Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-002-red",
+    "target_center_x": 919.3838,
+    "target_center_y": 1640.9156,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FFE53935",
+    "actual_touch_x": 984.56836,
+    "actual_touch_y": 1601.7705,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 76.035324,
+    "response_time_ms": 5001,
+    "previous_attempts_in_session": 14,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 89160072111678,
+      "accelerometer_mps2": [
+        0.87000006,
+        10.21905,
+        0.06105
+      ],
+      "gyroscope_rad_s": [
+        -0.0198,
+        -0.093775,
+        0.0705375
+      ],
+      "orientation_deg": [
+        173.47345,
+        -78.72031,
+        159.7738
+      ]
+    }
+  },
+  {
+    "event_id": "62774d81-2005-467b-a5b0-c13ef43534e1",
+    "session_id": "375722e8-2565-41d5-94be-c0c904ce4902",
+    "test_id": "856a1193-5658-434e-aa02-6176f5fee180",
+    "date_time": "2026-10-06T20:25:31.132351Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-002-green",
+    "target_center_x": 663.4745,
+    "target_center_y": 1665.2053,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF43A047",
+    "actual_touch_x": 710.8965,
+    "actual_touch_y": 1642.5195,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 52.568916,
+    "response_time_ms": 4722,
+    "previous_attempts_in_session": 15,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 89164790759355,
+      "accelerometer_mps2": [
+        -1.34595,
+        9.903001,
+        -2.7160501
+      ],
+      "gyroscope_rad_s": [
+        0.0375375,
+        -0.0132,
+        -0.0015125
+      ],
+      "orientation_deg": [
+        173.50269,
+        -78.54225,
+        159.75467
+      ]
+    }
+  },
+  {
+    "event_id": "e65e096f-36c4-4501-a7cb-3f52c18c4013",
+    "session_id": "375722e8-2565-41d5-94be-c0c904ce4902",
+    "test_id": "856a1193-5658-434e-aa02-6176f5fee180",
+    "date_time": "2026-10-06T20:25:36.537937Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-003-red",
+    "target_center_x": 150.19974,
+    "target_center_y": 1900.9625,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FFE53935",
+    "actual_touch_x": 170.92773,
+    "actual_touch_y": 1917.8877,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 26.760256,
+    "response_time_ms": 5395,
+    "previous_attempts_in_session": 16,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 89170197145546,
+      "accelerometer_mps2": [
+        -0.69900006,
+        11.236951,
+        -4.1350503
+      ],
+      "gyroscope_rad_s": [
+        -0.2068,
+        0.32285,
+        -0.01375
+      ],
+      "orientation_deg": [
+        173.29276,
+        -78.45021,
+        159.32478
+      ]
+    }
+  },
+  {
+    "event_id": "c04db90c-eac5-4b48-a437-d9c0091880a2",
+    "session_id": "375722e8-2565-41d5-94be-c0c904ce4902",
+    "test_id": "856a1193-5658-434e-aa02-6176f5fee180",
+    "date_time": "2026-10-06T20:25:41.167335Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-006-red",
+    "target_center_x": 373.75375,
+    "target_center_y": 1977.1376,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FFE53935",
+    "actual_touch_x": 414.9131,
+    "actual_touch_y": 1986.0107,
+    "inside_target": true,
+    "result": "hit",
+    "target_already_completed": false,
+    "distance_to_center": 42.104916,
+    "response_time_ms": 4619,
+    "previous_attempts_in_session": 17,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 89174839379043,
+      "accelerometer_mps2": [
+        -1.40295,
+        8.883,
+        0.08505
+      ],
+      "gyroscope_rad_s": [
+        -0.1456125,
+        -0.0570625,
+        -0.021175
+      ],
+      "orientation_deg": [
+        173.63483,
+        -78.32839,
+        159.75221
+      ]
+    }
+  },
+  {
+    "event_id": "312eabf8-2de1-4732-9516-1e8b99d374c8",
+    "session_id": "375722e8-2565-41d5-94be-c0c904ce4902",
+    "test_id": "856a1193-5658-434e-aa02-6176f5fee180",
+    "date_time": "2026-10-06T20:25:52.039938Z",
+    "test_mode": "Random target positions",
+    "screen_width": 1080,
+    "screen_height": 2400,
+    "target_id": "trio-005-blue",
+    "target_center_x": 919.089,
+    "target_center_y": 410.74365,
+    "target_radius": 100,
+    "target_radius_dp": 40,
+    "target_diameter": 200,
+    "target_color": "#FF1E88E5",
+    "actual_touch_x": null,
+    "actual_touch_y": null,
+    "inside_target": false,
+    "result": "no_touch",
+    "target_already_completed": false,
+    "distance_to_center": null,
+    "response_time_ms": 10865,
+    "previous_attempts_in_session": 18,
+    "timed_out": false,
+    "configuration": {
+      "test_mode": "Random target positions",
+      "rgb_trios_per_spawn": 6,
+      "target_count": 18,
+      "minimum_radius_dp": 40,
+      "maximum_radius_dp": 40,
+      "random_position": true,
+      "random_target_size": false
+    },
+    "imu": {
+      "sample_time_elapsed_realtime_ns": 89185709465837,
+      "accelerometer_mps2": [
+        -0.65895003,
+        9.77595,
+        -1.7119501
+      ],
+      "gyroscope_rad_s": [
+        -0.0100375,
+        0.0077,
+        0.0033
+      ],
+      "orientation_deg": [
+        173.64134,
+        -78.36141,
+        159.81216
+      ]
+    }
+  }
+]
