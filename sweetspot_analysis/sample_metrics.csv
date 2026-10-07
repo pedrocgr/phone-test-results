@@ -1,0 +1,2 @@
+sample,sessions,effective_target_count,touches,hits,recorded_touch_hit_rate,targets_with_hit,observed_target_hit_coverage,miss_without_hit,no_touch_only,unrecorded_targets
+Retained sessions; operator-corrected target counts,15,135,132,111,0.8409090909090909,111,0.8222222222222222,16,8,0

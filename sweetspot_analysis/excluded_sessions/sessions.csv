@@ -1,0 +1,6 @@
+session_number,session_id,test_id,reason,logged_target_count,events,touches,hits,misses,no_touch
+3,2b53e46e-4e49-4820-93a9-6c4edf8cac94,6dfaba85-7784-4d1c-9153-588822e7ee3d,Interrupted trial; excluded retrospectively by the operator,12,1,1,0,1,0
+4,bf8e71e5-5c28-400b-a3f7-145561d2774f,ba2db20e-eb9c-4350-ad3e-0ab771083ba6,Interrupted trial; excluded retrospectively by the operator,12,1,1,0,1,0
+6,d0437ec4-5e99-4090-af84-f0aad33b75b5,fef809f4-8c67-4203-b292-b26e2dc8dd8f,Interrupted trial; excluded retrospectively by the operator,12,1,1,0,1,0
+7,71dbf087-c4b8-4aab-8ca0-895bd33fd4c6,b87f7df5-2bb7-447f-9076-080bc4bd1d4f,Interrupted trial; excluded retrospectively by the operator,9,1,1,0,1,0
+9,7fc20fd5-ead3-41a7-99fb-3cd055b9e6c2,bd7d6332-f5b5-411b-b9fd-176c4427d6ad,Interrupted trial; excluded retrospectively by the operator,9,10,1,0,1,9

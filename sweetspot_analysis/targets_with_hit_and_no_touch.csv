@@ -1,0 +1,9 @@
+session_number,session_id,target_id,status,events,touches,miss_followed_by_hit,hit_and_no_touch,result_sequence
+2,65423ee8-7461-499a-9a47-b92fcb43400f,trio-001-red,hit,2,1,False,True,hit → no_touch
+5,a062dec0-466b-4c6b-93a3-beac4c2567fa,trio-001-blue,hit,2,1,False,True,hit → no_touch
+8,9522b6c8-08cb-4774-abc2-35714518319e,trio-001-green,hit,2,1,False,True,hit → no_touch
+10,b0b4aaca-e9f5-46e7-8ed2-ef99289eab48,trio-002-blue,hit,2,1,False,True,hit → no_touch
+11,03e7ef75-2c8e-44a6-9779-2045bcc52a5b,trio-002-blue,hit,2,1,False,True,hit → no_touch
+14,9ecbaf6c-0bb3-4e4c-b9db-d990c214fb05,trio-003-blue,hit,2,1,False,True,hit → no_touch
+15,a8626db1-7147-493b-9c73-e8e44ded9884,trio-003-red,hit,2,1,False,True,hit → no_touch
+18,38a197b6-d1c7-4223-955c-9e78269cf776,trio-002-green,hit,2,1,False,True,hit → no_touch

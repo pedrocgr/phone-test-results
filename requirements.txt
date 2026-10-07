@@ -1,0 +1,6 @@
+numpy
+matplotlib
+nbformat
+nbclient
+ipykernel
+matplotlib-inline<0.2

@@ -1,0 +1,84 @@
+{
+  "input_file": "touch_results_2026-10-06-sweetspot.jsonl",
+  "input_sha256": "290accd48b1739358913f6846d241b868f7a73a8317a14dd1b178490747f67f5",
+  "input_events": 177,
+  "input_sessions": 20,
+  "retained_events": 163,
+  "retained_contacts": 132,
+  "retained_sessions": 15,
+  "retained_session_numbers": [
+    1,
+    2,
+    5,
+    8,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "excluded_session_numbers": [
+    3,
+    4,
+    6,
+    7,
+    9
+  ],
+  "operator_target_counts": {
+    "12": 6,
+    "13": 6
+  },
+  "effective_target_denominator": 135,
+  "logged_target_denominator": 141,
+  "nearby_distance_dp": 8,
+  "rapid_contact_window_ms": 300,
+  "target_region_margin_dp": 20,
+  "time_zone": "America/Recife",
+  "python_version": "3.12.3",
+  "packages": {
+    "numpy": "1.26.4",
+    "matplotlib": "3.6.3",
+    "nbformat": "5.11.1",
+    "nbclient": "0.11.0",
+    "ipykernel": "7.4.0",
+    "matplotlib-inline": "0.1.7"
+  },
+  "optional_software_context": {
+    "android_view": {
+      "path": "/home/pcgr/Code/denso/robot-touch-test-app/app/src/main/java/com/pcgr/robottouchtest/RobotTouchTestView.kt",
+      "sha256": "1d441b53771aeb85bf39cbb49e97bb6a917631552d6d72e7c0a03f969dfdd07c"
+    },
+    "robot_sequence": {
+      "path": "/home/pcgr/Code/denso/denso_robot_ros2/denso_collab/src/move_to_screen_standoff.cpp",
+      "sha256": "b06aef6805b291cf4e4162b9690e014baa9a6dcef8d7baf5e6fbc3e49b018b73"
+    },
+    "android_git_revision": "2bb4a81c270657b4b4860a3f5151d8de777b7152"
+  },
+  "additional_inputs": [
+    {
+      "path": "fixed-touch-results-after-app-update/fixed-touch-results-after-app-update/touch_results_after_app_update_2026-10-06.csv",
+      "bytes": 80806,
+      "sha256": "f4b857520740ae85fb0bd460ef85d289cc73910b67d2c566a15ff01b389b31df",
+      "analysis_status": "Not analyzed in this notebook"
+    },
+    {
+      "path": "fixed-touch-results-after-app-update/fixed-touch-results-after-app-update/touch_results_after_app_update_2026-10-06.json",
+      "bytes": 166442,
+      "sha256": "b57f8f80292d226ee789d6af905b1fa1572adf2fcc87cafe95ea5e457c7aed7d",
+      "analysis_status": "Not analyzed in this notebook"
+    },
+    {
+      "path": "fixed-touch-results-after-app-update/fixed-touch-results-after-app-update/touch_results_after_app_update_2026-10-06.jsonl",
+      "bytes": 125134,
+      "sha256": "5cd7f5f138de816b5d531899aba79af099fd35f56c46bd3becde4af49c1c8bff",
+      "analysis_status": "Not analyzed in this notebook"
+    }
+  ],
+  "retained_jsonl_sha256": "056d9527036b25f35c4409172f9cc16a8a13d59ecc09a3076ccc8f456e20f6b6"
+}
