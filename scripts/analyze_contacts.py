@@ -489,8 +489,8 @@ def plot_dataset(output, contacts, sessions, groups):
     fig.suptitle(f"{output.name}: target tendency (image coordinates)")
     save(fig, output, "target_tendency")
 
-    if output.name == "combined":
-        return  # Phone orientation and original session numbering stay per condition.
+    if output.name != "random_poses":
+        return  # IMU presentation is for Random Poses; reuse Sweet Spot session maps.
 
     fig, axs = plt.subplots(4, 1, figsize=(11, 10), sharex=True)
     for axis, ax in enumerate(axs[:3]):
@@ -507,8 +507,6 @@ def plot_dataset(output, contacts, sessions, groups):
     axs[3].legend(fontsize=8)
     save(fig, output, "imu_and_bias")
 
-    if output.name != "random_poses":
-        return  # Reuse the existing Sweet Spot session maps.
     fig, axs = plt.subplots(math.ceil(len(groups) / 4), 4, figsize=(13, 14), squeeze=False)
     with PdfPages(output / "maps/all_sessions.pdf") as pdf:
         for panel, (number, events) in zip(axs.flat, groups):
@@ -651,6 +649,9 @@ or a separately attributed operator annotation. Neither is available in these ex
 `outcome_sensitivity.csv` additionally separates full-ID sessions and excludes ceiling-compatible sessions,
 with all contacts versus rapid-repeat and explicit completed-target-repeat exclusions.
 These alternative populations are sensitivities, not replacement truth or independent-action estimates.
+"""
+        if dataset == "random_poses":
+            report += """
 
 ## Phone orientation (exploratory)
 

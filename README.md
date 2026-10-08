@@ -41,6 +41,7 @@ archive/random_poses_before_exclusions/ Previous results including the four arch
 - [Sweet Spot target tendency](results/sweetspot/figures/target_tendency.png)
 - [Random Poses analysis](results/random_poses/contact_analysis.md)
 - [Random Poses target tendency](results/random_poses/figures/target_tendency.png)
+- [Random Poses exploratory IMU](results/random_poses/figures/imu_and_bias.png)
 - [Random Poses session maps](results/random_poses/maps/all_sessions.pdf)
 - [Archived Random Poses events](data/excluded/random_poses_excluded.jsonl)
 - [Comparison with shared target-radius strata](results/comparison.md)
@@ -75,7 +76,7 @@ The old app could consume another target after a double contact. `sessions_exten
 
 Random Poses has an explicit `target_already_completed` flag. The original export contains 116 events in 11 sessions. The operator requested archiving incomplete sessions **2, 7, 8 and 10**; their 9 original events are preserved in `data/excluded/random_poses_excluded.jsonl`, with reasons and session IDs in `data/annotations/random_poses_exclusions.csv`. The 7 retained sessions keep their original numbers (1, 3, 4, 5, 6, 9, 11): 107 events, 105 contacts and 13 contacts with the repeat flag. Session 6 remains included because it was not requested for exclusion; its 10 targets without records are unknown outcomes. The original full export and previous result snapshot remain archived. The fraction over configured targets is observed coverage, not a robot failure rate.
 
-IMU summaries use circular means of the three logged `orientation_deg` components, concentration and maximum circular deviation, using contact snapshots only. Axis conventions and the phone-to-holder/world transform have not been verified, so labels remain `orientation[0..2]`. Euler singularities and contact-time motion limit interpretation. Random robot pose is a dataset-level operator annotation, not inferred from the app's `random_position` setting (which randomizes targets). No causal comparison between Sweet Spot and random poses is claimed.
+The IMU figure and orientation discussion focus on **Random Poses**, where orientation variation is relevant. Sweet Spot sensor summaries remain in the tables for traceability, without a separate IMU figure or section. IMU summaries use circular means of the three logged `orientation_deg` components, concentration and maximum circular deviation, using contact snapshots only. Axis conventions and the phone-to-holder/world transform have not been verified, so labels remain `orientation[0..2]`. Euler singularities and contact-time motion limit interpretation. Random robot pose is a dataset-level operator annotation, not inferred from the app's `random_position` setting (which randomizes targets). No causal comparison between Sweet Spot and random poses is claimed.
 
 ## Data decisions and scientific interpretation
 

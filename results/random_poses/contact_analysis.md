@@ -44,6 +44,7 @@ or a separately attributed operator annotation. Neither is available in these ex
 with all contacts versus rapid-repeat and explicit completed-target-repeat exclusions.
 These alternative populations are sensitivities, not replacement truth or independent-action estimates.
 
+
 ## Phone orientation (exploratory)
 
 `sessions_extended.csv` summarizes contact-time `orientation_deg[0..2]` using circular means,

@@ -43,17 +43,3 @@ or a separately attributed operator annotation. Neither is available in these ex
 `outcome_sensitivity.csv` additionally separates full-ID sessions and excludes ceiling-compatible sessions,
 with all contacts versus rapid-repeat and explicit completed-target-repeat exclusions.
 These alternative populations are sensitivities, not replacement truth or independent-action estimates.
-
-## Phone orientation (exploratory)
-
-`sessions_extended.csv` summarizes contact-time `orientation_deg[0..2]` using circular means,
-resultant concentration and largest circular deviation, plus accelerometer/gyroscope norm medians.
-Null sensor samples are omitted. Manual no-touch timestamps are excluded from these summaries.
-These are phone sensor axes as logged: the exporter axis convention, phone-to-holder extrinsic and
-reference heading are not established here. They are not calibrated robot/world roll, pitch and yaw.
-Near an Euler singularity, heading and roll may change even for a similar phone attitude;
-contact-time acceleration includes motion/impact. The IMU plot describes sample variation only.
-Random target placement in app configuration does not identify a random robot pose. The Random Poses
-random-holder condition comes from the operator's description and remains a dataset-level annotation.
-Sweet Spot radius, collection time, app behavior and holder conditions differ from the later dataset;
-their fractions cannot demonstrate a causal improvement or deterioration.
