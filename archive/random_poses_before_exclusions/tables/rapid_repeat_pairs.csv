@@ -1,0 +1,4 @@
+session_number,session_id,event_id_a,event_id_b,interval_ms,separation_dp,assigned_target_a,assigned_target_b,assignment_changed
+2,41d9b4a5-33ac-421b-aef3-eadadbcd026e,644abfc9-c455-4261-97f1-84c3e5939d87,5fd7ddf8-1133-4b56-a34e-69b3beaee31a,88.11,0.8015609770940699,trio-002-red,trio-002-red,False
+3,27edd2c8-7c8a-4089-b96d-113c60282ea9,a930086e-5650-4b4e-a742-a2744b47db35,ea135039-328b-4f43-844c-8a5d13a474c4,80.851,2.2255842620435824,trio-002-blue,trio-002-blue,False
+3,27edd2c8-7c8a-4089-b96d-113c60282ea9,a66f5b7a-66b7-4907-8d6e-3f1789efca09,d6e201dd-f687-4cbc-9b46-d0ddbd56414d,82.447,1.2165525060596438,trio-001-red,trio-001-red,False

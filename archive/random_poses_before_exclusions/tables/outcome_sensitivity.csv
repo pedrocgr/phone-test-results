@@ -1,0 +1,10 @@
+session_population,contact_population,sessions,contacts,hits,contact_hit_fraction,assigned_hit_targets,expected_targets,observed_targets,unrecorded_targets,recorded_hit_coverage_of_expected,hit_fraction_of_observed_targets
+all_retained_sessions,all_contacts,11,114,107,0.9385964912280702,93,162,100,62,0.5740740740740741,0.93
+all_retained_sessions,without_rapid_repeat_second_events,11,111,104,0.9369369369369369,93,162,100,62,0.5740740740740741,0.93
+all_retained_sessions,without_app_completed_repeats,11,100,93,0.93,93,162,100,62,0.5740740740740741,0.93
+all_expected_ids_recorded,all_contacts,6,92,91,0.9891304347826086,82,84,84,0,0.9761904761904762,0.9761904761904762
+all_expected_ids_recorded,without_rapid_repeat_second_events,6,90,89,0.9888888888888889,82,84,84,0,0.9761904761904762,0.9761904761904762
+all_expected_ids_recorded,without_app_completed_repeats,6,83,82,0.9879518072289156,82,84,84,0,0.9761904761904762,0.9761904761904762
+without_ceiling_compatible_sessions,all_contacts,11,114,107,0.9385964912280702,93,162,100,62,0.5740740740740741,0.93
+without_ceiling_compatible_sessions,without_rapid_repeat_second_events,11,111,104,0.9369369369369369,93,162,100,62,0.5740740740740741,0.93
+without_ceiling_compatible_sessions,without_app_completed_repeats,11,100,93,0.93,93,162,100,62,0.5740740740740741,0.93

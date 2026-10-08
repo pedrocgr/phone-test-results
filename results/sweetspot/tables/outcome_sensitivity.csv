@@ -1,0 +1,10 @@
+session_population,contact_population,sessions,contacts,hits,contact_hit_fraction,assigned_hit_targets,expected_targets,observed_targets,unrecorded_targets,recorded_hit_coverage_of_expected,hit_fraction_of_observed_targets
+all_retained_sessions,all_contacts,15,132,111,0.8409090909090909,111,135,135,0,0.8222222222222222,0.8222222222222222
+all_retained_sessions,without_rapid_repeat_second_events,15,128,111,0.8671875,111,135,135,0,0.8222222222222222,0.8222222222222222
+all_retained_sessions,without_app_completed_repeats,15,132,111,0.8409090909090909,111,135,135,0,0.8222222222222222,0.8222222222222222
+all_expected_ids_recorded,all_contacts,15,132,111,0.8409090909090909,111,135,135,0,0.8222222222222222,0.8222222222222222
+all_expected_ids_recorded,without_rapid_repeat_second_events,15,128,111,0.8671875,111,135,135,0,0.8222222222222222,0.8222222222222222
+all_expected_ids_recorded,without_app_completed_repeats,15,132,111,0.8409090909090909,111,135,135,0,0.8222222222222222,0.8222222222222222
+without_ceiling_compatible_sessions,all_contacts,12,102,86,0.8431372549019608,86,105,105,0,0.819047619047619,0.819047619047619
+without_ceiling_compatible_sessions,without_rapid_repeat_second_events,12,101,86,0.8514851485148515,86,105,105,0,0.819047619047619,0.819047619047619
+without_ceiling_compatible_sessions,without_app_completed_repeats,12,102,86,0.8431372549019608,86,105,105,0,0.819047619047619,0.819047619047619

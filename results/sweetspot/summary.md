@@ -39,5 +39,5 @@ App outcomes are preserved even when an assigned target differs from the nearby 
 
 This analysis covers recorded outcomes, contact repetition, and maps. IMU, application timing, calibration, and software-history analyses are not performed.
 Target size and session conditions vary together; contacts are clustered within sessions. No causal or independent-trial inference is made.
-The after-update raw exports are preserved but are not part of this Sweet Spot analysis.
+The Random Poses raw exports are preserved but are not part of this Sweet Spot analysis.
 See data/annotations/ for operator decisions and archive/detailed_analysis/ for the previous detailed snapshot.

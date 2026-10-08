@@ -1,0 +1,30 @@
+{
+  "dataset": "random_poses",
+  "input_sha256": {
+    "data/raw/random_poses/touch_results_random_poses_2026-10-06.jsonl": "5cd7f5f138de816b5d531899aba79af099fd35f56c46bd3becde4af49c1c8bff",
+    "scripts/analyze_contacts.py": "70c773e8e5dd413cfa1de973478f5c9cfd60757908ba0fa99151f18410daf4c6",
+    "data/annotations/random_poses_exclusions.csv": "a5862f9b03f8540ce6e5b90bc82802f8de50f034c5f4b55d40f2036ea774dfed"
+  },
+  "nearby_dp": 8,
+  "repeat_ms": 300,
+  "events": 107,
+  "contacts": 105,
+  "sessions": 7,
+  "first_circle_contacts": 88,
+  "excluded_session_numbers": [
+    2,
+    7,
+    8,
+    10
+  ],
+  "region_boundaries_y_fraction": [
+    0,
+    0.3333333333333333,
+    0.6666666666666666,
+    1
+  ],
+  "region_basis": "target_center",
+  "python": "3.12.3",
+  "numpy": "1.26.4",
+  "matplotlib": "3.6.3"
+}

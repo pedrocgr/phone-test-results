@@ -1,0 +1,32 @@
+{
+  "dataset": "sweetspot",
+  "input_sha256": {
+    "data/raw/sweetspot/touch_results_2026-10-06-sweetspot.jsonl": "290accd48b1739358913f6846d241b868f7a73a8317a14dd1b178490747f67f5",
+    "scripts/analyze_contacts.py": "70c773e8e5dd413cfa1de973478f5c9cfd60757908ba0fa99151f18410daf4c6",
+    "data/annotations/exclusions.csv": "06abad4d3bc0c432b23c88549075e141a84c425e7ab9bfed65a8981fd87cb352",
+    "data/annotations/operator_target_counts.csv": "9e16c237a062d77010d4c6a6fa5a203c920c7182b97a2b61d7c185462f8f7485"
+  },
+  "nearby_dp": 8,
+  "repeat_ms": 300,
+  "events": 163,
+  "contacts": 132,
+  "sessions": 15,
+  "first_circle_contacts": 111,
+  "excluded_session_numbers": [
+    3,
+    4,
+    6,
+    7,
+    9
+  ],
+  "region_boundaries_y_fraction": [
+    0,
+    0.3333333333333333,
+    0.6666666666666666,
+    1
+  ],
+  "region_basis": "target_center",
+  "python": "3.12.3",
+  "numpy": "1.26.4",
+  "matplotlib": "3.6.3"
+}

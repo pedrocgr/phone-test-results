@@ -1,0 +1,16 @@
+{
+  "dataset": "after_app_update",
+  "input_sha256": {
+    "data/raw/after_app_update/touch_results_after_app_update_2026-10-06.jsonl": "5cd7f5f138de816b5d531899aba79af099fd35f56c46bd3becde4af49c1c8bff",
+    "scripts/analyze_contacts.py": "36519f48f8bb2e223373754f2801f54993ff3ce5f0fce636012407ec3c3118cb"
+  },
+  "nearby_dp": 8,
+  "repeat_ms": 300,
+  "events": 116,
+  "contacts": 114,
+  "sessions": 11,
+  "first_circle_contacts": 93,
+  "python": "3.12.3",
+  "numpy": "1.26.4",
+  "matplotlib": "3.6.3"
+}
