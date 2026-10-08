@@ -41,7 +41,7 @@ archive/random_poses_before_exclusions/ Previous results including the four arch
 - [Sweet Spot target tendency](results/sweetspot/figures/target_tendency.png)
 - [Random Poses analysis](results/random_poses/contact_analysis.md)
 - [Random Poses target tendency](results/random_poses/figures/target_tendency.png)
-- [Random Poses exploratory IMU](results/random_poses/figures/imu_and_bias.png)
+- [Random Poses phone orientation by session](results/random_poses/figures/phone_orientation_by_session.png)
 - [Random Poses session maps](results/random_poses/maps/all_sessions.pdf)
 - [Archived Random Poses events](data/excluded/random_poses_excluded.jsonl)
 - [Comparison with shared target-radius strata](results/comparison.md)
@@ -56,9 +56,23 @@ archive/random_poses_before_exclusions/ Previous results including the four arch
 
 Targets are classified into **upper, middle and lower thirds of the logged screen height**, using their centers, not the eventual touch coordinates. Missing target geometry has region `unknown`; it is not placed into any third. Region/radius tables show contact and session counts, signed mean/median offsets in dp, radial error in dp and target radii, and target-level app outcomes with `no_touch` and unknown/censoring separated.
 
-Each condition has `region_tendency`, `vertical_bias_by_height`, `region_by_size` and `target_outcomes_region_by_size` PNG figures. The heatmaps show first recorded in-circle contacts, with `n` contacts and `s` sessions in each cell; blank means no in-circle contacts, even if outside contacts were recorded. The outcome chart includes zero-hit combinations and separates app hits, assigned misses, no-touch and unknown/censoring. The height plot additionally shows all app-assigned contacts, including outside contacts and assignment artifacts, with a symlog scale so no outliers are removed. In-circle placement is conditional on recorded success; its boundary truncation matters when comparing sizes.
+Figures have plain-English question titles, written-out counts, units, and captions describing which records are included. Blue means Sweet Spot and orange means Random Poses in placement figures; green/red/yellow/gray describe app outcomes, not test conditions. The archived figures remain historical snapshots.
+
+| Figure | What it shows |
+|---|---|
+| `target_tendency.png` | Where the first recorded in-target touches land. Crosshair = center; circle = target edge. Offsets are percentages of target radius. |
+| `region_tendency.png` | The same touch locations, split into Upper, Middle and Lower screen thirds, stacked vertically. |
+| `vertical_bias_by_height.png` | Vertical touch offset versus target height: negative = above the center, positive = below. |
+| `region_by_size.png` | Median vertical offset and center distance for each screen-third/target-radius combination. White cells state why no in-target sample is available. |
+| `target_outcomes_region_by_size.png` | App-recorded target outcomes in each region/size group, as percentages. Targets are counted once; unknown outcomes stay separate. |
+| `phone_orientation_by_session.png` | Random Poses only: mean phone IMU angles by original session. Components are not verified roll/pitch/yaw. |
+| `app_assignment_diagnostics.png` | Supplementary checks using all app-assigned contacts, including misses, repeated contacts and assignment artifacts. The height panel has a nonlinear scale; no outliers removed. |
+
+Placement plots describe first recorded contacts inside uniquely identifiable targets, not all intended robot attempts. Outside/ambiguous contacts and extra contacts are excluded from these plots, but remain in the tables and app-label diagnostics. In-circle placement is conditional and boundary-truncated, which matters when comparing target sizes. dp means phone display units, not millimeters.
 
 The overlapping-arrow `screen_bias` figure was removed, including its pre-exclusion archived copy. Use `region_tendency` to see where contacts land relative to the target center in each screen third, and `vertical_bias_by_height` to see how vertical offset changes with target height. The underlying coordinates and statistical tables are unchanged.
+
+The target-outcome and regional touch-location charts are portrait, with Upper, Middle and Lower panels stacked in phone-screen order. Counts are written out as touches, targets or sessions rather than unexplained `n`/`s` abbreviations.
 
 Individual figures are saved only as PNG. The remaining PDFs combine multiple session maps and have no single equivalent PNG. Duplicate single-figure PDFs were removed from current and archived results.
 

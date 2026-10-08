@@ -14,6 +14,8 @@ if __name__ == "__main__":
     matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.patches import Circle
+from matplotlib.lines import Line2D
+from matplotlib.ticker import PercentFormatter
 from matplotlib.backends.backend_pdf import PdfPages
 import numpy as np
 
@@ -22,6 +24,10 @@ NEARBY_DP = 8
 REPEAT_MS = 300
 COLORS = {"red": "#e53935", "green": "#43a047", "blue": "#1e88e5"}
 REGIONS = ("upper", "middle", "lower")
+DATASET_LABELS = {"sweetspot": "Sweet Spot", "random_poses": "Random Poses", "combined": "Sweet Spot + Random Poses"}
+DATASET_COLORS = {"sweetspot": "#1565c0", "random_poses": "#d84315"}
+PLACEMENT_NOTE = ("One point per uniquely matched target: its first recorded in-target touch.\n"
+                  "Outside / ambiguous contacts and extra touches excluded; this is placement, not success rate.")
 
 
 def screen_region(y_fraction):
@@ -289,8 +295,10 @@ def outcome_sensitivity(sessions, contacts):
     return rows
 
 
-def save(fig, output, name):
-    fig.savefig(output / "figures" / f"{name}.png", dpi=180, bbox_inches="tight")
+def save(fig, output, name, caption=""):
+    if caption:
+        fig.text(.5, -.015, caption, ha="center", va="top", fontsize=9, linespacing=1.5)
+    fig.savefig(output / "figures" / f"{name}.png", dpi=180, bbox_inches="tight", metadata={"Description": caption})
     plt.close(fig)
 
 
@@ -302,83 +310,109 @@ def analyze_regions(output, contacts, targets):
     write_csv(output / "tables/region_size_outcomes.csv", outcomes)
     first = [c for c in contacts if c["first_contact_in_circle"]]
     conditions = sorted({c["dataset"] for c in contacts})
-    colors = {"sweetspot": "#1565c0", "random_poses": "#d84315"}
-    labels = {"sweetspot": "Sweet Spot", "random_poses": "Random Poses"}
+    title = DATASET_LABELS[output.name]
 
-    fig, axs = plt.subplots(1, 3, figsize=(14, 4.5), sharex=True, sharey=True)
+    fig, axs = plt.subplots(3, 1, figsize=(7, 14), sharex=True, sharey=True)
     for region, ax in zip(REGIONS, axs):
         for dataset in conditions:
             cs = [c for c in first if c["geometric_region"] == region and c["dataset"] == dataset]
             if cs:
                 ax.scatter([c["geometric_dx_r"] for c in cs], [c["geometric_dy_r"] for c in cs],
-                           s=24, alpha=.65, color=colors[dataset], label=f"{labels[dataset]} n={len(cs)}")
+                           s=28, alpha=.7, color=DATASET_COLORS[dataset],
+                           label=f"{DATASET_LABELS[dataset]}: {len(cs)} touches")
         cs = [c for c in first if c["geometric_region"] == region]
         if cs:
             ax.scatter(np.median([c["geometric_dx_r"] for c in cs]), np.median([c["geometric_dy_r"] for c in cs]),
-                       marker="+", s=130, color="black", label="Median offset")
+                       marker="+", s=130, color="black", label="Median touch position")
         ax.add_patch(Circle((0, 0), 1, fill=False, color="black"))
         ax.axhline(0, color="gray", linewidth=.7)
         ax.axvline(0, color="gray", linewidth=.7)
-        ax.set(title=f"{region.title()} third (n={len(cs)})", xlim=(-1.15, 1.15), ylim=(1.15, -1.15),
-               aspect="equal", xlabel="x offset / target radius")
-        ax.legend(fontsize=8)
-    axs[0].set_ylabel("y offset / target radius (down)")
-    fig.suptitle(f"{output.name}: first recorded contact per uniquely containing circle")
-    save(fig, output, "region_tendency")
+        ax.set(title=f"{region.title()} screen third — {len(cs)} touches", xlim=(-1.15, 1.15), ylim=(1.15, -1.15),
+               aspect="equal", xticks=[-1, -.5, 0, .5, 1], yticks=[-1, -.5, 0, .5, 1])
+        ax.xaxis.set_major_formatter(PercentFormatter(1))
+        ax.yaxis.set_major_formatter(PercentFormatter(1))
+        ax.legend(fontsize=8, loc="upper center", bbox_to_anchor=(.5, -.1), ncol=2)
+    fig.supxlabel("Left ← horizontal offset (% of target radius) → Right", fontsize=10)
+    fig.supylabel("Above ← vertical offset (% of target radius) → Below", fontsize=10)
+    fig.suptitle(f"{title}\nWhere do touches land in each part of the screen?", fontsize=13)
+    fig.tight_layout(rect=(.04, .05, 1, .95), h_pad=4)
+    save(fig, output, "region_tendency", PLACEMENT_NOTE +
+         "\nCircle = target edge; crosshair = target center. Regions follow target centers in screen thirds.")
 
-    fig, axs = plt.subplots(1, 2, figsize=(12, 4.5))
-    for ax, subset, basis, title in [
-        (axs[0], contacts, "assigned", "All recorded contacts / app assignments"),
-        (axs[1], first, "geometric", "First in-circle contacts / known geometry")]:
-        for dataset in conditions:
-            cs = [c for c in subset if c["dataset"] == dataset]
-            xkey = "assigned_y_fraction" if basis == "assigned" else "target_y_fraction"
-            ax.scatter([c[xkey] for c in cs], [c[f"{basis}_dy_dp"] for c in cs], s=22, alpha=.65,
-                       color=colors[dataset], label=f"{labels[dataset]} n={len(cs)}")
-        for border in (1/3, 2/3):
-            ax.axvline(border, color="gray", linestyle="--", linewidth=.8)
-        ax.axhline(0, color="black", linewidth=.8)
-        ax.set(xlim=(0, 1), xlabel="Target center y / screen height (top 0 → bottom 1)",
-               ylabel="Vertical offset (dp); negative = above target", title=title)
-        ax.legend(fontsize=8)
-    axs[0].set_yscale("symlog", linthresh=10)
-    axs[0].set_title("All app assignments (symlog y; no outliers removed)")
-    save(fig, output, "vertical_bias_by_height")
+    fig, ax = plt.subplots(figsize=(8, 5.5))
+    for dataset in conditions:
+        cs = [c for c in first if c["dataset"] == dataset]
+        ax.scatter([c["target_y_fraction"] for c in cs], [c["geometric_dy_dp"] for c in cs], s=28, alpha=.7,
+                   color=DATASET_COLORS[dataset], label=f"{DATASET_LABELS[dataset]}: {len(cs)} touches")
+    for border in (1/3, 2/3):
+        ax.axvline(border, color="gray", linestyle="--", linewidth=.8)
+    for position, label in zip((1/6, .5, 5/6), ("Upper third", "Middle third", "Lower third")):
+        ax.text(position, .98, label, ha="center", va="top", transform=ax.get_xaxis_transform(), fontsize=9)
+    ax.axhline(0, color="black", linewidth=.8, label="Target center (zero offset)")
+    ax.set(xlim=(0, 1), xlabel="Target position down the screen (0% = top; 100% = bottom)",
+           ylabel="Vertical touch offset (dp)\nNegative = above; positive = below",
+           title=f"{title}\nDoes the touch offset change from top to bottom?")
+    ax.xaxis.set_major_formatter(PercentFormatter(1))
+    ax.legend(fontsize=9, loc="upper left", bbox_to_anchor=(0, -.18), ncol=2)
+    fig.tight_layout()
+    save(fig, output, "vertical_bias_by_height", PLACEMENT_NOTE + "\ndp = phone display units, not millimeters.")
 
-    radii = sorted({c["geometric_radius_dp"] for c in first})
-    fig, axs = plt.subplots(1, 2, figsize=(max(10, len(radii)*1.8), 4))
-    for ax, metric, title, cmap in [
-        (axs[0], "median_dy_dp", "Median vertical offset (dp; negative = above)", "coolwarm"),
-        (axs[1], "median_radial_error_r", "Median radial distance / radius (in-circle only)", "viridis")]:
+    radii = sorted({t["radius_dp"] for t in targets if t["radius_dp"] is not None})
+    outcome_cells = {r["value"]: r for r in outcomes if r["stratum"] == "region_radius_dp"}
+    fig, axs = plt.subplots(2, 1, figsize=(max(8, len(radii)*1.55), 10))
+    for ax, metric, panel_title, cmap in [
+        (axs[0], "median_dy_dp", "Typical vertical offset (median, dp)", "coolwarm"),
+        (axs[1], "median_radial_error_r", "Typical distance from center (median, % of target radius)", "viridis")]:
         cells = np.full((3, len(radii)), np.nan)
         counts = {}
         for r in rows:
             if r["population"] == "first_contact_per_circle" and r["stratum"] == "region_radius_dp":
                 region, radius = r["value"].split(":")
                 index = REGIONS.index(region), radii.index(float(radius))
-                cells[index] = r[metric]
+                cells[index] = r[metric] * (100 if metric == "median_radial_error_r" else 1)
                 counts[index] = r
-        scale = max(1, float(np.nanmax(np.abs(cells))))
+        valid = cells[np.isfinite(cells)]
+        scale = max([1, *np.abs(valid)])
         im = ax.imshow(np.ma.masked_invalid(cells), aspect="auto", cmap=cmap,
                        vmin=-scale if metric == "median_dy_dp" else 0,
-                       vmax=scale if metric == "median_dy_dp" else 1)
+                       vmax=scale if metric == "median_dy_dp" else 100)
         for index, r in counts.items():
-            ax.text(index[1], index[0], f"{r[metric]:.2f}\nn={r['contacts']}\ns={r['sessions']}",
+            value = f"{r[metric]:+.1f} dp" if metric == "median_dy_dp" else f"{r[metric]:.0%} of radius"
+            ax.text(index[1], index[0], f"{value}\nTouches: {r['contacts']}\nSessions: {r['sessions']}",
                     ha="center", va="center", fontsize=8, bbox=dict(facecolor="white", alpha=.8, edgecolor="none"))
+        for i, region in enumerate(REGIONS):
+            for j, radius in enumerate(radii):
+                if (i, j) in counts:
+                    continue
+                row = outcome_cells.get(f"{region}:{radius:g}")
+                text = "No targets\nwith known\nposition" if not row else f"0 matched inside\nTargets: {row['targets']}"
+                if row:
+                    for key, label in (("assigned_hit_targets", "app hits"),
+                                       ("assigned_miss_without_hit_targets", "app misses"),
+                                       ("no_touch_only_targets", "no-touch only"), ("unknown_outcome_targets", "unknown")):
+                        if row[key]:
+                            text += f"\n{row[key]} {label}"
+                ax.text(j, i, text, ha="center", va="center", fontsize=8)
         ax.set(xticks=range(len(radii)), xticklabels=[f"{r:g}" for r in radii], yticks=range(3),
-               yticklabels=REGIONS, xlabel="Target radius (dp)", title=title)
-        fig.colorbar(im, ax=ax, shrink=.8)
-    fig.suptitle(f"{output.name}: region × size; blank = no observations, n = contacts, s = sessions")
-    fig.tight_layout()
-    save(fig, output, "region_by_size")
+               yticklabels=[f"{r.title()} third" for r in REGIONS], xlabel="Target radius (dp)", title=panel_title)
+        bar = fig.colorbar(im, ax=ax, shrink=.85)
+        if metric == "median_dy_dp":
+            bar.set_label("Negative = above; positive = below", fontsize=9)
+        else:
+            bar.set_ticks([0, 25, 50, 75, 100])
+            bar.set_ticklabels(["0% (center)", "25%", "50%", "75%", "100% (edge)"])
+    fig.suptitle(f"{title}\nHow do screen region and target size relate to touch placement?", fontsize=12)
+    fig.tight_layout(rect=(0, 0, 1, .94), h_pad=3)
+    save(fig, output, "region_by_size", PLACEMENT_NOTE +
+         "\nWhite cells have no in-target sample—not zero error. Counts show the available records. dp is not mm.")
 
     # Include zero-hit size/region cells: they are absent from in-circle placement plots.
     outcome_radii = sorted({t["radius_dp"] for t in targets if t["radius_dp"] is not None})
-    categories = [("assigned_hit_targets", "App-assigned hit", "#43a047"),
-                  ("assigned_miss_without_hit_targets", "Assigned miss without hit", "#e53935"),
-                  ("no_touch_only_targets", "no_touch only", "#ffb300"),
-                  ("unknown_outcome_targets", "Unknown / possible censoring", "#9e9e9e")]
-    fig, axs = plt.subplots(1, 3, figsize=(14, 4), sharey=True)
+    categories = [("assigned_hit_targets", "Hit recorded", "#43a047"),
+                  ("assigned_miss_without_hit_targets", "Miss recorded; no hit", "#e53935"),
+                  ("no_touch_only_targets", "No-touch records only", "#ffb300"),
+                  ("unknown_outcome_targets", "Outcome unknown", "#9e9e9e")]
+    fig, axs = plt.subplots(3, 1, figsize=(6.5, 12), sharex=True, sharey=True)
     for region, ax in zip(REGIONS, axs):
         bottom = np.zeros(len(outcome_radii))
         cells = {r["value"]: r for r in outcomes if r["stratum"] == "region_radius_dp"}
@@ -391,16 +425,22 @@ def analyze_regions(output, contacts, targets):
             bottom += fractions
         for i, radius in enumerate(outcome_radii):
             row = cells.get(f"{region}:{radius:g}")
-            ax.text(i, 1.01, f"n={row['targets']}\ns={row['sessions']}" if row else "no data",
+            ax.text(i, 1.01, f"Targets: {row['targets']}\nSessions: {row['sessions']}" if row else "No targets",
                     ha="center", va="bottom", fontsize=8)
         ax.set(xticks=range(len(outcome_radii)), xticklabels=[f"{r:g}" for r in outcome_radii],
-               ylim=(0, 1.2), yticks=[0, .25, .5, .75, 1], title=region.title(), xlabel="Target radius (dp)")
-    axs[0].set_ylabel("Fraction of target inventory")
+               ylim=(0, 1.2), yticks=[0, .25, .5, .75, 1], title=f"{region.title()} screen third")
+        ax.yaxis.set_major_formatter(PercentFormatter(1))
+    axs[-1].set_xlabel("Target radius (dp)")
+    fig.supylabel("Percentage of targets")
     handles, labels_legend = axs[0].get_legend_handles_labels()
-    fig.legend(handles, labels_legend, loc="lower center", ncol=4, fontsize=8)
-    fig.suptitle(f"{output.name}: app-recorded target outcomes; unknown geometry ungrouped")
-    fig.tight_layout(rect=(0, .07, 1, .98))
-    save(fig, output, "target_outcomes_region_by_size")
+    fig.legend(handles, labels_legend, loc="lower center", bbox_to_anchor=(.5, .05), ncol=2, fontsize=8)
+    fig.suptitle(f"{title}\nWhat did the app record for each target?", fontsize=13)
+    fig.tight_layout(rect=(.02, .12, 1, .95))
+    missing = sum(not t["geometry_available"] for t in targets)
+    save(fig, output, "target_outcomes_region_by_size",
+         "Each target counted once; outcomes follow app labels, not the robot's intended target.\n"
+         "No-touch = records without contact coordinates; unknown = missing records / possible app-limit effects.\n"
+         f"{missing} targets without known screen position omitted. dp = display units, not millimeters.")
 
     report = f"""# {output.name}: screen region and target size
 
@@ -454,7 +494,9 @@ Each target is counted once within its original dataset/session. Unknown/censori
 with contact/session counts for each combination. `region_size_outcomes.csv` provides the corresponding
 target inventory. `target_outcomes_region_by_size.png` also includes combinations with zero recorded hits,
 showing target-level app outcomes, no-touch observations and unknown/censoring separately.
-Blank placement cells mean no in-circle observations, not zero error or zero success.
+White placement cells are explicitly labeled with available target outcomes; they are not zero error.
+The main placement plots show only first in-circle contacts. `app_assignment_diagnostics.png`
+keeps all app-assigned contacts, including misses and repeats, with no outliers removed.
 A smaller target tolerates less of the same absolute error. Compare dp offsets and normalized distances
 together before interpreting any size association. In-circle distributions are boundary-truncated.
 Region/size cells with few sessions are descriptive; contacts within sessions are not independent trials.
@@ -466,46 +508,81 @@ not a balanced experiment or causal size/pose effect. The per-condition reports 
 
 
 def plot_dataset(output, contacts, sessions, groups):
-    fig, axs = plt.subplots(1, 2, figsize=(11, 5))
-    for ax, basis, subset, title in [
-        (axs[0], "assigned", contacts, "All contacts / app-assigned target"),
-        (axs[1], "geometric", [c for c in contacts if c["first_contact_in_circle"]], "First contact / uniquely containing circle")]:
-        for color in COLORS:
-            cs = [c for c in subset if c[f"{basis}_color"] == color]
-            if cs:
-                ax.scatter([c[f"{basis}_dx_r"] for c in cs], [c[f"{basis}_dy_r"] for c in cs],
-                           color=COLORS[color], s=20, alpha=.65, label=f"{color} (n={len(cs)})")
-        if subset:
-            dx = np.mean([c[f"{basis}_dx_r"] for c in subset])
-            dy = np.mean([c[f"{basis}_dy_r"] for c in subset])
-            ax.scatter(dx, dy, color="black", marker="+", s=130, label="Mean offset")
-        ax.add_patch(Circle((0, 0), 1, fill=False, color="black", linewidth=1.5))
+    title = DATASET_LABELS[output.name]
+    first = [c for c in contacts if c["first_contact_in_circle"]]
+    conditions = sorted({c["dataset"] for c in contacts})
+    fig, ax = plt.subplots(figsize=(7, 7.5))
+    for dataset in conditions:
+        cs = [c for c in first if c["dataset"] == dataset]
+        ax.scatter([c["geometric_dx_r"] for c in cs], [c["geometric_dy_r"] for c in cs],
+                   color=DATASET_COLORS[dataset], s=28, alpha=.7,
+                   label=f"{DATASET_LABELS[dataset]}: {len(cs)} touches")
+    if first:
+        ax.scatter(np.mean([c["geometric_dx_r"] for c in first]), np.mean([c["geometric_dy_r"] for c in first]),
+                   color="black", marker="+", s=130, label="Average touch position")
+    ax.add_patch(Circle((0, 0), 1, fill=False, color="black", linewidth=1.5))
+    ax.axhline(0, color="gray", linewidth=.7)
+    ax.axvline(0, color="gray", linewidth=.7)
+    ax.set(xlim=(-1.15, 1.15), ylim=(1.15, -1.15), aspect="equal",
+           xticks=[-1, -.5, 0, .5, 1], yticks=[-1, -.5, 0, .5, 1],
+           xlabel="Left ← horizontal offset (% of target radius) → Right",
+           ylabel="Above ← vertical offset (% of target radius) → Below")
+    ax.xaxis.set_major_formatter(PercentFormatter(1))
+    ax.yaxis.set_major_formatter(PercentFormatter(1))
+    fig.suptitle(f"{title}\nWhere do touches land inside the target?", fontsize=13)
+    handles, labels = ax.get_legend_handles_labels()
+    handles.append(Line2D([], [], marker="o", markerfacecolor="none", markeredgecolor="black", linestyle="none", markersize=10))
+    labels.append("Target edge")
+    fig.legend(handles, labels, loc="lower center", bbox_to_anchor=(.5, .04), ncol=2, fontsize=9)
+    fig.tight_layout(rect=(0, .17, 1, .92))
+    save(fig, output, "target_tendency", PLACEMENT_NOTE +
+         "\nCrosshair = target center; 100% of the radius = one center-to-edge distance.")
+
+    # Keep app-label outliers visible, without compressing the main placement plots.
+    fig, axs = plt.subplots(1, 2, figsize=(12, 5.5))
+    for dataset in conditions:
+        cs = [c for c in contacts if c["dataset"] == dataset]
+        label = f"{DATASET_LABELS[dataset]}: {len(cs)} touches"
+        axs[0].scatter([c["assigned_dx_r"] for c in cs], [c["assigned_dy_r"] for c in cs],
+                       color=DATASET_COLORS[dataset], s=24, alpha=.7, label=label)
+        axs[1].scatter([c["assigned_y_fraction"] for c in cs], [c["assigned_dy_dp"] for c in cs],
+                       color=DATASET_COLORS[dataset], s=24, alpha=.7, label=label)
+    axs[0].add_patch(Circle((0, 0), 1, fill=False, color="black", label="App-assigned target edge"))
+    extent = max([1.2] + [abs(c[f"assigned_{a}_r"]) + .1 for c in contacts for a in ("dx", "dy")])
+    axs[0].set(xlim=(-extent, extent), ylim=(extent, -extent), aspect="equal",
+               xlabel="Horizontal offset (target radii)", ylabel="Vertical offset (target radii; down)",
+               title="Touch location relative to the app's target")
+    axs[0].axvline(0, color="gray", linewidth=.7)
+    axs[1].set(xlim=(0, 1), xlabel="App target position (0% = top; 100% = bottom)",
+               ylabel="Vertical offset (dp; negative = above)", title="All offsets; large values compressed")
+    axs[1].xaxis.set_major_formatter(PercentFormatter(1))
+    axs[1].set_yscale("symlog", linthresh=10)
+    for ax in axs:
         ax.axhline(0, color="gray", linewidth=.7)
-        ax.axvline(0, color="gray", linewidth=.7)
-        extent = max([1.2] + [abs(c[f"{basis}_{a}_r"]) + .1 for c in subset for a in ("dx", "dy")])
-        ax.set(xlim=(-extent, extent), ylim=(extent, -extent), aspect="equal", title=title,
-               xlabel="Touch x − center x / radius", ylabel="Touch y − center y / radius (down)")
         ax.legend(fontsize=8)
-    fig.suptitle(f"{output.name}: target tendency (image coordinates)")
-    save(fig, output, "target_tendency")
+    fig.suptitle(f"{title}\nApp-label diagnostics: all contacts, including misses and repeats", fontsize=12)
+    fig.tight_layout(rect=(0, 0, 1, .93))
+    save(fig, output, "app_assignment_diagnostics",
+         "App labels may associate a repeat touch with a different target; they do not prove robot intent.\n"
+         "Right panel has a nonlinear vertical scale; no outliers removed. dp = display units, not millimeters.")
 
     if output.name != "random_poses":
         return  # IMU presentation is for Random Poses; reuse Sweet Spot session maps.
 
-    fig, axs = plt.subplots(4, 1, figsize=(11, 10), sharex=True)
-    for axis, ax in enumerate(axs[:3]):
+    fig, axs = plt.subplots(3, 1, figsize=(8, 9), sharex=True)
+    for axis, ax in enumerate(axs):
         valid = [s for s in sessions if s[f"imu_axis{axis}_mean_deg"] is not None]
         ax.scatter([s["session_number"] for s in valid], [s[f"imu_axis{axis}_mean_deg"] for s in valid])
-        ax.set(ylabel=f"orientation[{axis}] (deg)", ylim=(-185, 185))
-    axs[0].set_title("Contact-time circular IMU means; per-axis values, not robot/world pose")
-    for key, color in [("first_circle_mean_dx_dp", "#1565c0"), ("first_circle_mean_dy_dp", "#d84315")]:
-        valid = [s for s in sessions if s[key] is not None]
-        axs[3].plot([s["session_number"] for s in valid], [s[key] for s in valid], "o", color=color,
-                    label="Mean x offset" if "dx" in key else "Mean y offset")
-    axs[3].axhline(0, color="gray", linewidth=.7)
-    axs[3].set(xlabel="Session number", ylabel="Mean circle offset (dp)")
-    axs[3].legend(fontsize=8)
-    save(fig, output, "imu_and_bias")
+        ax.set(ylabel="Mean angle (degrees)", ylim=(-185, 185), yticks=[-180, -90, 0, 90, 180],
+               title=f"Phone sensor component {axis} — {len(valid)} sessions with readings")
+        ax.axhline(0, color="gray", linewidth=.7)
+    axs[-1].set(xlabel="Original session number", xticks=[s["session_number"] for s in sessions])
+    fig.suptitle("Random Poses\nHow did phone orientation vary between sessions?", fontsize=13)
+    fig.tight_layout(rect=(0, 0, 1, .93), h_pad=2)
+    save(fig, output, "phone_orientation_by_session",
+         "Each point = circular mean of phone IMU angles at recorded contacts in one retained session.\n"
+         "Exporter components are unverified—not calibrated robot roll, pitch or yaw.\n"
+         "Sessions 2, 7, 8 and 10 are archived and not shown; this plot does not establish an effect on accuracy.")
 
     fig, axs = plt.subplots(math.ceil(len(groups) / 4), 4, figsize=(13, 14), squeeze=False)
     with PdfPages(output / "maps/all_sessions.pdf") as pdf:
@@ -521,14 +598,22 @@ def plot_dataset(output, contacts, sessions, groups):
                         view.scatter(e["actual_touch_x"], e["actual_touch_y"], s=14,
                                      marker="x" if e["result"] == "miss" else "o", color="black")
                 view.set(xlim=(0, events[0]["screen_width"]), ylim=(events[0]["screen_height"], 0), aspect="equal",
-                         title=f"Session {number}: geometry {len(geo)}/{events[0]['configuration']['target_count']}")
+                         title=f"Session {number}: {len(geo)}/{events[0]['configuration']['target_count']} targets located")
+            ax.set(xlabel="Screen x (pixels; left → right)", ylabel="Screen y (pixels; top → bottom)")
+            individual.suptitle(f"Random Poses — session {number}", fontsize=13)
+            individual.text(.5, .015, "Colored circles = targets; dots = app hits; crosses = app misses.\n"
+                            "Only recorded positions shown; missing targets not reconstructed.", ha="center", fontsize=9)
+            individual.tight_layout(rect=(0, .07, 1, .94))
             individual.savefig(output / "maps" / f"session_{number:02d}.png", dpi=180, bbox_inches="tight")
             pdf.savefig(individual, bbox_inches="tight")
             plt.close(individual)
         for ax in axs.flat[len(groups):]:
             ax.set_visible(False)
-    fig.suptitle("Random Poses: recorded target geometry and contacts; missing targets not reconstructed")
-    fig.tight_layout()
+    fig.suptitle("Random Poses: where were targets and touches recorded?", fontsize=13)
+    fig.text(.5, .01, "Colored circles = targets; dots = app hits; crosses = app misses.\n"
+             "Screen coordinates in pixels: top-left origin. Only retained sessions; missing targets not reconstructed.",
+             ha="center", fontsize=10)
+    fig.tight_layout(rect=(0, .05, 1, .96))
     fig.savefig(output / "maps/session_overview.png", dpi=180, bbox_inches="tight")
     plt.close(fig)
 

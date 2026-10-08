@@ -65,7 +65,9 @@ Each target is counted once within its original dataset/session. Unknown/censori
 with contact/session counts for each combination. `region_size_outcomes.csv` provides the corresponding
 target inventory. `target_outcomes_region_by_size.png` also includes combinations with zero recorded hits,
 showing target-level app outcomes, no-touch observations and unknown/censoring separately.
-Blank placement cells mean no in-circle observations, not zero error or zero success.
+White placement cells are explicitly labeled with available target outcomes; they are not zero error.
+The main placement plots show only first in-circle contacts. `app_assignment_diagnostics.png`
+keeps all app-assigned contacts, including misses and repeats, with no outliers removed.
 A smaller target tolerates less of the same absolute error. Compare dp offsets and normalized distances
 together before interpreting any size association. In-circle distributions are boundary-truncated.
 Region/size cells with few sessions are descriptive; contacts within sessions are not independent trials.

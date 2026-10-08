@@ -2,6 +2,7 @@
 from copy import deepcopy
 import hashlib
 import json
+from struct import unpack
 
 from analyze_contacts import (ROOT, analyze_session, circular_summary, outcome_sensitivity,
                              read_csv, read_jsonl, tendency, screen_region, regional_outcomes)
@@ -109,9 +110,10 @@ for dataset, expected in [("sweetspot", (15, 132, 111)), ("random_poses", (7, 10
         assert {int(s['session_number']) for s in annotations} == {2, 7, 8, 10}
         assert {e['session_id'] for e in archived} == {s['session_id'] for s in annotations}
         assert {p.stem for p in (output / 'maps').glob('session_[0-9][0-9].png')} == {f'session_{i:02d}' for i in (1, 3, 4, 5, 6, 9, 11)}
-    for name in ("target_tendency", "region_tendency", "vertical_bias_by_height", "region_by_size", "target_outcomes_region_by_size"):
-        assert (output / "figures" / f"{name}.png").stat().st_size > 1000
-    assert (output / 'figures/imu_and_bias.png').exists() == (dataset == 'random_poses')
+    for name in ("target_tendency", "region_tendency", "vertical_bias_by_height", "region_by_size", "target_outcomes_region_by_size", "app_assignment_diagnostics"):
+        image = (output / "figures" / f"{name}.png").read_bytes()
+        assert len(image) > 1000 and b'Description\x00' in image
+    assert (output / 'figures/phone_orientation_by_session.png').exists() == (dataset == 'random_poses')
     assert ('## Phone orientation' in (output / 'contact_analysis.md').read_text()) == (dataset == 'random_poses')
 
 output = ROOT / 'results/combined'
@@ -132,4 +134,14 @@ assert sum(int(r['targets']) for r in outcomes if r['stratum'] == 'region') == 2
 assert next(r for r in outcomes if r['stratum'] == 'region' and r['value'] == 'unknown')['targets'] == '10'
 assert not list((ROOT / 'results').glob('*/figures/screen_bias.png'))
 assert not (output / 'figures/imu_and_bias.png').exists()
+for dataset in ('sweetspot', 'random_poses', 'combined'):
+    for name in ('region_tendency', 'target_outcomes_region_by_size'):
+        image = ROOT / 'results' / dataset / 'figures' / f'{name}.png'
+        width, height = unpack('>II', image.read_bytes()[16:24])
+        assert height > width, f'{dataset}: screen-region chart must be portrait'
+    assert not (ROOT / 'results' / dataset / 'figures/imu_and_bias.png').exists()
+zero_hit = next(r for r in read_csv(ROOT / 'results/sweetspot/tables/region_size_outcomes.csv')
+                if r['stratum'] == 'region_radius_dp' and r['value'] == 'upper:25')
+assert zero_hit['targets'] == '3' and zero_hit['assigned_hit_targets'] == '0'
+assert zero_hit['assigned_miss_without_hit_targets'] == '3'
 print("Contact checks passed: double contact assignments, censoring flags, unknown targets, source hashes, and circular IMU statistics.")
