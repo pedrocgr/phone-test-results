@@ -489,16 +489,6 @@ def plot_dataset(output, contacts, sessions, groups):
     fig.suptitle(f"{output.name}: target tendency (image coordinates)")
     save(fig, output, "target_tendency")
 
-    fig, ax = plt.subplots(figsize=(5, 8))
-    first = [c for c in contacts if c["first_contact_in_circle"]]
-    for c in first:
-        ax.arrow(c["target_x_fraction"], c["target_y_fraction"], c["screen_dx_fraction"],
-                 c["screen_dy_fraction"], color=COLORS[c["geometric_color"]], alpha=.55,
-                 head_width=.009, length_includes_head=True)
-    ax.set(xlim=(0, 1), ylim=(1, 0), xlabel="Target x / screen width", ylabel="Target y / screen height",
-           title="First in-circle contact offsets\nArrows at actual scale; successful recorded circles only")
-    save(fig, output, "screen_bias")
-
     if output.name == "combined":
         return  # Phone orientation and original session numbering stay per condition.
 

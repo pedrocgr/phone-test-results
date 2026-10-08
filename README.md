@@ -48,12 +48,16 @@ archive/random_poses_before_exclusions/ Previous results including the four arch
 - [Sweet Spot region × size](results/sweetspot/region_size_analysis.md)
 - [Random Poses region × size](results/random_poses/region_size_analysis.md)
 - [Pooled region × size figure](results/combined/figures/region_by_size.png)
+- [Where contacts land within targets, by screen region](results/combined/figures/region_tendency.png)
+- [Vertical offset versus target height](results/combined/figures/vertical_bias_by_height.png)
 
 ## Screen region, target size, and overall results
 
 Targets are classified into **upper, middle and lower thirds of the logged screen height**, using their centers, not the eventual touch coordinates. Missing target geometry has region `unknown`; it is not placed into any third. Region/radius tables show contact and session counts, signed mean/median offsets in dp, radial error in dp and target radii, and target-level app outcomes with `no_touch` and unknown/censoring separated.
 
 Each condition has `region_tendency`, `vertical_bias_by_height`, `region_by_size` and `target_outcomes_region_by_size` PNG figures. The heatmaps show first recorded in-circle contacts, with `n` contacts and `s` sessions in each cell; blank means no in-circle contacts, even if outside contacts were recorded. The outcome chart includes zero-hit combinations and separates app hits, assigned misses, no-touch and unknown/censoring. The height plot additionally shows all app-assigned contacts, including outside contacts and assignment artifacts, with a symlog scale so no outliers are removed. In-circle placement is conditional on recorded success; its boundary truncation matters when comparing sizes.
+
+The overlapping-arrow `screen_bias` figure was removed, including its pre-exclusion archived copy. Use `region_tendency` to see where contacts land relative to the target center in each screen third, and `vertical_bias_by_height` to see how vertical offset changes with target height. The underlying coordinates and statistical tables are unchanged.
 
 Individual figures are saved only as PNG. The remaining PDFs combine multiple session maps and have no single equivalent PNG. Duplicate single-figure PDFs were removed from current and archived results.
 
