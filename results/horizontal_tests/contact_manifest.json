@@ -1,0 +1,42 @@
+{
+  "dataset": "horizontal_tests",
+  "input_sha256": {
+    "data/raw/horizontal_tests/touch_results.jsonl": "a081ca9553b7c576d90724a0f50369f85cef2639c71126e54e2fa7c85ca8fbcf",
+    "scripts/analyze_contacts.py": "24ceb4a455027c38f1d8d81e4247114c5785a5a6bc65fd9ef71137f5ee07ab80",
+    "data/annotations/horizontal_tests_exclusions.csv": "a06aff63f04d65d61c9ab132351ee7b3e9016224748941068da05812cecd229b",
+    "data/annotations/operator_session_interruptions.csv": "68e2466bc05edd4e1796debef9377accfac0f13b083619a9fe1e16558836a629",
+    "data/raw/horizontal_tests/touch_results.json": "6ab85a6c1bbc79dd0e509942eacbc2a135380f343eb8c176ee00f2e005d39519",
+    "data/raw/horizontal_tests/touch_results.csv": "b52065f7d087ff4143d3c3ba4d56ecd35aa959ee598757f29f17630de4891caa",
+    "data/raw/horizontal_tests/README.md": "1330a93b1525444ebcafc4ff78d36f79edec86dca87fabdb3a6dff84b1fb93d0"
+  },
+  "nearby_dp": 8,
+  "repeat_ms": 300,
+  "events": 247,
+  "contacts": 220,
+  "sessions": 18,
+  "first_circle_contacts": 201,
+  "excluded_session_numbers": [
+    5,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    18,
+    26,
+    28,
+    29
+  ],
+  "region_boundaries_y_fraction": [
+    0,
+    0.3333333333333333,
+    0.6666666666666666,
+    1
+  ],
+  "region_basis": "target_center",
+  "python": "3.12.3",
+  "numpy": "1.26.4",
+  "matplotlib": "3.6.3"
+}

@@ -3,7 +3,19 @@
 Regions are fixed thirds of **logged screen height**, assigned using the **target center**:
 upper [0, 1/3), middle [1/3, 2/3), lower [2/3, 1]. They are not thirds of the app's target-placement area.
 Contacts never change region merely because their touch coordinate crosses a boundary.
-Offsets are in dp (not mm) and target radii; negative vertical offset means above the center.
+The tables below retain phone/app axes: offsets are in dp (not mm) and target radii;
+negative app-y offset means toward the phone's original top edge.
+
+## Region tendency in the displayed phone orientation
+
+`region_tendency.png` shows each condition separately in the phone-plane view.
+Sweet Spot and Random Poses thirds run top to bottom. Horizontal Tests has the phone's top
+pointing left, as confirmed by the operator: its app upper/middle/lower thirds are displayed
+left/center/right. Both the panel placement and touch offsets are rotated: view dx = app dy,
+view dy = -app dx. Positive view x points right; positive view y points down.
+These are display directions, not calibrated robot/world axes.
+`region_tendency_view.csv` records the transformed regional summaries in dp and target radii.
+All other tables and figures retain the original app axes, making their coordinate basis explicit.
 
 ## First contact per uniquely containing circle
 

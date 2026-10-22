@@ -44,6 +44,10 @@ or a separately attributed operator annotation. Neither is available in these ex
 with all contacts versus rapid-repeat and explicit completed-target-repeat exclusions.
 These alternative populations are sensitivities, not replacement truth or independent-action estimates.
 
+## Operator-confirmed interruption
+
+Session 6: Execution stopped after a touch-sensor connection error. The remaining 10 targets were not executed and are not counted as touch misses. Recorded contacts are retained; the interruption reason is an operator annotation, not inferred from the app export.
+
 
 ## Phone orientation (exploratory)
 

@@ -1,0 +1,5 @@
+dataset,sessions,events,contacts,app_hits,app_misses,contact_hit_fraction,no_touch,configured_targets,unrecorded_targets
+sweetspot,15,163,132,111,21,0.8409090909090909,31,135,0
+random_poses,7,107,105,101,4,0.9619047619047619,2,102,10
+horizontal_tests,18,247,220,204,16,0.9272727272727272,27,228,0
+all,40,517,457,416,41,0.9102844638949672,60,465,10

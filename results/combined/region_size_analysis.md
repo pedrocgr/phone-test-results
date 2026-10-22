@@ -3,7 +3,19 @@
 Regions are fixed thirds of **logged screen height**, assigned using the **target center**:
 upper [0, 1/3), middle [1/3, 2/3), lower [2/3, 1]. They are not thirds of the app's target-placement area.
 Contacts never change region merely because their touch coordinate crosses a boundary.
-Offsets are in dp (not mm) and target radii; negative vertical offset means above the center.
+The tables below retain phone/app axes: offsets are in dp (not mm) and target radii;
+negative app-y offset means toward the phone's original top edge.
+
+## Region tendency in the displayed phone orientation
+
+`region_tendency.png` shows each condition separately in the phone-plane view.
+Sweet Spot and Random Poses thirds run top to bottom. Horizontal Tests has the phone's top
+pointing left, as confirmed by the operator: its app upper/middle/lower thirds are displayed
+left/center/right. Both the panel placement and touch offsets are rotated: view dx = app dy,
+view dy = -app dx. Positive view x points right; positive view y points down.
+These are display directions, not calibrated robot/world axes.
+`region_tendency_view.csv` records the transformed regional summaries in dp and target radii.
+All other tables and figures retain the original app axes, making their coordinate basis explicit.
 
 ## First contact per uniquely containing circle
 
@@ -12,17 +24,17 @@ Outside contacts are kept separately in the app-assigned populations below.
 
 | Region | Contacts | Sessions | Mean x (dp) | Mean y (dp) | Median y (dp) | Median distance (dp) | Median distance / radius | Above center |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| lower | 54 | 19 | +4.92 | +5.96 | +7.00 | 12.92 | 0.320 | 22.2% |
-| middle | 86 | 22 | -3.98 | -8.63 | -8.39 | 14.81 | 0.390 | 86.0% |
-| upper | 59 | 20 | -12.37 | -22.23 | -24.49 | 28.95 | 0.744 | 98.3% |
+| lower | 102 | 37 | -0.45 | +10.19 | +12.12 | 15.95 | 0.433 | 11.8% |
+| middle | 195 | 40 | +0.02 | -2.18 | -1.35 | 11.47 | 0.360 | 56.4% |
+| upper | 103 | 37 | -2.48 | -17.12 | -15.93 | 23.35 | 0.653 | 98.1% |
 
 ## All app-assigned contacts (hits and misses)
 
 | Region | Contacts | Sessions | Mean y (dp) | Median y (dp) | Median distance / radius |
 |---|---:|---:|---:|---:|---:|
-| lower | 57 | 19 | +9.88 | +7.60 | 0.321 |
-| middle | 93 | 22 | -19.86 | -9.53 | 0.394 |
-| upper | 87 | 22 | -15.65 | -24.49 | 0.808 |
+| lower | 109 | 37 | +12.59 | +12.38 | 0.447 |
+| middle | 206 | 40 | -7.16 | -1.66 | 0.369 |
+| upper | 142 | 40 | -13.37 | -17.32 | 0.743 |
 
 App assignments can differ from the physically containing circle after repeated touches.
 `region_size_contacts.csv` includes sensitivities removing rapid-repeat second events,
@@ -35,9 +47,9 @@ Each target is counted once within its original dataset/session. Unknown/censori
 
 | Region | Targets | App-assigned hit | Assigned miss without hit | no_touch only | Unknown/censoring |
 |---|---:|---:|---:|---:|---:|
-| upper | 74 | 59 | 14 | 0 | 1 |
-| middle | 93 | 86 | 3 | 4 | 0 |
-| lower | 60 | 54 | 1 | 1 | 4 |
+| upper | 132 | 103 | 23 | 5 | 1 |
+| middle | 210 | 195 | 6 | 9 | 0 |
+| lower | 113 | 102 | 4 | 3 | 4 |
 | unknown | 10 | 0 | 0 | 0 | 10 |
 
 ## Region × size

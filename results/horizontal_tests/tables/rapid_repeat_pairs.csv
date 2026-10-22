@@ -1,0 +1,3 @@
+session_number,session_id,event_id_a,event_id_b,interval_ms,separation_dp,assigned_target_a,assigned_target_b,assignment_changed
+9,b6a7ae28-0545-417f-9a1f-11f1f45a369b,9a13131b-3995-48e9-b3c1-89952a470f33,8b2e2984-0b4f-4324-acc5-b9b53a02f60d,57.071999999999996,0.7272727272727273,trio-002-blue,trio-002-blue,False
+9,b6a7ae28-0545-417f-9a1f-11f1f45a369b,2ed6265e-dda8-4819-80b1-2dff190c31d0,90384805-fe0c-4013-bb90-29a1aeddc7fc,48.95,1.8181818181818181,trio-003-blue,trio-003-blue,False

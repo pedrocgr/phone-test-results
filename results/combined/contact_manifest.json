@@ -2,20 +2,29 @@
   "dataset": "combined",
   "source_datasets": [
     "sweetspot",
-    "random_poses"
+    "random_poses",
+    "horizontal_tests"
   ],
   "input_sha256": {
     "data/raw/sweetspot/touch_results_2026-10-06-sweetspot.jsonl": "290accd48b1739358913f6846d241b868f7a73a8317a14dd1b178490747f67f5",
-    "scripts/analyze_contacts.py": "2c2688bee434feafc7fdd418ead5809ec30424ca87cc3f7b6ccb8d906ddaae23",
+    "scripts/analyze_contacts.py": "24ceb4a455027c38f1d8d81e4247114c5785a5a6bc65fd9ef71137f5ee07ab80",
     "data/annotations/exclusions.csv": "06abad4d3bc0c432b23c88549075e141a84c425e7ab9bfed65a8981fd87cb352",
     "data/annotations/operator_target_counts.csv": "9e16c237a062d77010d4c6a6fa5a203c920c7182b97a2b61d7c185462f8f7485",
     "data/raw/random_poses/touch_results_random_poses_2026-10-06.jsonl": "5cd7f5f138de816b5d531899aba79af099fd35f56c46bd3becde4af49c1c8bff",
-    "data/annotations/random_poses_exclusions.csv": "a5862f9b03f8540ce6e5b90bc82802f8de50f034c5f4b55d40f2036ea774dfed"
+    "data/annotations/random_poses_exclusions.csv": "a5862f9b03f8540ce6e5b90bc82802f8de50f034c5f4b55d40f2036ea774dfed",
+    "data/annotations/operator_session_interruptions.csv": "68e2466bc05edd4e1796debef9377accfac0f13b083619a9fe1e16558836a629",
+    "data/raw/random_poses/touch_results_random_poses_2026-10-06.json": "b57f8f80292d226ee789d6af905b1fa1572adf2fcc87cafe95ea5e457c7aed7d",
+    "data/raw/random_poses/touch_results_random_poses_2026-10-06.csv": "f4b857520740ae85fb0bd460ef85d289cc73910b67d2c566a15ff01b389b31df",
+    "data/raw/horizontal_tests/touch_results.jsonl": "a081ca9553b7c576d90724a0f50369f85cef2639c71126e54e2fa7c85ca8fbcf",
+    "data/annotations/horizontal_tests_exclusions.csv": "a06aff63f04d65d61c9ab132351ee7b3e9016224748941068da05812cecd229b",
+    "data/raw/horizontal_tests/touch_results.json": "6ab85a6c1bbc79dd0e509942eacbc2a135380f343eb8c176ee00f2e005d39519",
+    "data/raw/horizontal_tests/touch_results.csv": "b52065f7d087ff4143d3c3ba4d56ecd35aa959ee598757f29f17630de4891caa",
+    "data/raw/horizontal_tests/README.md": "1330a93b1525444ebcafc4ff78d36f79edec86dca87fabdb3a6dff84b1fb93d0"
   },
-  "events": 270,
-  "contacts": 237,
-  "sessions": 22,
-  "first_circle_contacts": 199,
+  "events": 517,
+  "contacts": 457,
+  "sessions": 40,
+  "first_circle_contacts": 400,
   "archived_sessions_excluded": true,
   "region_boundaries_y_fraction": [
     0,

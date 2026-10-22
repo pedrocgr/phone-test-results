@@ -1,0 +1,2 @@
+dataset,session_number,session_id,unexecuted_targets,reason,annotation_source
+random_poses,6,97f88663-32b9-47bb-804a-f9feb04d41b1,10,Execution stopped after a touch-sensor connection error,Operator clarification in the article discussion
