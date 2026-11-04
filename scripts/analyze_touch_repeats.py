@@ -80,20 +80,22 @@ def summarize(units, contacts, sessions, dataset):
 
 def plot_outcomes(output, units, summary):
     grouped = output.name == "without_double_touches" or output.parent.name == "without_double_touches"
-    fig, ax = plt.subplots(figsize=(8, 5))
-    bars = ax.bar(range(len(summary)), [r["hit_fraction"] for r in summary],
-                  color=[DATASET_COLORS.get(r["dataset"], "#455a64") for r in summary])
-    for bar, r in zip(bars, summary):
-        ax.text(bar.get_x()+bar.get_width()/2, bar.get_height()+.02,
-                f"{r['hits']}/{r['counted_units']}\n{r['hit_fraction']:.1%}", ha="center", fontsize=10)
-    ax.set(xticks=range(len(summary)), xticklabels=["Combined" if r["dataset"] == "combined" else DATASET_LABELS[r["dataset"]] for r in summary],
-           ylim=(0, 1.17), yticks=[0, .25, .5, .75, 1], ylabel="Recorded hit fraction")
-    ax.yaxis.set_major_formatter(PercentFormatter(1))
-    ax.set_title("Individual contact records" if not grouped else
-                 "One outcome per target in each session\nAny hit = hit; only misses = miss")
-    fig.tight_layout()
-    save(fig, output, "hit_fraction_by_condition", "Labels = hits / counted units. no-touch and unrecorded targets are excluded from this denominator.\n"
-         "Conditions differ in target size, app behavior and mounting; fractions are descriptive.")
+    if output.name in MODES:
+        fig, ax = plt.subplots(figsize=(8, 5))
+        bars = ax.bar(range(len(summary)), [r["hit_fraction"] for r in summary],
+                      color=[DATASET_COLORS.get(r["dataset"], "#455a64") for r in summary])
+        for bar, r in zip(bars, summary):
+            ax.text(bar.get_x()+bar.get_width()/2, bar.get_height()+.02,
+                    f"{r['hits']}/{r['counted_units']}\n{r['hit_fraction']:.1%}", ha="center", fontsize=10)
+        ax.set(xticks=range(len(summary)), xticklabels=["Combined" if r["dataset"] == "combined" else DATASET_LABELS[r["dataset"]] for r in summary],
+               ylim=(0, 1.17), yticks=[0, .25, .5, .75, 1], ylabel="Recorded hit fraction")
+        ax.yaxis.set_major_formatter(PercentFormatter(1))
+        ax.set_title("Individual contact records" if not grouped else
+                     "One outcome per target in each session\nAny hit = hit; only misses = miss")
+        fig.tight_layout()
+        save(fig, output, "hit_fraction_by_condition", "Labels = hits / counted units. no-touch and unrecorded targets are excluded from this denominator.\n"
+             "Conditions differ in target size, app behavior and mounting; fractions are descriptive.")
+        return  # The pooled size chart lives only in combined/figures/.
 
     fig, ax = plt.subplots(figsize=(10, 5.5))
     radii = sorted({u["radius_dp"] for u in units})
@@ -116,8 +118,7 @@ def plot_outcomes(output, units, summary):
     ax.yaxis.set_major_formatter(PercentFormatter(1))
     ax.legend(loc="upper center", bbox_to_anchor=(.5, -.15), ncol=3, fontsize=9)
     fig.tight_layout()
-    name = "hit_fraction_by_size" if output.name in MODES else "outcomes_by_size"
-    save(fig, output, name, "Labels = hits / counted units; dp is not millimeters.\n"
+    save(fig, output, "outcomes_by_size", "Labels = hits / counted units; dp is not millimeters.\n"
          "Blank positions have no observations. The horizontal 15 dp condition has one session.")
 
 
@@ -173,11 +174,12 @@ def plot_session_outcomes(output, rows):
 
 def run(root, contacts, sessions, targets, groups):
     root = Path(root)
-    base = root / "results/combined"
+    baseline = root / "results/with_double_touches"
+    base = baseline / "combined"
     pairs = [dict(p, dataset=ds) for ds in DATASETS
-             for p in read_csv(root / f"results/{ds}/tables/rapid_repeat_pairs.csv")]
+             for p in read_csv(baseline / ds / "tables/rapid_repeat_pairs.csv")]
     paths = [base / f"tables/{name}.csv" for name in ("contacts_extended", "sessions_extended", "targets_extended")]
-    paths += [root / f"results/{ds}/tables/rapid_repeat_pairs.csv" for ds in DATASETS]
+    paths += [baseline / ds / "tables/rapid_repeat_pairs.csv" for ds in DATASETS]
     paths += [root / "scripts/analyze_touch_repeats.py"]
     baseline_manifest = json.loads((base / "contact_manifest.json").read_text())
     source_hashes = baseline_manifest["input_sha256"]
@@ -238,7 +240,8 @@ def run(root, contacts, sessions, targets, groups):
                 region_report = region_report.replace("keeps all app-assigned contacts, including misses and repeats, with no outliers removed.",
                                                       "shows one representative per session/target: first hit, otherwise first miss. No coordinates are corrected.")
             (folder / "region_size_analysis.md").write_text(region_report, encoding="utf-8")
-            write_csv(folder / "tables/representative_contacts.csv", selected)
+            if mode == "without_double_touches":
+                write_csv(folder / "tables/representative_contacts.csv", selected)
             spatial_rows = [r for r in tendency(selected) if r["population"] != "first_contact_per_circle"]
             spatial_rows += [r for r in tendency(original) if r["population"] == "first_contact_per_circle"]
             write_csv(folder / "tables/target_tendency.csv", spatial_rows)
@@ -298,7 +301,7 @@ def run(root, contacts, sessions, targets, groups):
                    "and <=8 dp candidate pairs. This stricter rule retains later retries as separate outcomes and is not "
                    "the main target-level metric requested by the operator.\n\n"
                    "## Figures and reproducibility\n\n"
-                   "[Fractions by condition](figures/hit_fraction_by_condition.png) · [Fractions by target size](figures/hit_fraction_by_size.png)\n\n"
+                   "[Fractions by condition](figures/hit_fraction_by_condition.png) · [Fractions by target size](combined/figures/outcomes_by_size.png)\n\n"
                    "Full figure sets and session maps: [Sweet Spot](sweetspot/README.md), "
                    "[Random Poses](random_poses/README.md), [Horizontal Tests](horizontal_tests/README.md), "
                    "[Combined](combined/README.md). Each includes the same tendency, region, size and diagnostic figures as the original analysis.\n\n"
@@ -322,6 +325,23 @@ def run(root, contacts, sessions, targets, groups):
         comparisons.extend(dict(mode=mode, **r) for r in summary)
         print(f"{mode}: {summary[-1]['hits']}/{summary[-1]['counted_units']} = {summary[-1]['hit_fraction']:.2%}")
     write_csv(root / "results/double_touch_comparison.csv", comparisons)
+    combined = {r["mode"]: r for r in comparisons if r["dataset"] == "combined"}
+    def fraction(mode):
+        row = combined[mode]
+        return f"{row['hits']}/{row['counted_units']} = {row['hit_fraction']:.2%}"
+    (root / "results/README.md").write_text(
+        "# Analysis results\n\n"
+        "Choose the counting rule first; each folder contains Sweet Spot, Random Poses, Horizontal Tests and Combined.\n\n"
+        "| View | Counting rule | Combined result |\n|---|---|---|\n"
+        f"| [Without double-touch penalties](without_double_touches/README.md) | One outcome per target/session: any hit = hit; only misses = miss | {fraction('without_double_touches')} |\n"
+        f"| [All contacts](with_double_touches/README.md) | Every recorded contact, including repeats | {fraction('with_double_touches')} |\n\n"
+        "[Comparison table (CSV)](double_touch_comparison.csv)\n\n"
+        "The original contact analysis, detailed reports, input tables, IMU summaries and excluded-session maps "
+        "live under `with_double_touches/`; there is no third copy at this level. "
+        "Plots within each view belong to that view. First-in-circle placement and target-inventory plots "
+        "already counted each target once, so their samples agree between views. "
+        "No-touch and missing records stay separate from the hit/miss denominators. Raw data and exclusions are unchanged.\n",
+        encoding="utf-8")
     return comparisons
 
 

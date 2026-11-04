@@ -6,7 +6,7 @@ import json
 import re
 
 ROOT = Path(__file__).resolve().parents[1]
-RESULTS = ROOT / 'results/sweetspot'
+RESULTS = ROOT / 'results/with_double_touches/sweetspot'
 
 def table(path):
     with path.open(encoding='utf-8', newline='') as f:

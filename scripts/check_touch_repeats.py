@@ -37,7 +37,7 @@ except ValueError:
 else:
     raise AssertionError("Unknown counting rule accepted")
 
-contacts = read_csv(ROOT / "results/combined/tables/contacts_extended.csv")
+contacts = read_csv(ROOT / "results/with_double_touches/combined/tables/contacts_extended.csv")
 original = {(c["dataset"], c["event_id"]): c for c in contacts}
 expected = {
     "with_double_touches": [(132, 111), (105, 101), (220, 204), (457, 416)],
@@ -68,7 +68,8 @@ for mode in MODES:
     assert (int(rapid_summary["counted_units"]), int(rapid_summary["hits"])) == (449, 412)
     for ds, counts in zip((*DATASETS, "combined"), expected[mode]):
         output = folder / ds
-        representatives = read_csv(output / "tables/representative_contacts.csv")
+        contact_table = "contacts_extended.csv" if mode == "with_double_touches" else "representative_contacts.csv"
+        representatives = read_csv(output / "tables" / contact_table)
         assert len(representatives) == counts[0]
         assert sum(c["app_result"] == "hit" for c in representatives) == counts[1]
         us = [u for u in units.values() if ds == "combined" or u["dataset"] == ds]
@@ -82,7 +83,7 @@ for mode in MODES:
         assert sum(int(r["hits"]) for r in sessions) == counts[1]
         for name in ("target_tendency", "region_tendency", "vertical_bias_by_height", "region_by_size",
                      "target_outcomes_region_by_size", "app_assignment_diagnostics", "contact_outcomes_region_by_size",
-                     "outcomes_by_size", "hit_fraction_by_condition"):
+                     "outcomes_by_size"):
             png = (output / f"figures/{name}.png").read_bytes()
             assert png.startswith(b"\x89PNG") and b"Description" in png, (mode, ds, name)
         if ds != "combined":
@@ -90,10 +91,16 @@ for mode in MODES:
             assert (output / "maps/session_overview.png").is_file()
             assert len(list((output / "maps").glob("session_[0-9][0-9].png"))) == {"sweetspot": 15, "random_poses": 7, "horizontal_tests": 18}[ds]
         # First-contact placement is already deduplicated: count/coordinates must not change with mode.
-        assert read_csv(output / "tables/region_tendency_view.csv") == read_csv(ROOT / f"results/{ds}/tables/region_tendency_view.csv")
-        old_figures = {p.name for p in (ROOT / f"results/{ds}/figures").glob("*.png")}
+        assert read_csv(output / "tables/region_tendency_view.csv") == read_csv(ROOT / f"results/with_double_touches/{ds}/tables/region_tendency_view.csv")
+        old_figures = {p.name for p in (ROOT / f"results/with_double_touches/{ds}/figures").glob("*.png")}
         assert old_figures <= {p.name for p in (output / "figures").glob("*.png")}, (mode, ds, old_figures)
 
 assert (ROOT / "results/with_double_touches/target_inventory.csv").read_bytes() == (ROOT / "results/without_double_touches/target_inventory.csv").read_bytes()
 assert len(read_csv(ROOT / "results/double_touch_comparison.csv")) == 8
+assert {p.name for p in (ROOT / "results").iterdir()} == {*MODES, "README.md", "double_touch_comparison.csv"}
+assert all(not (ROOT / "results" / ds).exists() for ds in (*DATASETS, "combined"))
+assert all(not (ROOT / "results" / mode / "figures/hit_fraction_by_size.png").exists() for mode in MODES)
+for mode in MODES:
+    for ds in (*DATASETS, "combined"):
+        assert not (ROOT / "results" / mode / ds / "figures/hit_fraction_by_condition.png").exists()
 print("Repeat-analysis checks passed: any-hit rule, 457 unchanged source contacts, full figures/maps, counts and hashes.")

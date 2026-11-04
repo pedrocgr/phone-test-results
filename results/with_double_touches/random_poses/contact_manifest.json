@@ -2,7 +2,7 @@
   "dataset": "random_poses",
   "input_sha256": {
     "data/raw/random_poses/touch_results_random_poses_2026-10-06.jsonl": "5cd7f5f138de816b5d531899aba79af099fd35f56c46bd3becde4af49c1c8bff",
-    "scripts/analyze_contacts.py": "6d484d0cb23e0f187a75500df9bb2b1b061059fa35a2103d795796e4116ce30c",
+    "scripts/analyze_contacts.py": "9a93b62c573591749034e1eccc906b7e0cf4c274c894f23b1934e5ff46aa73fd",
     "data/annotations/random_poses_exclusions.csv": "a5862f9b03f8540ce6e5b90bc82802f8de50f034c5f4b55d40f2036ea774dfed",
     "data/annotations/operator_session_interruptions.csv": "68e2466bc05edd4e1796debef9377accfac0f13b083619a9fe1e16558836a629",
     "data/raw/random_poses/touch_results_random_poses_2026-10-06.json": "b57f8f80292d226ee789d6af905b1fa1572adf2fcc87cafe95ea5e457c7aed7d",

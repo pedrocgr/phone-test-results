@@ -19,7 +19,7 @@ Original app labels, coordinates and event IDs remain unchanged in `contact_memb
 
 ## Figures and reproducibility
 
-[Fractions by condition](figures/hit_fraction_by_condition.png) · [Fractions by target size](figures/hit_fraction_by_size.png)
+[Fractions by condition](figures/hit_fraction_by_condition.png) · [Fractions by target size](combined/figures/outcomes_by_size.png)
 
 Full figure sets and session maps: [Sweet Spot](sweetspot/README.md), [Random Poses](random_poses/README.md), [Horizontal Tests](horizontal_tests/README.md), [Combined](combined/README.md). Each includes the same tendency, region, size and diagnostic figures as the original analysis.
 

@@ -22,58 +22,47 @@ scripts/
   check_analysis.py       Check data preservation and results
   check_contacts.py       Check geometry, censoring flags, IMU and extended outputs
   check_touch_repeats.py   Check grouping, unchanged sources and both figure sets
-results/sweetspot/
-  summary.md              Short results and limitations
-  tables/                 Sessions, outcome fractions, repeated contacts
-  figures/                Contact outcome chart (PNG)
-  maps/                   Individual maps, overview, and combined PDF
+results/
+  README.md                  Start here: counting rules and combined results
+  double_touch_comparison.csv Counts for both rules and all conditions
+  with_double_touches/       Every contact, including repeats; original reports and source tables
+  without_double_touches/    One any-hit outcome per target/session
+    sweetspot/               Each view contains these same four condition folders
+    random_poses/
+    horizontal_tests/
+    combined/
+      figures/               PNG figures for this view
+      tables/                Reproducible numerical summaries
 archive/detailed_analysis/ Previous detailed notebook and outputs
-results/random_poses/      Extended reports, tables, figures and 7 retained session maps
-results/combined/          All three retained conditions: contacts, region × size and orientation-aware tendency
-results/horizontal_tests/  Horizontal results, size strata and 18 retained session maps
-results/with_double_touches/    All individual contacts; full figures for each condition and combined
-results/without_double_touches/ One any-hit outcome per session/target; same figure set
-results/overview.md        Overall table including all three conditions after exclusions
 archive/random_poses_before_exclusions/ Previous results including the four archived sessions
 ```
 
 ## Start here
 
+- [Results index: choose a counting rule](results/README.md)
 - [Without double-touch penalties: one result per target/session](results/without_double_touches/README.md)
 - [With double touches: every recorded contact](results/with_double_touches/README.md)
 - [Side-by-side counts for both rules (CSV)](results/double_touch_comparison.csv)
-- [Updated overview: Sweet Spot, Random Poses and Horizontal Tests](results/overview.md)
-- [Horizontal Tests: results by target size](results/horizontal_tests/summary.md)
-- [Horizontal Tests: numbered session maps and review table](results/horizontal_tests/session_review.md)
-- [Horizontal Tests: all 18 retained maps in one PDF](results/horizontal_tests/maps/all_sessions.pdf)
+- [Original contact overview and detailed reports](results/with_double_touches/overview.md)
+- [Horizontal Tests: numbered session maps and review table](results/with_double_touches/horizontal_tests/session_review.md)
 - [Main notebook](notebooks/sweetspot.ipynb)
 - [Main retained JSONL](data/processed/sweetspot_valid.jsonl)
-- [Short results](results/sweetspot/summary.md)
-- [All retained session maps](results/sweetspot/maps/all_sessions.pdf)
-- [Session overview](results/sweetspot/maps/session_overview.png)
 - [Target tendency notebook](notebooks/contact_analysis.ipynb)
-- [Sweet Spot target tendency](results/sweetspot/figures/target_tendency.png)
-- [Random Poses analysis](results/random_poses/contact_analysis.md)
-- [Random Poses target tendency](results/random_poses/figures/target_tendency.png)
-- [Random Poses phone orientation by session](results/random_poses/figures/phone_orientation_by_session.png)
-- [Random Poses session maps](results/random_poses/maps/all_sessions.pdf)
 - [Archived Random Poses events](data/excluded/random_poses_excluded.jsonl)
-- [Comparison with shared target-radius strata](results/comparison.md)
-- [Overall contacts: Sweet Spot + Random Poses + Horizontal Tests](results/combined/summary.md)
-- [Horizontal contact tendency: phone top pointing left](results/horizontal_tests/figures/region_tendency.png)
-- [Sweet Spot region × size](results/sweetspot/region_size_analysis.md)
-- [Random Poses region × size](results/random_poses/region_size_analysis.md)
-- [Pooled region × size figure](results/combined/figures/region_by_size.png)
-- [Where contacts land within targets, by screen region](results/combined/figures/region_tendency.png)
-- [Vertical offset versus target height](results/combined/figures/vertical_bias_by_height.png)
+- [Comparison with shared target-radius strata](results/with_double_touches/comparison.md)
+
+Choose `with_double_touches/` or `without_double_touches/` before selecting a condition.
+Both have the full figure sets. Original detailed reports, source tables and excluded-session maps
+live in `with_double_touches/`; the former `results/sweetspot/`, `random_poses/`, `horizontal_tests/`
+and `combined/` copies were removed. Regenerating the notebooks uses this same layout.
 
 ## Screen region, target size, and overall results
 
 The 13 October **Horizontal Tests** export is now analyzed separately in
-`results/horizontal_tests/`. At the operator's request on 21 October, sessions
+`results/with_double_touches/horizontal_tests/`. At the operator's request on 21 October, sessions
 **5, 10, 11, 12, 13, 14, 15, 16, 18, 26, 28 and 29** were archived and excluded.
 Their 25 original events remain in `data/excluded/horizontal_tests_excluded.jsonl`
-and their maps in `results/horizontal_tests/maps/excluded/`. Original session
+and their maps in `results/with_double_touches/horizontal_tests/maps/excluded/`. Original session
 numbers are preserved. The retained 18 sessions contain 247 events, 220 contacts,
 204 app hits and 27 no-touch records. All configured target IDs have records,
 which does not independently confirm robot completion. The 272 original events
@@ -90,8 +79,8 @@ left-to-right (phone top / middle / bottom), rotating offsets by
 the original app axes; `region_tendency_view.csv` gives the rotated summaries.
 These are phone-plane display directions, not calibrated world coordinates.
 
-`results/combined/` now includes all three retained conditions, consistently with
-`results/overview.md` and `overview.csv`. The combined region-tendency figure
+Each view's `combined/` includes all three retained conditions. The original contact overview is in
+`results/with_double_touches/overview.md` and `overview.csv`. The combined region-tendency figure
 uses separate condition panels: vertical columns for Sweet Spot/Random Poses
 and a horizontal row for Horizontal Tests. Do not interpret differences between
 conditions as an isolated orientation effect.
@@ -120,7 +109,7 @@ Target-outcome charts retain app-screen thirds. Region-tendency charts arrange p
 
 Individual figures are saved only as PNG. The remaining PDFs combine multiple session maps and have no single equivalent PNG. Duplicate single-figure PDFs were removed from current and archived results.
 
-`results/combined/` pools **all 457 recorded contacts from 40 retained sessions** (517 events): **416 app hits / 457 contacts = 91.03%**, including repeats. It preserves each contact's dataset, session UUID/number and event ID, keeps archived trials excluded, and includes per-condition counts alongside the overall results. This recorded mix is not a balanced experiment; Random Poses contributes only radius 40 dp. Use per-condition results and the repeat-flag sensitivities alongside pooled fractions. No unlogged physical contact or intended robot action is inferred.
+`results/with_double_touches/combined/` pools **all 457 recorded contacts from 40 retained sessions** (517 events): **416 app hits / 457 contacts = 91.03%**, including repeats. It preserves each contact's dataset, session UUID/number and event ID, keeps archived trials excluded, and includes per-condition counts alongside the overall results. This recorded mix is not a balanced experiment; Random Poses contributes only radius 40 dp. Use per-condition results and the repeat-flag sensitivities alongside pooled fractions. No unlogged physical contact or intended robot action is inferred.
 
 The baseline notebook covers recorded hits/misses, nearby repeated contacts, and session maps. The extended notebook adds target-relative tendency, repeat/censoring sensitivities, Random Poses and exploratory contact-time IMU summaries. Raw measurements are preserved. The archive remains a historical snapshot outside the current workflow.
 
@@ -129,7 +118,7 @@ The baseline notebook covers recorded hits/misses, nearby repeated contacts, and
 The two counting views above both contain **Sweet Spot, Random Poses, Horizontal Tests and Combined**
 subfolders, each with the existing target-tendency, region-tendency, region/size, phone-height,
 assignment-diagnostic and target-inventory figures, plus size/region hit fractions and session tables/maps.
-The original result folders remain the contact-level baseline.
+`with_double_touches/` is also the canonical location for the original contact-level analysis.
 
 **Without double-touch penalties** follows the operator-confirmed rule: group by dataset, session and
 app-assigned target ID; any recorded hit makes the outcome a hit, and only recorded misses make it a miss.
@@ -173,7 +162,7 @@ Targets with any hit are counted once in target coverage. The original contact-l
 
 Nearby pairs use a threshold of **8 dp (20 px here)**. A rapid-repeat candidate also has a timestamp interval ≤ **300 ms**. Four pairs occur in **5, 14, 15, and 19**; they are consistent with repeated contact but do not establish its physical cause. Coordinates use the logged 1080 × 2400 px surface, with origin at the top left and y increasing downward. Display units are not physical millimeters.
 
-For article reporting, distinguish **raw observations**, **operator annotations**, and **derived classifications**. The trial conditions vary over time and contacts are clustered within sessions; no causal or independent-trial inference is made. The source hash, parameters, and environment versions are in [manifest.json](results/sweetspot/manifest.json).
+For article reporting, distinguish **raw observations**, **operator annotations**, and **derived classifications**. The trial conditions vary over time and contacts are clustered within sessions; no causal or independent-trial inference is made. The source hash, parameters, and environment versions are in [manifest.json](results/with_double_touches/sweetspot/manifest.json).
 
 The Random Poses JSON, JSONL, and CSV exports represent the same 116 original events, not three independent experiments. Only JSONL is analyzed; JSON equality is checked. Export paths were renamed to `data/raw/random_poses/` without changing their contents. The empty export is preserved in its `empty_export/` subfolder. Extended manifests record input/annotation/code hashes and environment versions.
 

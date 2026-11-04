@@ -860,6 +860,7 @@ def horizontal_summary(output, contacts, sessions, targets, groups, exclusions):
 
 
 def run(root=ROOT):
+    results = root / "results/with_double_touches"
     reports = []
     comparisons = []
     pooled_contacts, pooled_sessions, pooled_targets = [], [], []
@@ -891,7 +892,7 @@ def run(root=ROOT):
                 path.write_bytes(b"".join(line for line in lines if line.strip()
                                          and (json.loads(line)["session_id"] in exclusions) == selected))
         corrections = {s["session_id"]: s for s in read_csv(root / "data/annotations/operator_target_counts.csv")} if dataset == "sweetspot" else {}
-        output = root / "results" / dataset
+        output = results / dataset
         for folder in ("tables", "figures", "maps"):
             (output / folder).mkdir(parents=True, exist_ok=True)
         for row in exclusion_rows:
@@ -1073,7 +1074,7 @@ missing outcomes are not imputed. New repeated contacts and partial sessions rem
                    "Its app coordinates stay portrait even when the holder is horizontal. "
                    "The horizontal radius 15 dp condition has one session. "
                    "See `horizontal_tests/summary.md` for all-session versus full-ID size strata.\n")
-    (root / "results/comparison.md").write_text(comparison, encoding="utf-8")
+    (results / "comparison.md").write_text(comparison, encoding="utf-8")
     overview_rows = []
     for dataset in (*DATASETS, "all"):
         ss = [s for s in all_sessions if dataset == "all" or s["dataset"] == dataset]
@@ -1085,7 +1086,7 @@ missing outcomes are not imputed. New repeated contacts and partial sessions rem
                                   no_touch=sum(s["no_touch"] for s in ss),
                                   configured_targets=sum(s["effective_targets"] for s in ss),
                                   unrecorded_targets=sum(s["target_ids_without_records"] for s in ss)))
-    write_csv(root / "results/overview.csv", overview_rows)
+    write_csv(results / "overview.csv", overview_rows)
     overview = ("# Recorded touchscreen contacts — all three conditions\n\n"
                 "All three conditions apply their documented operator-requested exclusions. "
                 "Original session numbering is preserved. Counts describe logged contacts, not independent robot attempts.\n\n"
@@ -1099,8 +1100,8 @@ missing outcomes are not imputed. New repeated contacts and partial sessions rem
                  "The total is an unbalanced mixture of sizes, app versions, screen geometry and mounting conditions; "
                  "it does not estimate a causal orientation effect. Repeats are included; unknown targets remain separate. "
                  "`combined/` includes the same three retained conditions and their full contact/target tables and figures.\n")
-    (root / "results/overview.md").write_text(overview, encoding="utf-8")
-    output = root / "results/combined"
+    (results / "overview.md").write_text(overview, encoding="utf-8")
+    output = results / "combined"
     for folder in ("tables", "figures"):
         (output / folder).mkdir(parents=True, exist_ok=True)
     for name, rows in [("contacts_extended", pooled_contacts), ("sessions_extended", pooled_sessions),
@@ -1136,7 +1137,7 @@ The signed offsets in pooled tables use the original phone/app axes. The region-
 separates conditions and rotates the horizontal view to match its mounting; see the section below.
 """
     (output / "summary.md").write_text(summary + "\n" + regional_report, encoding="utf-8")
-    manifests = [json.loads((root / f"results/{ds}/contact_manifest.json").read_text()) for ds in DATASETS]
+    manifests = [json.loads((results / ds / "contact_manifest.json").read_text()) for ds in DATASETS]
     manifest = dict(dataset="combined", source_datasets=[m["dataset"] for m in manifests],
                     input_sha256={k: v for m in manifests for k, v in m["input_sha256"].items()},
                     events=sum(s["events"] for s in pooled_sessions), contacts=total_contacts,

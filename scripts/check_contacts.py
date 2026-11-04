@@ -83,7 +83,7 @@ source_target_keys = set()
 
 for dataset, expected in [("sweetspot", (15, 132, 111)), ("random_poses", (7, 105, 88)),
                           ("horizontal_tests", (18, 220, 201))]:
-    output = ROOT / "results" / dataset
+    output = ROOT / "results/with_double_touches" / dataset
     manifest = json.loads((output / "contact_manifest.json").read_text())
     assert (manifest["sessions"], manifest["contacts"], manifest["first_circle_contacts"]) == expected
     for name, sha in manifest["input_sha256"].items():
@@ -129,7 +129,7 @@ for dataset, expected in [("sweetspot", (15, 132, 111)), ("random_poses", (7, 10
     assert (output / 'figures/phone_orientation_by_session.png').exists() == (dataset in ('random_poses', 'horizontal_tests'))
     assert ('## Phone orientation' in (output / 'contact_analysis.md').read_text()) == (dataset == 'random_poses')
 
-output = ROOT / 'results/combined'
+output = ROOT / 'results/with_double_touches/combined'
 combined_contacts = read_csv(output / 'tables/contacts_extended.csv')
 combined_targets = read_csv(output / 'tables/targets_extended.csv')
 combined_sessions = read_csv(output / 'tables/sessions_extended.csv')
@@ -151,15 +151,15 @@ for name, sha in manifest['input_sha256'].items():
 outcomes = read_csv(output / 'tables/region_size_outcomes.csv')
 assert sum(int(r['targets']) for r in outcomes if r['stratum'] == 'region') == 465
 assert next(r for r in outcomes if r['stratum'] == 'region' and r['value'] == 'unknown')['targets'] == '10'
-assert not list((ROOT / 'results').glob('*/figures/screen_bias.png'))
+assert not list((ROOT / 'results').rglob('figures/screen_bias.png'))
 assert not (output / 'figures/imu_and_bias.png').exists()
 for dataset in ('sweetspot', 'random_poses', 'combined'):
     for name in ('region_tendency', 'target_outcomes_region_by_size'):
-        image = ROOT / 'results' / dataset / 'figures' / f'{name}.png'
+        image = ROOT / 'results/with_double_touches' / dataset / 'figures' / f'{name}.png'
         width, height = unpack('>II', image.read_bytes()[16:24])
         assert height > width, f'{dataset}: screen-region chart must be portrait'
-    assert not (ROOT / 'results' / dataset / 'figures/imu_and_bias.png').exists()
-zero_hit = next(r for r in read_csv(ROOT / 'results/sweetspot/tables/region_size_outcomes.csv')
+    assert not (ROOT / 'results/with_double_touches' / dataset / 'figures/imu_and_bias.png').exists()
+zero_hit = next(r for r in read_csv(ROOT / 'results/with_double_touches/sweetspot/tables/region_size_outcomes.csv')
                 if r['stratum'] == 'region_radius_dp' and r['value'] == 'upper:25')
 assert zero_hit['targets'] == '3' and zero_hit['assigned_hit_targets'] == '0'
 assert zero_hit['assigned_miss_without_hit_targets'] == '3'
@@ -190,7 +190,7 @@ assert {int(r['session_number']) for r in annotations} == excluded_numbers
 assert len(valid) == 247 and len(excluded) == 25
 assert {r['session_id'] for r in excluded} == {r['session_id'] for r in annotations}
 assert {r['event_id'] for r in valid}.isdisjoint({r['event_id'] for r in excluded})
-output = ROOT / 'results/horizontal_tests'
+output = ROOT / 'results/with_double_touches/horizontal_tests'
 manifest = json.loads((output / 'contact_manifest.json').read_text())
 assert (manifest['events'], manifest['contacts'], manifest['sessions'], manifest['first_circle_contacts']) == (247, 220, 18, 201)
 assert set(manifest['excluded_session_numbers']) == excluded_numbers
@@ -223,7 +223,7 @@ for name in ('target_tendency', 'region_tendency', 'vertical_bias_by_height', 'r
              'target_outcomes_region_by_size', 'outcomes_by_size', 'phone_orientation_by_session'):
     image = (output / 'figures' / f'{name}.png').read_bytes()
     assert len(image) > 1000 and b'Description\x00' in image
-overview = read_csv(ROOT / 'results/overview.csv')
+overview = read_csv(ROOT / 'results/with_double_touches/overview.csv')
 total = next(r for r in overview if r['dataset'] == 'all')
 assert (int(total['sessions']), int(total['events']), int(total['contacts']), int(total['app_hits'])) == (40, 517, 457, 416)
 assert abs(float(total['contact_hit_fraction']) - 416/457) < 1e-12
@@ -241,7 +241,7 @@ for r in view:
 image = (output / 'figures/region_tendency.png').read_bytes()
 width, height = unpack('>II', image[16:24])
 assert width > height
-combined_view = read_csv(ROOT / 'results/combined/tables/region_tendency_view.csv')
+combined_view = read_csv(ROOT / 'results/with_double_touches/combined/tables/region_tendency_view.csv')
 assert sum(int(r['contacts']) for r in combined_view) == 400
 assert {r['dataset'] for r in combined_view} == {'sweetspot', 'random_poses', 'horizontal_tests'}
 assert [r for r in combined_view if r['dataset'] == 'horizontal_tests'] == view
