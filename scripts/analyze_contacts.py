@@ -378,19 +378,28 @@ def outcome_sensitivity(sessions, contacts):
 
 
 def save(fig, output, name, caption=""):
+    mode = output.parent.name
+    if mode in ("with_double_touches", "without_double_touches"):
+        rule = ("Every contact counted separately, including repeats." if mode == "with_double_touches" else
+                "One outcome per session/target: any hit = hit; only misses = miss.")
+        caption = rule + "\n" + caption
     if caption:
         fig.text(.5, -.015, caption, ha="center", va="top", fontsize=9, linespacing=1.5)
     fig.savefig(output / "figures" / f"{name}.png", dpi=180, bbox_inches="tight", metadata={"Description": caption})
     plt.close(fig)
 
 
-def analyze_regions(output, contacts, targets):
+def analyze_regions(output, contacts, targets, placement_contacts=None):
     """Use the same summaries and definitions for each condition and pooled records."""
     rows = tendency(contacts)
+    if placement_contacts is not None:
+        # Placement already uses one contact per geometric circle, independently of app-outcome grouping.
+        rows = [r for r in rows if r["population"] != "first_contact_per_circle"] + [
+            r for r in tendency(placement_contacts) if r["population"] == "first_contact_per_circle"]
     outcomes = regional_outcomes(targets)
     write_csv(output / "tables/region_size_contacts.csv", [r for r in rows if r["stratum"] in ("region", "radius_dp", "region_radius_dp")])
     write_csv(output / "tables/region_size_outcomes.csv", outcomes)
-    first = [c for c in contacts if c["first_contact_in_circle"]]
+    first = [c for c in (contacts if placement_contacts is None else placement_contacts) if c["first_contact_in_circle"]]
     conditions = sorted({c["dataset"] for c in contacts})
     title = DATASET_LABELS[output.name]
 
@@ -578,9 +587,9 @@ not a balanced experiment or causal size/pose effect. The per-condition reports 
     return report
 
 
-def plot_dataset(output, contacts, sessions, groups):
+def plot_dataset(output, contacts, sessions, groups, placement_contacts=None, contact_event_ids=None):
     title = DATASET_LABELS[output.name]
-    first = [c for c in contacts if c["first_contact_in_circle"]]
+    first = [c for c in (contacts if placement_contacts is None else placement_contacts) if c["first_contact_in_circle"]]
     conditions = sorted({c["dataset"] for c in contacts})
     fig, ax = plt.subplots(figsize=(7, 7.5))
     for dataset in conditions:
@@ -631,29 +640,34 @@ def plot_dataset(output, contacts, sessions, groups):
     for ax in axs:
         ax.axhline(0, color="gray", linewidth=.7)
         ax.legend(fontsize=8)
-    fig.suptitle(f"{title}\nApp-label diagnostics: all contacts, including misses and repeats", fontsize=12)
+    diagnostic = ("one representative contact per session/target" if output.parent.name == "without_double_touches"
+                  else "all contacts, including misses and repeats")
+    fig.suptitle(f"{title}\nApp-label diagnostics: {diagnostic}", fontsize=12)
     fig.tight_layout(rect=(0, 0, 1, .93))
     save(fig, output, "app_assignment_diagnostics",
          "App labels may associate a repeat touch with a different target; they do not prove robot intent.\n"
          "Right panel has a nonlinear vertical scale; no outliers removed. dp = display units, not millimeters.")
 
-    if output.name not in ("random_poses", "horizontal_tests"):
+    if output.name not in ("random_poses", "horizontal_tests") and contact_event_ids is None:
         return  # Reuse the baseline Sweet Spot session maps.
+    if output.name == "combined":
+        return
 
-    fig, axs = plt.subplots(3, 1, figsize=(8, 9), sharex=True)
-    for axis, ax in enumerate(axs):
-        valid = [s for s in sessions if s[f"imu_axis{axis}_mean_deg"] is not None]
-        ax.scatter([s["session_number"] for s in valid], [s[f"imu_axis{axis}_mean_deg"] for s in valid])
-        ax.set(ylabel="Mean angle (degrees)", ylim=(-185, 185), yticks=[-180, -90, 0, 90, 180],
-               title=f"Phone sensor component {axis} — {len(valid)} sessions with readings")
-        ax.axhline(0, color="gray", linewidth=.7)
-    axs[-1].set(xlabel="Original session number", xticks=[s["session_number"] for s in sessions])
-    fig.suptitle(f"{title}\nHow did phone orientation vary between sessions?", fontsize=13)
-    fig.tight_layout(rect=(0, 0, 1, .93), h_pad=2)
-    save(fig, output, "phone_orientation_by_session",
-         "Each point = circular mean of phone IMU angles at recorded contacts in one retained session.\n"
-         "Exporter components are unverified—not calibrated robot roll, pitch or yaw.\n"
-         "This plot does not establish an effect on accuracy; session selection is documented in the report.")
+    if output.name in ("random_poses", "horizontal_tests"):
+        fig, axs = plt.subplots(3, 1, figsize=(8, 9), sharex=True)
+        for axis, ax in enumerate(axs):
+            valid = [s for s in sessions if s[f"imu_axis{axis}_mean_deg"] is not None]
+            ax.scatter([s["session_number"] for s in valid], [s[f"imu_axis{axis}_mean_deg"] for s in valid])
+            ax.set(ylabel="Mean angle (degrees)", ylim=(-185, 185), yticks=[-180, -90, 0, 90, 180],
+                   title=f"Phone sensor component {axis} — {len(valid)} sessions with readings")
+            ax.axhline(0, color="gray", linewidth=.7)
+        axs[-1].set(xlabel="Original session number", xticks=[s["session_number"] for s in sessions])
+        fig.suptitle(f"{title}\nHow did phone orientation vary between sessions?", fontsize=13)
+        fig.tight_layout(rect=(0, 0, 1, .93), h_pad=2)
+        save(fig, output, "phone_orientation_by_session",
+             "Each point = circular mean of phone IMU angles at recorded contacts in one retained session.\n"
+             "Exporter components are unverified—not calibrated robot roll, pitch or yaw.\n"
+             "This plot does not establish an effect on accuracy; session selection is documented in the report.")
 
     map_rows = math.ceil(len(groups) / 4)
     fig, axs = plt.subplots(map_rows, 4, figsize=(13, max(8, map_rows * 3.8)), squeeze=False)
@@ -673,7 +687,7 @@ def plot_dataset(output, contacts, sessions, groups):
                             view.scatter(e["target_center_x"], e["target_center_y"], s=35,
                                          marker="s", facecolors="none", edgecolors="#b77900")
                 for e in events:
-                    if has_contact(e):
+                    if has_contact(e) and (contact_event_ids is None or e["event_id"] in contact_event_ids):
                         view.scatter(e["actual_touch_x"], e["actual_touch_y"], s=14,
                                      marker="x" if e["result"] == "miss" else "o", color="black")
                         if output.name == "horizontal_tests" and e.get("target_already_completed"):
@@ -685,11 +699,15 @@ def plot_dataset(output, contacts, sessions, groups):
             individual.suptitle(f"{title} — session {number}", fontsize=13)
             map_note = "Colored circles = targets; dots = app hits; crosses = app misses.\n"
             if output.name == "horizontal_tests":
-                count = sum(has_contact(e) for e in events)
-                hits = sum(e["result"] == "hit" for e in events)
-                map_note += (f"Contacts: {count} ({hits} hits); no-touch records: {len(events)-count}.\n"
+                shown = [e for e in events if has_contact(e) and (contact_event_ids is None or e["event_id"] in contact_event_ids)]
+                count = len(shown)
+                hits = sum(e["result"] == "hit" for e in shown)
+                label = "Contacts" if contact_event_ids is None else "Shown contacts"
+                map_note += (f"{label}: {count} ({hits} hits); no-touch records: {sum(not has_contact(e) for e in events)}.\n"
                              "Hollow square = no-touch only; purple ring = completed-target repeat.\n")
             map_note += "Only recorded positions shown; missing targets not reconstructed."
+            if output.parent.name == "without_double_touches":
+                map_note += "\nOne marker per session/target: first hit, otherwise first miss."
             individual.text(.5, .015, map_note, ha="center", fontsize=8)
             individual.tight_layout(rect=(0, .12, 1, .94))
             individual.savefig(output / "maps" / f"session_{number:02d}.png", dpi=180, bbox_inches="tight")
@@ -698,7 +716,8 @@ def plot_dataset(output, contacts, sessions, groups):
         for ax in axs.flat[len(groups):]:
             ax.set_visible(False)
     fig.suptitle(f"{title}: where were targets and touches recorded?", fontsize=13)
-    fig.text(.5, .01, "Colored circles = targets; dots = app hits; crosses = app misses.\n"
+    fig.text(.5, .01, ("One marker per session/target: first hit, otherwise first miss.\n" if output.parent.name == "without_double_touches" else "") +
+             "Colored circles = targets; dots = app hits; crosses = app misses.\n"
              "Screen coordinates in pixels: top-left origin. Only retained sessions; missing targets not reconstructed.",
              ha="center", fontsize=10)
     fig.tight_layout(rect=(0, .05, 1, .96))
@@ -845,6 +864,7 @@ def run(root=ROOT):
     comparisons = []
     pooled_contacts, pooled_sessions, pooled_targets = [], [], []
     all_sessions = []
+    dataset_groups = {}
     interruption_path = root / "data/annotations/operator_session_interruptions.csv"
     interruptions = {(r["dataset"], r["session_id"]): r for r in read_csv(interruption_path)}
     for dataset in DATASETS:
@@ -908,6 +928,7 @@ def run(root=ROOT):
             targets.extend(ts)
             pairs.extend(ps)
             selected_groups.append((number, events))
+        dataset_groups[dataset] = selected_groups
         tendency_rows = tendency(contacts)
         sensitivity = outcome_sensitivity(sessions, contacts)
         for name, rows in [("contacts_extended", contacts), ("sessions_extended", sessions),
@@ -1126,6 +1147,8 @@ separates conditions and rotates the horizontal view to match its mounting; see 
     (output / "contact_manifest.json").write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
     reports.append(summary + "\n" + regional_report)
     print(f"combined: {len(pooled_sessions)} sessions, {total_contacts} recorded contacts; results in {output}")
+    from analyze_touch_repeats import run as run_repeat_analysis
+    run_repeat_analysis(root, pooled_contacts, pooled_sessions, pooled_targets, dataset_groups)
     return reports
 
 

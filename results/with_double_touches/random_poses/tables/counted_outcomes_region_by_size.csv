@@ -1,0 +1,4 @@
+region,radius_dp,counted_units,hits,misses,hit_fraction
+upper,40.0,43,42,1,0.9767441860465116
+middle,40.0,39,36,3,0.9230769230769231
+lower,40.0,23,23,0,1.0

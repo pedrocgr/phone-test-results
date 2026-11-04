@@ -1,0 +1,8 @@
+dataset,session_id,session_number,counted_units,hits,misses,no_touch_events,unrecorded_targets
+random_poses,e4b009b4-b9c3-43f0-9ced-77fd53e93a69,1,6,6,0,0,0
+random_poses,27edd2c8-7c8a-4089-b96d-113c60282ea9,3,8,8,0,0,0
+random_poses,155b3ddd-bb24-415c-88e6-ca2e61d8e748,4,18,18,0,0,0
+random_poses,db7b7404-00c9-44ca-bdee-d1969ff9be3d,5,17,17,0,1,0
+random_poses,97f88663-32b9-47bb-804a-f9feb04d41b1,6,13,10,3,0,10
+random_poses,e8041b55-e1ce-4a02-b579-47aa66e9ed09,9,25,25,0,0,0
+random_poses,375722e8-2565-41d5-94be-c0c904ce4902,11,18,17,1,1,0

@@ -1,0 +1,5 @@
+dataset,configured_targets,targets_with_any_hit,targets_with_contact_misses_only,targets_with_no_touch_records_only,targets_without_records,possible_ceiling_censoring
+sweetspot,135,111,16,8,0,5
+random_poses,102,88,3,1,10,0
+horizontal_tests,228,201,15,12,0,0
+combined,465,400,34,21,10,5

@@ -1,0 +1,16 @@
+dataset,session_id,session_number,counted_units,hits,misses,no_touch_events,unrecorded_targets
+sweetspot,bba6558a-2cdd-42d7-9e0a-ab8cfb3cf138,1,6,5,1,1,0
+sweetspot,65423ee8-7461-499a-9a47-b92fcb43400f,2,12,12,0,1,0
+sweetspot,a062dec0-466b-4c6b-93a3-beac4c2567fa,5,10,10,0,3,0
+sweetspot,9522b6c8-08cb-4774-abc2-35714518319e,8,9,9,0,1,0
+sweetspot,b0b4aaca-e9f5-46e7-8ed2-ef99289eab48,10,9,9,0,1,0
+sweetspot,03e7ef75-2c8e-44a6-9779-2045bcc52a5b,11,9,8,1,2,0
+sweetspot,277529fc-a0e6-44b5-b811-f69de2f4bf86,12,6,5,1,0,0
+sweetspot,65031c8f-8bbe-4e4a-8673-6a2551c16c0d,13,6,6,0,0,0
+sweetspot,9ecbaf6c-0bb3-4e4c-b9db-d990c214fb05,14,8,7,1,3,0
+sweetspot,a8626db1-7147-493b-9c73-e8e44ded9884,15,8,8,0,2,0
+sweetspot,af20baac-54cc-4a32-a1fb-cf12794cb24a,16,8,6,2,3,0
+sweetspot,84500cb2-3e16-4a8c-8bc8-693767db4080,17,8,6,2,3,0
+sweetspot,38a197b6-d1c7-4223-955c-9e78269cf776,18,9,8,1,2,0
+sweetspot,904ab55e-64ed-43b6-ac9c-b0df646ca2c3,19,10,7,3,5,0
+sweetspot,b7c1b59e-1e8d-468b-90c0-21ad617d0e20,20,9,5,4,4,0

@@ -18,8 +18,10 @@ notebooks/
 scripts/
   run_analysis.py         Execute both notebooks
   analyze_contacts.py     Extended analysis; can also run directly
+  analyze_touch_repeats.py Two counting views, reusing the existing figures and maps
   check_analysis.py       Check data preservation and results
   check_contacts.py       Check geometry, censoring flags, IMU and extended outputs
+  check_touch_repeats.py   Check grouping, unchanged sources and both figure sets
 results/sweetspot/
   summary.md              Short results and limitations
   tables/                 Sessions, outcome fractions, repeated contacts
@@ -29,12 +31,17 @@ archive/detailed_analysis/ Previous detailed notebook and outputs
 results/random_poses/      Extended reports, tables, figures and 7 retained session maps
 results/combined/          All three retained conditions: contacts, region × size and orientation-aware tendency
 results/horizontal_tests/  Horizontal results, size strata and 18 retained session maps
+results/with_double_touches/    All individual contacts; full figures for each condition and combined
+results/without_double_touches/ One any-hit outcome per session/target; same figure set
 results/overview.md        Overall table including all three conditions after exclusions
 archive/random_poses_before_exclusions/ Previous results including the four archived sessions
 ```
 
 ## Start here
 
+- [Without double-touch penalties: one result per target/session](results/without_double_touches/README.md)
+- [With double touches: every recorded contact](results/with_double_touches/README.md)
+- [Side-by-side counts for both rules (CSV)](results/double_touch_comparison.csv)
 - [Updated overview: Sweet Spot, Random Poses and Horizontal Tests](results/overview.md)
 - [Horizontal Tests: results by target size](results/horizontal_tests/summary.md)
 - [Horizontal Tests: numbered session maps and review table](results/horizontal_tests/session_review.md)
@@ -119,6 +126,24 @@ The baseline notebook covers recorded hits/misses, nearby repeated contacts, and
 
 ## Target tendency and logging limitations
 
+The two counting views above both contain **Sweet Spot, Random Poses, Horizontal Tests and Combined**
+subfolders, each with the existing target-tendency, region-tendency, region/size, phone-height,
+assignment-diagnostic and target-inventory figures, plus size/region hit fractions and session tables/maps.
+The original result folders remain the contact-level baseline.
+
+**Without double-touch penalties** follows the operator-confirmed rule: group by dataset, session and
+app-assigned target ID; any recorded hit makes the outcome a hit, and only recorded misses make it a miss.
+This groups later retries too, not only rapid double contacts. It gives **400 hits / 434 touched targets
+= 92.17%**, versus **416 / 457 contacts = 91.03%** in the individual-contact view. These are different
+units, not an improvement in the robot's measured independent-attempt accuracy.
+
+Maps and assigned-contact diagnostics use an actual representative: the first hit, otherwise the first miss.
+First-in-circle placement figures already exclude extra touches and retain their original coordinates and
+samples in both views. IMU summaries also retain all sensor samples. No-touch-only and unrecorded targets
+stay separate; the target-inventory chart already uses any-hit target outcomes and is unchanged.
+Every grouped result links to all unchanged source events in `contact_membership.csv` and `units.csv`.
+The stricter rapid-repeat grouping (≤300 ms and ≤8 dp) is supplementary in `rapid_repeat_sensitivity.csv`.
+
 The unit-circle plots center each target at `(0, 0)` and divide x/y offsets by its radius; positive x points right and positive y points down. Tables also report dp, radius/color strata, quadrant fractions, median/p90 radial error and means weighted equally by session. dp is a display unit, not millimeters.
 
 Two spatial views are kept separate: **all contacts relative to the app-assigned target**, including misses, and **first recorded contact per uniquely containing circle**. The latter describes where successful recorded contacts land and prevents multiple contacts in the same circle from dominating the plot. It excludes outside/ambiguous contacts and cannot reconstruct robot intent or independent actions. Raw event IDs and app outcomes remain in `contacts_extended.csv`.
@@ -144,7 +169,7 @@ The retained population contains **15 sessions, 163 events, and 132 recorded con
 - Observed target hit coverage: **111/135 = 82.22%**, using operator-corrected target counts.
 - Raw-count sensitivity: **111/141 = 78.72%**, using the unmodified configuration counts.
 
-Targets with any hit are counted once in target coverage. No contacts are deduplicated, trimmed, or imputed. These descriptive fractions do not estimate independent robot-action accuracy or contacts never logged.
+Targets with any hit are counted once in target coverage. The original contact-level analysis retains every contact; the separate target-level view groups contacts as described above. No source coordinates or labels are changed and no missing contacts are imputed. These descriptive fractions do not estimate independent robot-action accuracy or contacts never logged.
 
 Nearby pairs use a threshold of **8 dp (20 px here)**. A rapid-repeat candidate also has a timestamp interval ≤ **300 ms**. Four pairs occur in **5, 14, 15, and 19**; they are consistent with repeated contact but do not establish its physical cause. Coordinates use the logged 1080 × 2400 px surface, with origin at the top left and y increasing downward. Display units are not physical millimeters.
 
@@ -161,6 +186,7 @@ source .venv/bin/activate
 python scripts/run_analysis.py
 python scripts/check_analysis.py
 python scripts/check_contacts.py
+python scripts/check_touch_repeats.py
 ```
 
 For a new environment:

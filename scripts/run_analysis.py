@@ -14,4 +14,5 @@ for name in sys.argv[1:] or ("sweetspot", "contact_analysis"):
     nbformat.validate(notebook)
     nbformat.write(notebook, path)
     print(f"Notebook executed and validated: {name}", flush=True)
-print("Outputs: results/sweetspot/, results/random_poses/, results/horizontal_tests/, results/combined/ and results/overview.md")
+print("Outputs: results/sweetspot/, results/random_poses/, results/horizontal_tests/, results/combined/, "
+      "results/with_double_touches/, results/without_double_touches/ and results/overview.md")

@@ -2,7 +2,7 @@
   "dataset": "sweetspot",
   "input_sha256": {
     "data/raw/sweetspot/touch_results_2026-10-06-sweetspot.jsonl": "290accd48b1739358913f6846d241b868f7a73a8317a14dd1b178490747f67f5",
-    "scripts/analyze_contacts.py": "24ceb4a455027c38f1d8d81e4247114c5785a5a6bc65fd9ef71137f5ee07ab80",
+    "scripts/analyze_contacts.py": "6d484d0cb23e0f187a75500df9bb2b1b061059fa35a2103d795796e4116ce30c",
     "data/annotations/exclusions.csv": "06abad4d3bc0c432b23c88549075e141a84c425e7ab9bfed65a8981fd87cb352",
     "data/annotations/operator_target_counts.csv": "9e16c237a062d77010d4c6a6fa5a203c920c7182b97a2b61d7c185462f8f7485"
   },
